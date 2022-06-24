@@ -64,3 +64,21 @@ createKeyClass();
 //responsiveControl();
 //let jsonData = "[{'Nombre':'Manuel'}]"
 //createFile(jsonData, 'json.txt', 'text/plain');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            //let xLen = document.querySelector(".homeControlPF__effect").length;
+            document.querySelectorAll(".itemControl")[0].classList.add("effect_homeControlPF")
+            document.querySelectorAll(".itemControl")[1].classList.add("effect_homeControlPF")
+            document.querySelectorAll(".itemControl")[2].classList.add("effect_homeControlPF")
+            //alert("hola ")
+        }else{
+            document.querySelectorAll(".itemControl")[0].classList.remove("effect_homeControlPF")
+            document.querySelectorAll(".itemControl")[1].classList.remove("effect_homeControlPF")
+            document.querySelectorAll(".itemControl")[2].classList.remove("effect_homeControlPF")
+        }
+    })
+})
+
+observer.observe(document.querySelector(".intersectionObserver"))
