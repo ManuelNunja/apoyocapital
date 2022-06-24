@@ -680,7 +680,7 @@ body {
           justify-items: center;
           justify-content: center;
           background-color: transparent;
-          opacity: 0; }
+          opacity: 1; }
           .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:hover .itemControl_background .image {
             transform: scale(1.2); }
           .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {

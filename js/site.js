@@ -81,4 +81,4 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 
-observer.observe(document.querySelector(".intersectionObserver"))
+//observer.observe(document.querySelector(".intersectionObserver"))
