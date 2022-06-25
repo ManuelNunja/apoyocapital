@@ -1,6 +1,6 @@
 @font-face {
   font-family: roboto;
-  src: url(../resources/font/Roboto-Regular.ttf) format("truetype");
+  src: url(../resources/font/Roboto-Regular.ttf) format("truety");
   font-weight: normal;
   font-style: normal; }
 
@@ -69,6 +69,7 @@ body {
       align-items: center;
       justify-items: center;
       justify-content: center; } }
+
 
 @media only screen and (min-width: 769px) {
   .intersectionObserver {
