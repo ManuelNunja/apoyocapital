@@ -37,6 +37,7 @@ function responsiveControl(){
                     document.getElementsByClassName("siteMenu__background__sideLeft")[0].classList.remove("siteMenu__background__sideLeft--active")
                     document.getElementsByClassName("imageBrand")[0].classList.remove("imageBrand--active")
                     document.getElementsByClassName("menuIcon")[0].classList.remove("menuIcon--active")
+                    document.getElementsByClassName("menuIcon")[1].classList.remove("menuIcon--active")
                 }
             }
         }
@@ -52,6 +53,7 @@ function responsiveControl(){
                 document.getElementsByClassName("siteMenu__background__sideLeft")[0].classList.remove("siteMenu__background__sideLeft--active")
                 document.getElementsByClassName("imageBrand")[0].classList.remove("imageBrand--active")
                 document.getElementsByClassName("menuIcon")[0].classList.remove("menuIcon--active")
+                document.getElementsByClassName("menuIcon")[1].classList.remove("menuIcon--active")
             }
         }
     }
