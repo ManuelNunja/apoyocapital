@@ -576,7 +576,7 @@ body {
     justify-content: center; }
     .homeHead .homeHead__background {
       width: 100%;
-      height: calc(100% - 16px);
+      height: calc(100vh - 72px);
       background-color: transparent;
       display: flex;
       flex-direction: column;
@@ -597,8 +597,33 @@ body {
           justify-content: flex-start; }
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item {
             height: 100%; }
-            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container {
+            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(1) .item__container {
               height: 100%; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(1) .item__container .carousel--image {
+                height: 100%;
+                width: 100%;
+                background-image: url("../resources/image/carousel_image_1_mobile.png");
+                background-position: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(2) .item__container {
+              height: 100%; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(2) .item__container .carousel--image {
+                height: 100%;
+                width: 100%;
+                background-image: url("../resources/image/carousel_image_1_mobile.png");
+                background-position: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(3) .item__container {
+              height: 100%; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(3) .item__container .carousel--image {
+                height: 100%;
+                width: 100%;
+                background-image: url("../resources/image/carousel_image_1_mobile.png");
+                background-position: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat; }
         .homeHead .homeHead__background .site__carouselHead .carousel-control-prev {
           color: #d61c25;
           font-size: 30px; }
@@ -638,8 +663,33 @@ body {
           justify-content: flex-start; }
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item {
             height: 100%; }
-            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container {
+            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(1) .item__container {
               height: 100%; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(1) .item__container .carousel--image {
+                height: 100%;
+                width: 100%;
+                background-image: url("../resources/image/carousel_image_1_desktop.jpg");
+                background-position: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(2) .item__container {
+              height: 100%; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(2) .item__container .carousel--image {
+                height: 100%;
+                width: 100%;
+                background-image: url("../resources/image/carousel_image_1_desktop.jpg");
+                background-position: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(3) .item__container {
+              height: 100%; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(3) .item__container .carousel--image {
+                height: 100%;
+                width: 100%;
+                background-image: url("../resources/image/carousel_image_1_desktop.jpg");
+                background-position: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat; }
         .homeHead .homeHead__background .site__carouselHead .carousel-control-prev {
           color: #d61c25;
           font-size: 30px; }
