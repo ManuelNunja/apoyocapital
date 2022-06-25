@@ -22,7 +22,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: white; }
+  background-color: #f5f5f7; }
 
 /*SCROLL BAR*/
 ::-webkit-scrollbar {
@@ -48,7 +48,54 @@ body {
   background-color: transparent; }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
+  .intersectionObserver {
+    display: none; }
+  .siteContainer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+    .siteContainer .siteContainer__background {
+      width: 100%;
+      background-color: transparent;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; } }
+
+@media only screen and (min-width: 769px) {
+  .intersectionObserver {
+    display: block; }
+  .siteContainer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+    .siteContainer .siteContainer__background {
+      width: 100%;
+      background-color: transparent;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; } }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
   .siteMenu {
+    z-index: 9999999;
     width: 100%;
     height: auto;
     display: flex;
@@ -87,7 +134,7 @@ body {
             text-align: center;
             vertical-align: middle;
             background-color: transparent;
-            padding-top: 50px;
+            padding-top: 25px;
             cursor: pointer;
             font-size: 20px; }
           .siteMenu .siteMenu__background .siteMenu__background__sideLeft .menuIcon--active .fas {
@@ -144,20 +191,27 @@ body {
                 z-index: 1078;
                 padding-top: 8px;
                 padding-bottom: 8px; }
-                .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link {
-                  height: 40px;
-                  padding-top: 20px;
-                  font-size: 18px;
-                  font-weight: 700;
-                  background-color: transparent;
-                  cursor: pointer; }
-                  .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link:active {
-                    background-color: #d14b52; }
+                .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  justify-items: center; }
+                  .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link {
+                    width: 100%;
+                    height: 50px;
+                    padding-top: 10px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    background-color: transparent;
+                    cursor: pointer; }
+                    .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link:active {
+                      background-color: #d14b52; }
               .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child {
                 z-index: 1077; }
                 .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link {
-                  height: 32px;
-                  padding-top: 15px;
+                  width: 100%;
+                  height: 50px;
+                  padding-top: 10px;
                   font-size: 14px;
                   font-weight: 300;
                   background-color: transparent;
@@ -167,9 +221,10 @@ body {
 
 @media only screen and (min-width: 769px) {
   .siteMenu {
+    z-index: 9999999;
     width: 100%;
     height: 80px;
-    background-color: transparent;
+    background-color: #f5f5f7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,7 +243,7 @@ body {
         height: 100%;
         display: grid;
         grid-template-columns: 100%;
-        background-color: #ffffff; }
+        background-color: #f5f5f7; }
         .siteMenu .siteMenu__background .siteMenu__background__sideLeft--active {
           background-color: #d61c25; }
         .siteMenu .siteMenu__background .siteMenu__background__sideLeft .menuIcon {
@@ -199,6 +254,10 @@ body {
           background-position: 50%;
           background-size: 48%;
           background-repeat: no-repeat; }
+          .siteMenu .siteMenu__background .siteMenu__background__sideLeft .imageBrand img {
+            content: url("../resources/brand/brandRed.png");
+            width: 10%;
+            height: 10%; }
           .siteMenu .siteMenu__background .siteMenu__background__sideLeft .imageBrand--zoom {
             background-size: 50%;
             /*background-image: url('../resources/brand/brandWhite.png');*/ }
@@ -207,7 +266,7 @@ body {
         width: 100%;
         height: 100%;
         margin-top: 0px;
-        background-color: #ffffff;
+        background-color: #f5f5f7;
         padding-top: 0px;
         padding-bottom: 0px; }
         .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav {
@@ -249,23 +308,30 @@ body {
                 z-index: 1078;
                 padding-top: 0px;
                 padding-bottom: 0px; }
-                .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link {
-                  height: 40px;
-                  padding-top: 20px;
-                  font-size: 16px;
-                  font-weight: 700;
-                  background-color: transparent;
-                  cursor: pointer; }
-                  .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link:active {
-                    background-color: #d14b52; }
-                  .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link:hover {
-                    background-color: #d61c25;
-                    color: #ffffff; }
+                .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  justify-items: center; }
+                  .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link {
+                    width: 100%;
+                    height: 40px;
+                    padding-top: 8px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    background-color: transparent;
+                    cursor: pointer; }
+                    .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link:active {
+                      background-color: #d14b52; }
+                    .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link:hover {
+                      background-color: #d61c25;
+                      color: #ffffff; }
               .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child {
                 z-index: 1077; }
                 .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link {
-                  height: 32px;
-                  padding-top: 15px;
+                  width: 100%;
+                  height: 40px;
+                  padding-top: 8px;
                   font-size: 14px;
                   font-weight: 300;
                   background-color: transparent;
@@ -274,10 +340,7 @@ body {
                     background-color: #d14b52; }
                   .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link:hover {
                     color: #d61c25;
-                    font-weight: 700;
-                    margin-top: -3px;
-                    margin-right: -6px;
-                    padding-bottom: 3px; } }
+                    border-bottom: solid 1px #d61c25; } }
 
 @media only screen and (min-width: 300px) and (max-width: 540px) {
   .siteFooter .siteFooter__background {
@@ -502,3 +565,322 @@ body {
                   .siteFooter .siteFooter__background .footer__item:nth-child(3) .siteMap .side .siteMap__list .siteMap__list__item a {
                     text-decoration: none;
                     color: #828282; } }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .homeHead {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+    .homeHead .homeHead__background {
+      width: 100%;
+      height: calc(100% - 16px);
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .homeHead .homeHead__background .site__carouselHead {
+        width: 100%;
+        height: 100%; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
+          background-color: #d61c25; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-inner {
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-items: center;
+          justify-content: flex-start; }
+          .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item {
+            height: 100%; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container {
+              height: 100%; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-control-prev {
+          color: #d61c25;
+          font-size: 30px; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-control-next {
+          color: #d61c25;
+          font-size: 30px; } }
+
+@media only screen and (min-width: 769px) {
+  .homeHead {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: black; }
+    .homeHead .homeHead__background {
+      width: 75%;
+      height: 64vh;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .homeHead .homeHead__background .site__carouselHead {
+        width: 100%;
+        height: 100%; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
+          background-color: #d61c25; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-inner {
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-items: center;
+          justify-content: flex-start; }
+          .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item {
+            height: 100%; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container {
+              height: 100%; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-control-prev {
+          color: #d61c25;
+          font-size: 30px; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-control-next {
+          color: #d61c25;
+          font-size: 30px; } }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .homeControlPF {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+    .homeControlPF .homeControlPF__background {
+      width: calc(100% - 16px);
+      height: calc(100% - 16px);
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      padding: 8px; }
+      .homeControlPF .homeControlPF__background .homeControlPF__title {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0; }
+        .homeControlPF .homeControlPF__background .homeControlPF__title h2 {
+          padding: 8px;
+          margin: 0;
+          font-family: GelionLight;
+          color: #46494c;
+          text-align: center; }
+      .homeControlPF .homeControlPF__background .homeControlPF__items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding: 8px; }
+        .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
+          width: calc(216px);
+          height: calc(216px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          justify-content: center;
+          background-color: transparent; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {
+            width: calc(100% - 24px);
+            height: calc(100% - 24px);
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: 2px 8px 10px #828282; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
+              width: 100%;
+              height: 40%;
+              background-color: transparent;
+              background-image: url("../resources/icon/corporate/ICONO-22.png");
+              background-position: 50%;
+              background-size: 48%;
+              background-repeat: no-repeat; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 15%;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-items: center;
+              justify-content: center; }
+              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title span {
+                color: #1a1a1a;
+                font-family: GelionLight;
+                font-weight: 700;
+                font-size: 16px; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text {
+              width: 100%;
+              height: 45%;
+              background-color: transparent; }
+              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
+                color: #1a1a1a;
+                font-family: GelionLight;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500; } }
+
+@media only screen and (min-width: 769px) {
+  .homeControlPF {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden; }
+    .homeControlPF .homeControlPF__background {
+      width: calc(100% - 16px);
+      height: calc(100% - 16px);
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      padding: 8px; }
+      .homeControlPF .homeControlPF__background .homeControlPF__title {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0; }
+        .homeControlPF .homeControlPF__background .homeControlPF__title h2 {
+          padding: 8px;
+          margin: 0;
+          font-family: GelionLight;
+          color: #46494c;
+          text-align: center; }
+      .homeControlPF .homeControlPF__background .homeControlPF__items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding: 8px; }
+        .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
+          width: calc(216px);
+          height: calc(216px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          justify-content: center;
+          background-color: transparent;
+          opacity: 1; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:hover .itemControl_background .image {
+            transform: scale(1.2); }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {
+            width: calc(100% - 24px);
+            height: calc(100% - 24px);
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: 2px 8px 10px #828282; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
+              width: 100%;
+              height: 40%;
+              background-color: transparent;
+              background-image: url("../resources/icon/corporate/ICONO-22.png");
+              background-position: 50%;
+              background-size: 48%;
+              background-repeat: no-repeat; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 15%;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-items: center;
+              justify-content: center; }
+              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title span {
+                color: #1a1a1a;
+                font-family: GelionLight;
+                font-weight: 700;
+                font-size: 16px; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text {
+              width: 100%;
+              height: 45%;
+              background-color: transparent; }
+              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
+                color: #1a1a1a;
+                font-family: GelionLight;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500; } }
+
+.effect_homeControlPF:nth-child(1) {
+  -webkit-animation: animation1 1s forwards;
+  -moz-animation: animation1 1s forwards;
+  -o-animation: animation1 1s forwards;
+  animation: animation1 1s forwards; }
+
+.effect_homeControlPF:nth-child(2) {
+  -webkit-animation: animation1 1s forwards;
+  -moz-animation: animation1 1s forwards;
+  -o-animation: animation1 1s forwards;
+  animation: animation1 1s forwards;
+  animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s; }
+
+.effect_homeControlPF:nth-child(3) {
+  -webkit-animation: animation1 1s forwards;
+  -moz-animation: animation1 1s forwards;
+  -o-animation: animation1 1s forwards;
+  animation: animation1 1s forwards;
+  animation-delay: 0.35s;
+  -webkit-animation-delay: 0.35s;
+  -o-animation-delay: 0.35s;
+  -moz-animation-delay: 0.35s; }
+
+@-webkit-keyframes animation1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes animation1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes animation1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animation1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
