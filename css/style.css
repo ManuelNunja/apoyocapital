@@ -715,7 +715,8 @@ body {
     display: flex;
     align-items: center;
     justify-items: center;
-    justify-content: center; }
+    justify-content: center;
+    background-color: #f5f5f7; }
     .homeControlPF .homeControlPF__background {
       width: calc(100% - 16px);
       height: calc(100% - 16px);
@@ -808,7 +809,7 @@ body {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    overflow: hidden; }
+    background-color: #f5f5f7; }
     .homeControlPF .homeControlPF__background {
       width: 75%;
       height: calc(100% - 16px);
@@ -895,6 +896,239 @@ body {
                 text-align: center;
                 font-size: 14px;
                 font-weight: 500; } }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .homeControlSquare {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: calc(40px); }
+    .homeControlSquare .homeControlSquare__bacckground {
+      width: calc(340px);
+      height: calc(680px);
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      gap: calc(16px); }
+      .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1.5fr 1fr;
+        border: solid 0px #828282;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2px #828282; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) {
+          grid-template-areas: "image" "info"; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(1) {
+            background-color: green;
+            grid-area: image;
+            background-image: url("../resources/image/controlsquare/square1_mobile.jpg");
+            background-position: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) {
+            background-color: transparent;
+            grid-area: info;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding: calc(16px); }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .title {
+              width: 100%;
+              height: auto; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .title h2 {
+                color: #d61c25;
+                font-family: GelionLight;
+                font-weight: 700;
+                font-size: 16px; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .text {
+              width: 100%;
+              height: auto; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .text p {
+                color: #1a1a1a;
+                font-family: GelionLight;
+                font-weight: 300;
+                font-size: 12px; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) {
+          grid-template-areas: "image" "info"; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(1) {
+            background-color: green;
+            grid-area: image;
+            background-image: url("../resources/image/controlsquare/square2_mobile.jpg");
+            background-position: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) {
+            background-color: transparent;
+            grid-area: info;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding: calc(16px); }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .title {
+              width: 100%;
+              height: auto; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .title h2 {
+                color: #d61c25;
+                font-family: GelionLight;
+                font-weight: 700;
+                font-size: 16px; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .text {
+              width: 100%;
+              height: auto; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .text p {
+                color: #1a1a1a;
+                font-family: GelionLight;
+                font-weight: 300;
+                font-size: 12px; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button {
+              width: 100%;
+              height: auto;
+              display: flex;
+              align-items: center;
+              justify-items: flex-start;
+              justify-content: flex-start; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button > a {
+                width: 150px;
+                height: 32px;
+                background-color: #d61c25;
+                color: #ffffff;
+                font-family: GelionLight;
+                font-size: 16px;
+                text-align: center;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 700;
+                padding-top: 2px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button > a:hover {
+                  background-color: #d14b52; } }
+
+@media only screen and (min-width: 769px) {
+  .homeControlSquare {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+    .homeControlSquare .homeControlSquare__bacckground {
+      width: calc(680px);
+      height: calc(680px);
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) {
+          grid-template-areas: "info image"; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-items: center;
+            justify-content: center; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(1) {
+              background-color: green;
+              grid-area: image;
+              background-image: url("../resources/image/controlsquare/square1_desktop.jpg");
+              background-position: 50%;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) {
+              background-color: transparent;
+              grid-area: info;
+              padding: calc(16px); }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .title {
+                width: 70%;
+                height: auto; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .title h2 {
+                  color: #d61c25;
+                  font-family: GelionLight;
+                  font-weight: 700;
+                  font-size: 32px; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .text {
+                width: 100%;
+                height: auto; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .text p {
+                  color: #1a1a1a;
+                  font-family: GelionLight;
+                  font-weight: 300;
+                  font-size: 16px; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) {
+          grid-template-areas: "image info"; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-items: center;
+            justify-content: center; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(1) {
+              background-color: green;
+              grid-area: image;
+              background-image: url("../resources/image/controlsquare/square2_desktop.jpg");
+              background-position: 50%;
+              background-size: cover;
+              background-repeat: no-repeat; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) {
+              background-color: transparent;
+              grid-area: info;
+              padding: calc(16px); }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .title {
+                width: 70%;
+                height: auto; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .title h2 {
+                  color: #d61c25;
+                  font-family: GelionLight;
+                  font-weight: 700;
+                  font-size: 32px;
+                  text-align: right; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .text {
+                width: 100%;
+                height: auto; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .text p {
+                  color: #1a1a1a;
+                  font-family: GelionLight;
+                  font-weight: 300;
+                  font-size: 16px;
+                  text-align: right; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-items: flex-end;
+                justify-content: flex-end; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button > a {
+                  width: 150px;
+                  height: 32px;
+                  background-color: #d61c25;
+                  color: #ffffff;
+                  font-family: GelionLight;
+                  font-size: 16px;
+                  text-align: center;
+                  border-radius: 0px;
+                  text-decoration: none;
+                  font-weight: 700;
+                  padding-top: 2px; }
+                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button > a:hover {
+                    background-color: #d14b52; } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
