@@ -93,7 +93,7 @@ body {
       justify-items: center;
       justify-content: center; } }
 
-@media only screen and (min-width: 300px) and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
   .siteMenu {
     z-index: 9999999;
     width: 100%;
@@ -219,7 +219,7 @@ body {
                   .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link:active {
                     background-color: #d14b52; } }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .siteMenu {
     z-index: 9999999;
     width: 100%;
@@ -340,6 +340,13 @@ body {
                   .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link:hover {
                     color: #d61c25;
                     border-bottom: solid 1px #d61c25; } }
+
+@media only screen and (min-width: 1025px) and (max-width: 1220px) {
+  .siteMenu .siteMenu__background {
+    width: 100%;
+    grid-template-columns: 25% 75%; }
+    .siteMenu .siteMenu__background .siteMenu__background__sideLeft .imageBrand {
+      background-size: 75%; } }
 
 @media only screen and (min-width: 300px) and (max-width: 540px) {
   .siteFooter .siteFooter__background {
@@ -574,7 +581,6 @@ body {
     justify-items: center;
     justify-content: center; }
     .homeHead .homeHead__background {
-      width: 100%;
       height: calc(100vh - 72px);
       background-color: transparent;
       display: flex;
@@ -598,7 +604,6 @@ body {
               height: 100%;
               width: 100%;
               background-position: 50%;
-              background-size: 100%;
               background-repeat: no-repeat; }
             .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(1) .item__container {
               height: 100%; }
@@ -615,7 +620,7 @@ body {
         .homeHead .homeHead__background .site__carouselHead .site__carousel__button {
           display: none; }
         .homeHead .homeHead__background .site__carouselHead .carousel-indicators {
-          margin-bottom: 2.5rem; }
+          margin-bottom: 3.5rem; }
           .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
             background-color: #d61c25; } }
 
@@ -627,9 +632,8 @@ body {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    background-color: black; }
+    background-color: transparent; }
     .homeHead .homeHead__background {
-      width: 75%;
       height: 64vh;
       background-color: transparent;
       display: flex;
@@ -653,7 +657,6 @@ body {
               height: 100%;
               width: 100%;
               background-position: 50%;
-              background-size: contain;
               background-repeat: no-repeat; }
             .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(1) .item__container {
               height: 100%; }
@@ -670,8 +673,40 @@ body {
         .homeHead .homeHead__background .site__carouselHead .site__carousel__button {
           color: #d61c25;
           font-size: 30px; }
-        .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
-          background-color: #d61c25; } }
+        .homeHead .homeHead__background .site__carouselHead .carousel-indicators {
+          margin-bottom: 1.5rem; }
+          .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
+            background-color: #d61c25; } }
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .homeHead .homeHead__background {
+    width: 100%; }
+    .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container .carousel--image {
+      background-size: contain; } }
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .homeHead .homeHead__background {
+    width: 100%; }
+    .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container .carousel--image {
+      background-size: 80%; } }
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .homeHead .homeHead__background {
+    width: 100%; }
+    .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container .carousel--image {
+      background-size: 65%; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1220px) {
+  .homeHead .homeHead__background {
+    width: 100%; }
+    .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container .carousel--image {
+      background-size: contain; } }
+
+@media only screen and (min-width: 1221px) {
+  .homeHead .homeHead__background {
+    width: 75%; }
+    .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container .carousel--image {
+      background-size: contain; } }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .homeControlPF {
