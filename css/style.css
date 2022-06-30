@@ -16,6 +16,18 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: SFProHeavy;
+  src: url(../resources/font/SFProTextHeavy.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: SFProBold;
+  src: url(../resources/font/SFProTextBold.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   transition: 0.35s all; }
 
@@ -735,7 +747,7 @@ body {
         .homeControlPF .homeControlPF__background .homeControlPF__title h2 {
           padding: 8px;
           margin: 0;
-          font-family: GelionLight;
+          font-family: SFProBold;
           color: #46494c;
           text-align: center; }
       .homeControlPF .homeControlPF__background .homeControlPF__items {
@@ -756,6 +768,15 @@ body {
           justify-items: center;
           justify-content: center;
           background-color: transparent; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(1) .itemControl_background .image {
+            background-image: url("../resources/icon/corporate/iconperson.png");
+            background-size: 80px 80px; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(2) .itemControl_background .image {
+            background-image: url("../resources/icon/corporate/iconmedal.png");
+            background-size: 50px 50px; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(3) .itemControl_background .image {
+            background-image: url("../resources/icon/corporate/iconhandworld.png");
+            background-size: 50px 50px; }
           .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {
             width: calc(100% - 24px);
             height: calc(100% - 24px);
@@ -771,9 +792,7 @@ body {
               width: 100%;
               height: 40%;
               background-color: transparent;
-              background-image: url("../resources/icon/corporate/ICONO-22.png");
               background-position: 50%;
-              background-size: 48%;
               background-repeat: no-repeat; }
             .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
               margin: 0;
@@ -819,18 +838,21 @@ body {
       align-items: center;
       justify-items: center;
       justify-content: center;
-      padding: 8px; }
+      padding-top: calc(16px);
+      padding-bottom: calc(24px); }
       .homeControlPF .homeControlPF__background .homeControlPF__title {
         width: 100%;
         height: auto;
         padding: 0;
         margin: 0; }
         .homeControlPF .homeControlPF__background .homeControlPF__title h2 {
-          padding: 8px;
+          padding: 0;
           margin: 0;
-          font-family: GelionLight;
+          font-family: SFProBold;
           color: #46494c;
-          text-align: center; }
+          text-align: center;
+          font-weight: 700;
+          font-size: 24px; }
       .homeControlPF .homeControlPF__background .homeControlPF__items {
         width: 100%;
         height: auto;
@@ -838,8 +860,7 @@ body {
         flex-direction: row;
         align-items: center;
         justify-items: center;
-        justify-content: center;
-        padding: 8px; }
+        justify-content: center; }
         .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
           width: calc(216px);
           height: calc(216px);
@@ -850,8 +871,15 @@ body {
           justify-content: center;
           background-color: transparent;
           opacity: 1; }
-          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:hover .itemControl_background .image {
-            transform: scale(1.2); }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(1) .itemControl_background .image {
+            background-image: url("../resources/icon/corporate/iconperson.png");
+            background-size: 80px 80px; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(2) .itemControl_background .image {
+            background-image: url("../resources/icon/corporate/iconmedal.png");
+            background-size: 50px 50px; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(3) .itemControl_background .image {
+            background-image: url("../resources/icon/corporate/iconhandworld.png");
+            background-size: 50px 50px; }
           .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {
             width: calc(100% - 24px);
             height: calc(100% - 24px);
@@ -867,9 +895,7 @@ body {
               width: 100%;
               height: 40%;
               background-color: transparent;
-              background-image: url("../resources/icon/corporate/ICONO-22.png");
               background-position: 50%;
-              background-size: 48%;
               background-repeat: no-repeat; }
             .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
               margin: 0;
@@ -925,9 +951,9 @@ body {
         border: solid 0px #828282;
         border-radius: 5px;
         box-shadow: 0px 0px 2px #828282; }
-        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) {
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
           grid-template-areas: "image" "info"; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(1) {
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image {
             background-color: green;
             grid-area: image;
             background-image: url("../resources/image/controlsquare/square1_mobile.jpg");
@@ -936,31 +962,31 @@ body {
             background-repeat: no-repeat;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) {
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info {
             background-color: transparent;
             grid-area: info;
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
             padding: calc(16px); }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .title {
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title {
               width: 100%;
               height: auto; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .title h2 {
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h2 {
                 color: #d61c25;
-                font-family: GelionLight;
+                font-family: SFProBold;
                 font-weight: 700;
                 font-size: 16px; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .text {
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text {
               width: 100%;
               height: auto; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .text p {
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text p {
                 color: #1a1a1a;
                 font-family: GelionLight;
                 font-weight: 300;
                 font-size: 12px; }
-        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) {
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom {
           grid-template-areas: "image" "info"; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(1) {
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image {
             background-color: green;
             grid-area: image;
             background-image: url("../resources/image/controlsquare/square2_mobile.jpg");
@@ -969,36 +995,36 @@ body {
             background-repeat: no-repeat;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) {
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info {
             background-color: transparent;
             grid-area: info;
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
             padding: calc(16px); }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .title {
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title {
               width: 100%;
               height: auto; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .title h2 {
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h2 {
                 color: #d61c25;
-                font-family: GelionLight;
+                font-family: SFProBold;
                 font-weight: 700;
                 font-size: 16px; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .text {
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text {
               width: 100%;
               height: auto; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .text p {
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text p {
                 color: #1a1a1a;
                 font-family: GelionLight;
                 font-weight: 300;
                 font-size: 12px; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button {
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button {
               width: 100%;
               height: auto;
               display: flex;
               align-items: center;
               justify-items: flex-start;
               justify-content: flex-start; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button > a {
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton {
                 width: 150px;
                 height: 32px;
                 background-color: #d61c25;
@@ -1010,7 +1036,7 @@ body {
                 text-decoration: none;
                 font-weight: 700;
                 padding-top: 2px; }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button > a:hover {
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
                   background-color: #d14b52; } }
 
 @media only screen and (min-width: 769px) {
@@ -1035,87 +1061,165 @@ body {
         height: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 100%; }
-        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) {
+        grid-template-rows: 100%;
+        position: relative; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
           grid-template-areas: "info image"; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square {
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-items: center;
-            justify-content: center; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(1) {
+            justify-content: center;
+            position: relative; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image {
+              margin-left: -340px;
+              margin-right: 340px;
               background-color: green;
               grid-area: image;
               background-image: url("../resources/image/controlsquare/square1_desktop.jpg");
               background-position: 50%;
               background-size: cover;
               background-repeat: no-repeat; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) {
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image--effect {
+                animation: animation__homeControlSquare__UP .35s ease-out;
+                animation-delay: 0.35s;
+                animation-fill-mode: forwards; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image--effect--reverse {
+                animation-direction: reverse; }
+  @keyframes animation__homeControlSquare__UP {
+    from {
+      margin-left: -340px;
+      margin-right: 340px; }
+    to {
+      margin-left: 0px;
+      margin-right: 0px; } }
+  @keyframes animation__homeControlSquare__UP_REVERSE {
+    from {
+      margin-left: 0px;
+      margin-right: 0px; }
+    to {
+      margin-left: -340px;
+      margin-right: 340px; } }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info {
               background-color: transparent;
               grid-area: info;
               padding: calc(16px); }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .title {
-                width: 70%;
-                height: auto; }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .title h2 {
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title {
+                width: 75%;
+                height: auto;
+                transform: rotateX(90deg); }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h2 {
                   color: #d61c25;
-                  font-family: GelionLight;
+                  font-family: SFProBold;
                   font-weight: 700;
                   font-size: 32px; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .text {
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title--effect {
+                  animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
+                  animation-delay: 1.4s;
+                  animation-fill-mode: forwards; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text {
                 width: 100%;
-                height: auto; }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(1) .row__square:nth-child(2) .text p {
+                height: auto;
+                transform: rotateX(90deg); }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text p {
                   color: #1a1a1a;
                   font-family: GelionLight;
                   font-weight: 300;
                   font-size: 16px; }
-        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) {
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text--effect {
+                  animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
+                  animation-delay: 1.6s;
+                  animation-fill-mode: forwards; }
+  @keyframes animnation__homeControlSquare__TEXT {
+    from {
+      transform: rotateX(90deg); }
+    to {
+      transform: rotateX(0deg); } }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.float {
+              position: absolute;
+              right: 70px;
+              top: 70px;
+              background-color: transparent;
+              width: 200px;
+              height: 200px;
+              background-image: url("../resources/brand/isoac.png");
+              background-position: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              filter: grayscale(100%);
+              opacity: 0.35; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom {
           grid-template-areas: "image info"; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square {
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             justify-items: center;
-            justify-content: center; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(1) {
+            justify-content: center;
+            position: relative; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image {
+              margin-right: -340px;
+              margin-left: 340px;
               background-color: green;
               grid-area: image;
               background-image: url("../resources/image/controlsquare/square2_desktop.jpg");
               background-position: 50%;
               background-size: cover;
               background-repeat: no-repeat; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) {
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image--effect {
+                animation: animation__homeControlSquare__DOWN .35s ease-out;
+                animation-delay: 0.35s;
+                animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__DOWN {
+    from {
+      margin-right: -340px;
+      margin-left: 340px; }
+    to {
+      margin-right: 0px;
+      margin-left: 0px; } }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info {
               background-color: transparent;
               grid-area: info;
               padding: calc(16px); }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .title {
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title {
                 width: 70%;
-                height: auto; }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .title h2 {
+                height: auto;
+                transform: rotateX(90deg); }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h2 {
                   color: #d61c25;
-                  font-family: GelionLight;
+                  font-family: SFProBold;
                   font-weight: 700;
                   font-size: 32px;
                   text-align: right; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .text {
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title--effect {
+                  animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
+                  animation-delay: 1.4s;
+                  animation-fill-mode: forwards; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text {
                 width: 100%;
-                height: auto; }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .text p {
+                height: auto;
+                transform: rotateX(90deg); }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text p {
                   color: #1a1a1a;
                   font-family: GelionLight;
                   font-weight: 300;
                   font-size: 16px;
                   text-align: right; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button {
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text--effect {
+                  animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
+                  animation-delay: 1.6s;
+                  animation-fill-mode: forwards; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button {
                 width: 100%;
                 height: auto;
                 display: flex;
                 align-items: center;
                 justify-items: flex-end;
-                justify-content: flex-end; }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button > a {
+                justify-content: flex-end;
+                overflow: hidden;
+                max-height: 32px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton {
                   width: 150px;
                   height: 32px;
                   background-color: #d61c25;
@@ -1126,9 +1230,160 @@ body {
                   border-radius: 0px;
                   text-decoration: none;
                   font-weight: 700;
-                  padding-top: 2px; }
-                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row:nth-child(2) .row__square:nth-child(2) .button > a:hover {
-                    background-color: #d14b52; } }
+                  padding-top: 2px;
+                  margin-top: 64px; }
+                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
+                    background-color: #d14b52; }
+                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton--effect {
+                    animation: animation__homeControlSquare__BUTTON 0.2s ease-out;
+                    animation-delay: 1.8s;
+                    animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__BUTTON {
+    from {
+      margin-top: 64px; }
+    to {
+      margin-top: 0px; } }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.float {
+              position: absolute;
+              left: 70px;
+              top: 70px;
+              background-color: transparent;
+              width: 200px;
+              height: 200px;
+              background-image: url("../resources/brand/isoac.png");
+              background-position: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              filter: grayscale(100%);
+              opacity: 0.35; } }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .homeControlIcaGroup {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    max-height: calc(240px); }
+    .homeControlIcaGroup .homeControlIcaGroup__background {
+      width: calc(400px);
+      height: calc(240px);
+      max-height: calc(240px);
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__title {
+        width: 100%;
+        height: calc(64px);
+        padding: 0;
+        margin: 0; }
+        .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__title h2 {
+          padding: 0;
+          margin: 0;
+          font-family: SFProBold;
+          color: #1a1a1a;
+          text-align: center;
+          font-weight: 700; }
+      .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items {
+        display: grid;
+        grid-template-areas: "col2 col3" "col1 col4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50%;
+        gap: 8px; }
+        .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl {
+          width: calc(200px);
+          height: calc(64px);
+          background-color: transparent; }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl .image {
+            width: 100%;
+            height: 100%;
+            background-position: 50%;
+            background-size: 70%;
+            background-repeat: no-repeat; }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(1) {
+            grid-area: col1; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(1) .image {
+              background-image: url("../resources/brand/brandRed.png"); }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(2) {
+            grid-area: col2; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(2) .image {
+              background-image: url("../resources/client/icredit.png"); }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(3) {
+            grid-area: col3; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(3) .image {
+              background-image: url("../resources/brand/brandRed.png"); }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(4) {
+            grid-area: col4; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(4) .image {
+              background-image: url("../resources/brand/brandRed.png"); } }
+
+@media only screen and (min-width: 769px) {
+  .homeControlIcaGroup {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    max-height: calc(240px); }
+    .homeControlIcaGroup .homeControlIcaGroup__background {
+      width: calc(400px);
+      height: calc(240px);
+      max-height: calc(240px);
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__title {
+        width: 100%;
+        height: calc(48px);
+        padding: 0;
+        margin: 0; }
+        .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__title h2 {
+          padding: 0;
+          margin: 0;
+          font-family: SFProBold;
+          color: #1a1a1a;
+          text-align: center;
+          font-weight: 700; }
+      .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items {
+        display: grid;
+        grid-template-areas: "col1 col2 col3 col4";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+        gap: 8px; }
+        .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl {
+          width: 250px;
+          height: 100px;
+          background-color: transparent; }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl .image {
+            width: 100%;
+            height: 100%;
+            background-position: 50%;
+            background-size: 70%;
+            background-repeat: no-repeat; }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(1) {
+            grid-area: col1; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(1) .image {
+              background-image: url("../resources/brand/brandRed.png"); }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(2) {
+            grid-area: col2; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(2) .image {
+              background-image: url("../resources/client/icredit.png"); }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(3) {
+            grid-area: col3; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(3) .image {
+              background-image: url("../resources/brand/brandRed.png"); }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(4) {
+            grid-area: col4; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(4) .image {
+              background-image: url("../resources/brand/brandRed.png"); } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;

@@ -71,16 +71,18 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             //let xLen = document.querySelector(".homeControlPF__effect").length;
-            document.querySelectorAll(".itemControl")[0].classList.add("effect_homeControlPF")
-            document.querySelectorAll(".itemControl")[1].classList.add("effect_homeControlPF")
-            document.querySelectorAll(".itemControl")[2].classList.add("effect_homeControlPF")
-            //alert("hola ")
-        }else{
-            document.querySelectorAll(".itemControl")[0].classList.remove("effect_homeControlPF")
-            document.querySelectorAll(".itemControl")[1].classList.remove("effect_homeControlPF")
-            document.querySelectorAll(".itemControl")[2].classList.remove("effect_homeControlPF")
+            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image")[0].classList.add("image--effect")
+            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image")[0].classList.add("image--effect")
+
+            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title")[0].classList.add("title--effect")
+            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title")[1].classList.add("title--effect")
+
+            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")[0].classList.add("text--effect")
+            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")[1].classList.add("text--effect")
+
+            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .button .linkButton")[0].classList.add("linkButton--effect")
         }
     })
 })
 
-//observer.observe(document.querySelector(".intersectionObserver"))
+observer.observe(document.querySelector(".intersectionObserver"))
