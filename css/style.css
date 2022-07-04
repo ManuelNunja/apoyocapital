@@ -71,7 +71,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    justify-content: center; }
+    justify-content: center;
+    overflow: hidden; }
     .siteContainer .siteContainer__background {
       width: 100%;
       background-color: transparent;
@@ -94,7 +95,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    justify-content: center; }
+    justify-content: center;
+    overflow: hidden; }
     .siteContainer .siteContainer__background {
       width: 100%;
       background-color: transparent;
@@ -476,7 +478,7 @@ body {
 
 @media only screen and (min-width: 769px) {
   .siteFooter {
-    z-index: 1076;
+    z-index: 9999999;
     width: 100%;
     height: 350px;
     min-height: 350px;
@@ -1267,7 +1269,7 @@ body {
     justify-content: center;
     max-height: calc(240px); }
     .homeControlIcaGroup .homeControlIcaGroup__background {
-      width: calc(400px);
+      width: 100%;
       height: calc(240px);
       max-height: calc(240px);
       background-color: transparent;
@@ -1331,7 +1333,7 @@ body {
     justify-content: center;
     max-height: calc(240px); }
     .homeControlIcaGroup .homeControlIcaGroup__background {
-      width: calc(400px);
+      width: 75%;
       height: calc(240px);
       max-height: calc(240px);
       background-color: transparent;
@@ -1359,7 +1361,7 @@ body {
         grid-template-rows: 100%;
         gap: 8px; }
         .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl {
-          width: 250px;
+          width: 200px;
           height: 100px;
           background-color: transparent; }
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl .image {
@@ -1384,6 +1386,676 @@ body {
             grid-area: col4; }
             .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(4) .image {
               background-image: url("../resources/brand/brandRed.png"); } }
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .headPage {
+    width: 100%;
+    height: auto; }
+    .headPage--producto .headPage__background {
+      background-image: url("../resources/image/head/producto_mobile.jpg"); }
+    .headPage--noticias .headPage__background {
+      background-image: url("../resources/image/head/noticias_mobile.jpg"); }
+    .headPage--contacto .headPage__background {
+      background-image: url("../resources/image/head/contacto_mobile.jpg"); }
+    .headPage .backFloat {
+      display: none; }
+    .headPage .headPage__background {
+      width: 100%;
+      height: 50vh;
+      background-position: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .headPage .headPage__background .headPage__title {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center; }
+        .headPage .headPage__background .headPage__title h1 {
+          width: 85%;
+          color: #d61c25;
+          font-weight: bold;
+          font-family: SFProHeavy;
+          letter-spacing: -2px;
+          line-height: calc(32px);
+          background-color: rgba(192, 192, 192, 0.205); }
+      .headPage .headPage__background .headPage__text {
+        width: 100%;
+        height: auto;
+        display: none;
+        align-items: center;
+        justify-items: center;
+        justify-content: center; }
+        .headPage .headPage__background .headPage__text p {
+          width: 85%;
+          color: #d61c25;
+          font-weight: bold;
+          font-family: SFProHeavy; } }
+
+@media only screen and (min-width: 769px) {
+  .headPage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; }
+    .headPage--producto .headPage__background, .headPage--producto .backFloat {
+      background-image: url("../resources/image/head/producto_desktop.jpg"); }
+    .headPage--noticias .headPage__background, .headPage--noticias .backFloat {
+      background-image: url("../resources/image/head/noticias_desktop.jpg"); }
+    .headPage--contacto .headPage__background, .headPage--contacto .backFloat {
+      background-image: url("../resources/image/head/contacto_desktop.jpg"); }
+    .headPage .backFloat {
+      width: 100%;
+      height: 64vh;
+      position: absolute;
+      background-color: black;
+      left: 0;
+      z-index: 1073;
+      filter: blur(40px); }
+    .headPage .headPage__background {
+      z-index: 1074;
+      width: 75%;
+      height: 64vh;
+      background-position: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      padding-bottom: calc(80px); }
+      .headPage .headPage__background .headPage__title {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: flex-start;
+        background-color: transparent;
+        padding-left: 12.5%; }
+        .headPage .headPage__background .headPage__title h1 {
+          width: auto;
+          color: #d61c25;
+          font-weight: bold;
+          font-family: SFProHeavy;
+          font-size: calc(56px);
+          letter-spacing: -3px;
+          line-height: calc(64px);
+          background-color: rgba(192, 192, 192, 0.205); }
+      .headPage .headPage__background .headPage__text {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: flex-start;
+        background-color: transparent;
+        padding-left: 12.5%; }
+        .headPage .headPage__background .headPage__text p {
+          width: auto;
+          color: #d61c25;
+          font-weight: 500;
+          font-family: SFProHeavy;
+          font-size: calc(16px);
+          letter-spacing: 2px;
+          line-height: calc(16px);
+          padding-left: 5px;
+          background-color: rgba(192, 192, 192, 0.205); } }
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  .headPage .headPage__background {
+    width: 100%; } }
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .controlCalculator {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    margin-top: -50px; }
+    .controlCalculator .controlCalculator__background {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      background-color: #f5e9e9;
+      border-radius: calc(16px); }
+      .controlCalculator .controlCalculator__background .sideInfo {
+        width: 72%;
+        height: 48vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        gap: calc(16px); }
+        .controlCalculator .controlCalculator__background .sideInfo .title {
+          width: 100%; }
+          .controlCalculator .controlCalculator__background .sideInfo .title h2 {
+            color: #d61c25;
+            font-family: SFProHeavy;
+            font-size: 32px;
+            line-height: calc(32px); }
+          .controlCalculator .controlCalculator__background .sideInfo .title h3 {
+            color: #d61c25;
+            font-family: SFProHeavy;
+            font-size: 16px; }
+        .controlCalculator .controlCalculator__background .sideInfo .info {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          justify-content: center; }
+          .controlCalculator .controlCalculator__background .sideInfo .info ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            line-height: calc(32px); }
+            .controlCalculator .controlCalculator__background .sideInfo .info ul li {
+              color: #d61c25;
+              font-family: GelionLight;
+              font-weight: 700; }
+              .controlCalculator .controlCalculator__background .sideInfo .info ul li img {
+                width: 40px;
+                padding-right: calc(16px); }
+      .controlCalculator .controlCalculator__background .sideTool {
+        width: 85%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding-bottom: calc(32px); }
+        .controlCalculator .controlCalculator__background .sideTool .sideTool__background {
+          width: 100%;
+          border-radius: calc(16px);
+          background-color: #ffffff;
+          padding-top: calc(24px);
+          padding-bottom: calc(24px); }
+          .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            gap: calc(8px); }
+            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row {
+              width: 85%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-items: flex-start;
+              justify-content: flex-start;
+              gap: calc(8px); }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row p {
+                padding-top: 10px;
+                margin: 0;
+                font-weight: bold;
+                font-family: GelionLight;
+                font-size: 15px;
+                vertical-align: middle; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row input {
+                font-size: 14px;
+                background-color: #ececec;
+                font-weight: bold;
+                font-family: GelionLight; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select {
+                font-size: 14px;
+                font-weight: bold;
+                font-family: GelionLight; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select option {
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-family: GelionLight; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button .buttonSimular {
+                  width: 150px;
+                  height: 32px;
+                  color: #ffffff;
+                  background-color: #d61c25;
+                  border: none;
+                  border-radius: 8px; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side {
+                width: 85%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-items: center;
+                justify-content: center; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
+                  width: 50%; } }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .controlCalculator {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    margin-top: -50px; }
+    .controlCalculator .controlCalculator__background {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      background-color: #f5e9e9;
+      border-radius: calc(16px); }
+      .controlCalculator .controlCalculator__background .sideInfo {
+        width: 90%;
+        height: 48vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        gap: calc(16px); }
+        .controlCalculator .controlCalculator__background .sideInfo .title {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          justify-content: center; }
+          .controlCalculator .controlCalculator__background .sideInfo .title h2 {
+            color: #d61c25;
+            font-family: SFProHeavy;
+            font-size: 32px;
+            line-height: calc(32px); }
+          .controlCalculator .controlCalculator__background .sideInfo .title h3 {
+            color: #d61c25;
+            font-family: SFProHeavy;
+            font-size: 16px; }
+        .controlCalculator .controlCalculator__background .sideInfo .info {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          justify-content: center; }
+          .controlCalculator .controlCalculator__background .sideInfo .info ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            line-height: calc(32px); }
+            .controlCalculator .controlCalculator__background .sideInfo .info ul li {
+              color: #d61c25;
+              font-family: GelionLight;
+              font-weight: 700; }
+              .controlCalculator .controlCalculator__background .sideInfo .info ul li img {
+                width: 40px;
+                padding-right: calc(16px); }
+      .controlCalculator .controlCalculator__background .sideTool {
+        width: 85%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding-bottom: calc(32px); }
+        .controlCalculator .controlCalculator__background .sideTool .sideTool__background {
+          width: 100%;
+          border-radius: calc(16px);
+          background-color: #ffffff;
+          padding-top: calc(24px);
+          padding-bottom: calc(24px); }
+          .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            gap: calc(8px); }
+            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row {
+              width: 85%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-items: flex-start;
+              justify-content: flex-start;
+              gap: calc(8px); }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row p {
+                padding-top: 10px;
+                margin: 0;
+                font-weight: bold;
+                font-family: GelionLight;
+                font-size: 15px;
+                vertical-align: middle; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row input {
+                font-size: 14px;
+                background-color: #ececec;
+                font-weight: bold;
+                font-family: GelionLight; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select {
+                font-size: 14px;
+                font-weight: bold;
+                font-family: GelionLight; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select option {
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-family: GelionLight; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button .buttonSimular {
+                  width: 150px;
+                  height: 32px;
+                  color: #ffffff;
+                  background-color: #d61c25;
+                  border: none;
+                  border-radius: 8px; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side {
+                width: 85%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-items: center;
+                justify-content: center; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
+                  width: 50%; } }
+
+@media only screen and (min-width: 1025px) {
+  .controlCalculator {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: #f5e9e9; }
+    .controlCalculator .controlCalculator__background {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      background-color: #f5e9e9;
+      border-radius: calc(16px); }
+      .controlCalculator .controlCalculator__background .sideInfo {
+        width: 35%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        gap: calc(16px); }
+        .controlCalculator .controlCalculator__background .sideInfo .title {
+          width: 100%; }
+          .controlCalculator .controlCalculator__background .sideInfo .title h2 {
+            color: #d61c25;
+            font-family: SFProHeavy;
+            font-size: 32px;
+            line-height: calc(32px); }
+          .controlCalculator .controlCalculator__background .sideInfo .title h3 {
+            color: #d61c25;
+            font-family: SFProHeavy;
+            font-size: 16px; }
+        .controlCalculator .controlCalculator__background .sideInfo .info {
+          width: 100%; }
+          .controlCalculator .controlCalculator__background .sideInfo .info ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            line-height: calc(32px); }
+            .controlCalculator .controlCalculator__background .sideInfo .info ul li {
+              color: #d61c25;
+              font-family: GelionLight;
+              font-weight: 700; }
+              .controlCalculator .controlCalculator__background .sideInfo .info ul li img {
+                width: 40px;
+                padding-right: calc(16px); }
+      .controlCalculator .controlCalculator__background .sideTool {
+        width: 45%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding-top: calc(32px);
+        padding-bottom: calc(32px); }
+        .controlCalculator .controlCalculator__background .sideTool .sideTool__background {
+          width: 100%;
+          border-radius: calc(16px);
+          background-color: #ffffff;
+          padding-top: calc(24px);
+          padding-bottom: calc(24px); }
+          .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            gap: calc(8px); }
+            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row {
+              width: 85%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-items: flex-start;
+              justify-content: flex-start;
+              gap: calc(8px); }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row p {
+                padding-top: 10px;
+                margin: 0;
+                font-weight: bold;
+                font-family: GelionLight;
+                font-size: 15px;
+                vertical-align: middle; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row input {
+                font-size: 14px;
+                background-color: #ececec;
+                font-weight: bold;
+                font-family: GelionLight; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select {
+                font-size: 14px;
+                font-weight: bold;
+                font-family: GelionLight; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select option {
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-family: GelionLight; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button .buttonSimular {
+                  width: 150px;
+                  height: 32px;
+                  color: #ffffff;
+                  background-color: #d61c25;
+                  border: none;
+                  border-radius: 8px; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side {
+                width: 85%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-items: center;
+                justify-content: center; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
+                  width: 50%; } }
+
+@media only screen and (min-width: 1200px) {
+  .controlCalculator {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: #f5e9e9; }
+    .controlCalculator .controlCalculator__background {
+      width: 75%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      background-color: #f5e9e9;
+      border-radius: calc(16px); }
+      .controlCalculator .controlCalculator__background .sideInfo {
+        width: 35%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        gap: calc(16px); }
+        .controlCalculator .controlCalculator__background .sideInfo .title {
+          width: 100%; }
+          .controlCalculator .controlCalculator__background .sideInfo .title h2 {
+            color: #d61c25;
+            font-family: SFProHeavy;
+            font-size: 48px;
+            line-height: calc(48px); }
+          .controlCalculator .controlCalculator__background .sideInfo .title h3 {
+            color: #d61c25;
+            font-family: SFProHeavy;
+            font-size: 16px; }
+        .controlCalculator .controlCalculator__background .sideInfo .info {
+          width: 100%; }
+          .controlCalculator .controlCalculator__background .sideInfo .info ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            line-height: calc(40px);
+            font-size: 20px; }
+            .controlCalculator .controlCalculator__background .sideInfo .info ul li {
+              color: #d61c25;
+              font-family: GelionLight;
+              font-weight: 700; }
+              .controlCalculator .controlCalculator__background .sideInfo .info ul li img {
+                width: 40px;
+                padding-right: calc(16px); }
+      .controlCalculator .controlCalculator__background .sideTool {
+        width: 35%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding-top: calc(32px);
+        padding-bottom: calc(32px); }
+        .controlCalculator .controlCalculator__background .sideTool .sideTool__background {
+          width: 100%;
+          border-radius: calc(16px);
+          background-color: #ffffff;
+          padding-top: calc(24px);
+          padding-bottom: calc(24px); }
+          .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            gap: calc(8px); }
+            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row {
+              width: 85%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-items: flex-start;
+              justify-content: flex-start;
+              gap: calc(8px); }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row p {
+                padding-top: 10px;
+                margin: 0;
+                font-weight: bold;
+                font-family: GelionLight;
+                font-size: 15px;
+                vertical-align: middle; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row input {
+                font-size: 14px;
+                background-color: #ececec;
+                font-weight: bold;
+                font-family: GelionLight; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select {
+                font-size: 14px;
+                font-weight: bold;
+                font-family: GelionLight; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select option {
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-family: GelionLight; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button .buttonSimular {
+                  width: 150px;
+                  height: 32px;
+                  color: #ffffff;
+                  background-color: #d61c25;
+                  border: none;
+                  border-radius: 8px; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side {
+                width: 85%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-items: center;
+                justify-content: center; }
+                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
+                  width: 50%; } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
