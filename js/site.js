@@ -71,14 +71,36 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             //let xLen = document.querySelector(".homeControlPF__effect").length;
-            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image")[0].classList.add("image--effect")
-            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image")[0].classList.add("image--effect")
+            let count1 = document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image");
+            for(i = 0;i<= count1.length - 1;i++){
+                count1[i].classList.add("image--effect");
+            }
+            let count2 = document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image");
+            for(i = 0;i<= count2.length - 1;i++){
+                count2[i].classList.add("image--effect");
+            }
+            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image")[1].classList.add("image--effect")
+            //[0].classList.add("image--effect")
+            let count3 = document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title");
+            for(i = 0;i<= count3.length - 1;i++){
+                count3[i].classList.add("title--effect");
+            }
+            //[0].classList.add("")
+            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title")[1].classList.add("title--effect")
+            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title")[2].classList.add("title--effect")
 
-            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title")[0].classList.add("title--effect")
-            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title")[1].classList.add("title--effect")
+            let count4 = document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")
+            for(i = 0;i<= count4.length - 1;i++){
+                count4[i].classList.add("text--effect");
+            }
+            //[0].classList.add("text--effect")
+            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")[1].classList.add("text--effect")
+            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")[2].classList.add("text--effect")
 
-            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")[0].classList.add("text--effect")
-            document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")[1].classList.add("text--effect")
+            let count5 = document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li")
+            for(i = 0;i<= count5.length - 1;i++){
+                count5[i].classList.add("li--effect");
+            }
 
             document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .button .linkButton")[0].classList.add("linkButton--effect")
         }

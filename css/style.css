@@ -946,13 +946,33 @@ body {
       gap: calc(16px); }
       .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
         width: 100%;
-        height: 100%;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 1.5fr 1fr;
         border: solid 0px #828282;
         border-radius: 5px;
         box-shadow: 0px 0px 2px #828282; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
+          padding-top: calc(8px);
+          padding-bottom: calc(8px); }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            line-height: calc(24px); }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li {
+              font-family: GelionLight;
+              font-size: 14px;
+              color: #1a1a1a;
+              font-weight: 500;
+              opacity: 1; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li::before {
+            content: "\2022";
+            color: red;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
           grid-template-areas: "image" "info"; }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image {
@@ -978,6 +998,11 @@ body {
                 font-family: SFProBold;
                 font-weight: 700;
                 font-size: 16px; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h3 {
+                color: #d61c25;
+                font-family: SFProBold;
+                font-weight: 700;
+                font-size: 20px; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text {
               width: 100%;
               height: auto; }
@@ -986,6 +1011,31 @@ body {
                 font-family: GelionLight;
                 font-weight: 300;
                 font-size: 12px; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button {
+              width: 100%;
+              height: auto;
+              display: flex;
+              align-items: center;
+              justify-items: center;
+              justify-content: center;
+              overflow: hidden;
+              max-height: 32px;
+              padding-left: 0px; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton {
+                width: 150px;
+                height: 32px;
+                background-color: #d61c25;
+                color: #ffffff;
+                font-family: GelionLight;
+                font-size: 16px;
+                text-align: center;
+                border-radius: 0px;
+                text-decoration: none;
+                font-weight: 700;
+                padding-top: 2px;
+                margin-top: 0px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton:hover {
+                  background-color: #d14b52; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom {
           grid-template-areas: "image" "info"; }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image {
@@ -1011,6 +1061,12 @@ body {
                 font-family: SFProBold;
                 font-weight: 700;
                 font-size: 16px; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h3 {
+                color: #d61c25;
+                font-family: SFProBold;
+                font-weight: 700;
+                font-size: 32px;
+                text-align: left; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text {
               width: 100%;
               height: auto; }
@@ -1039,7 +1095,37 @@ body {
                 font-weight: 700;
                 padding-top: 2px; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
-                  background-color: #d14b52; } }
+                  background-color: #d14b52; }
+      .homeControlSquare .homeControlSquare__bacckground--big {
+        padding-top: calc(64px);
+        padding-bottom: calc(64px);
+        width: calc(1000px);
+        height: auto; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row {
+          grid-template-rows: 1fr; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
+            padding-left: 0px;
+            width: 100%; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
+            padding-left: 10px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
+            padding-left: 0px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
+            height: 200px;
+            background-image: url("../resources/image/controlsquare/big_square1_mobile.jpg"); }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
+            height: 200px;
+            background-image: url("../resources/image/controlsquare/big_square3_mobile.jpg"); }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
+            padding-right: 0px;
+            width: 100%; }
+            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title h3 {
+              font-size: 24px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
+            padding-left: 10px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
+            height: 200px;
+            background-image: url("../resources/image/controlsquare/big_square2_mobile.jpg"); } }
 
 @media only screen and (min-width: 769px) {
   .homeControlSquare {
@@ -1065,6 +1151,56 @@ body {
         grid-template-columns: 50% 50%;
         grid-template-rows: 100%;
         position: relative; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
+          padding-top: calc(8px);
+          padding-bottom: calc(8px); }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            line-height: calc(32px); }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li {
+              font-family: GelionLight;
+              font-size: 16px;
+              color: #1a1a1a;
+              font-weight: 500;
+              opacity: 0; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(1) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 1.6s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(2) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 1.8s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(3) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 2s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(4) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 2.2s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(5) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 2.4s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(6) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 2.6s;
+              animation-fill-mode: forwards; }
+  @keyframes animnation__homeControlSquare__LI {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li::before {
+            content: "\2022";
+            color: red;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
           grid-template-areas: "info image"; }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square {
@@ -1116,6 +1252,11 @@ body {
                   font-family: SFProBold;
                   font-weight: 700;
                   font-size: 32px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h3 {
+                  color: #d61c25;
+                  font-family: SFProBold;
+                  font-weight: 700;
+                  font-size: 32px; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
                   animation-delay: 1.4s;
@@ -1138,6 +1279,39 @@ body {
       transform: rotateX(90deg); }
     to {
       transform: rotateX(0deg); } }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-items: flex-start;
+                justify-content: flex-start;
+                overflow: hidden;
+                max-height: 32px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton {
+                  width: 150px;
+                  height: 32px;
+                  background-color: #d61c25;
+                  color: #ffffff;
+                  font-family: GelionLight;
+                  font-size: 16px;
+                  text-align: center;
+                  border-radius: 0px;
+                  text-decoration: none;
+                  font-weight: 700;
+                  padding-top: 2px;
+                  margin-top: 64px; }
+                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton:hover {
+                    background-color: #d14b52; }
+                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton--effect {
+                    animation: animation__homeControlSquare__BUTTON 0.2s ease-out;
+                    animation-delay: 1.8s;
+                    animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__BUTTON {
+    from {
+      margin-top: 64px; }
+    to {
+      margin-top: 0px; } }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.float {
               position: absolute;
               right: 70px;
@@ -1189,6 +1363,12 @@ body {
                 height: auto;
                 transform: rotateX(90deg); }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h2 {
+                  color: #d61c25;
+                  font-family: SFProBold;
+                  font-weight: 700;
+                  font-size: 32px;
+                  text-align: right; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h3 {
                   color: #d61c25;
                   font-family: SFProBold;
                   font-weight: 700;
@@ -1257,7 +1437,62 @@ body {
               background-size: cover;
               background-repeat: no-repeat;
               filter: grayscale(100%);
-              opacity: 0.35; } }
+              opacity: 0.35; }
+      .homeControlSquare .homeControlSquare__bacckground--big {
+        padding-top: calc(64px);
+        padding-bottom: calc(64px);
+        width: calc(1000px);
+        height: calc(1080px); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image {
+          margin-left: -500px;
+          margin-right: 500px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image--effect {
+            animation: animation__homeControlSquare__UP__BIG .35s ease-out;
+            animation-delay: 0.35s;
+            animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__UP__BIG {
+    from {
+      margin-left: -500px;
+      margin-right: 500px; }
+    to {
+      margin-left: 0px;
+      margin-right: 0px; } }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
+          padding-left: 50px;
+          width: 100%; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title h3 {
+            font-size: 24px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
+          padding-left: 70px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
+          padding-left: 50px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
+          background-image: url("../resources/image/controlsquare/big_square1_desktop.jpg"); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
+          background-image: url("../resources/image/controlsquare/big_square3_desktop.jpg"); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image {
+          margin-left: 500px;
+          margin-right: -500px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image--effect {
+            animation: animation__homeControlSquare__DOWN__BIG .35s ease-out;
+            animation-delay: 0.35s;
+            animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__DOWN__BIG {
+    from {
+      margin-left: 500px;
+      margin-right: -500px; }
+    to {
+      margin-left: 0px;
+      margin-right: 0px; } }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
+          padding-right: 100px;
+          width: 100%; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title h3 {
+            font-size: 24px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
+          padding-right: 30px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
+          background-image: url("../resources/image/controlsquare/big_square2_desktop.jpg"); } }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .homeControlIcaGroup {
@@ -1922,7 +2157,7 @@ body {
                 .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
                   width: 50%; } }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   .controlCalculator {
     width: 100%;
     height: auto;
