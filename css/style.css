@@ -2292,6 +2292,212 @@ body {
                 .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
                   width: 50%; } }
 
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+  .productoControlFinanciamos {
+    width: 100%;
+    height: auto;
+    max-height: 32vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f6f6f8; }
+    .productoControlFinanciamos .productoControlFinanciamos__background {
+      width: 100%;
+      height: 32vh;
+      display: grid;
+      grid-template-areas: "side1";
+      grid-template-columns: 1fr;
+      grid-template-rows: 100%;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      background-color: transparent; }
+      .productoControlFinanciamos .productoControlFinanciamos__background .side {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        opacity: 1; }
+        .productoControlFinanciamos .productoControlFinanciamos__background .side--info {
+          grid-area: side1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          justify-items: center; }
+          .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content {
+            width: 90%; }
+            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title {
+              width: 100%;
+              height: auto; }
+              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title h2 {
+                color: #d61c25;
+                font-family: SFProHeavy;
+                font-size: 20px; }
+            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text {
+              width: 100%;
+              height: auto; }
+              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text p {
+                color: #1a1a1a;
+                font-family: GelionLight;
+                font-size: 16px; }
+        .productoControlFinanciamos .productoControlFinanciamos__background .side--image {
+          display: none; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .productoControlFinanciamos {
+    width: 100%;
+    height: auto;
+    max-height: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f6f6f8; }
+    .productoControlFinanciamos .productoControlFinanciamos__background {
+      width: 100%;
+      height: 28vh;
+      display: grid;
+      grid-template-areas: "side1 side2";
+      grid-template-columns: 1.5fr 1fr;
+      grid-template-rows: 100%;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      background-color: transparent; }
+      .productoControlFinanciamos .productoControlFinanciamos__background .side {
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+        opacity: 0; }
+        .productoControlFinanciamos .productoControlFinanciamos__background .side--info {
+          grid-area: side1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          justify-items: center; }
+          .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content {
+            width: 75%; }
+            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title {
+              width: 100%;
+              height: auto; }
+              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title h2 {
+                color: #d61c25;
+                font-family: SFProHeavy; }
+            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text {
+              width: 100%;
+              height: auto; }
+              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text p {
+                color: #1a1a1a;
+                font-family: GelionLight; }
+        .productoControlFinanciamos .productoControlFinanciamos__background .side--image {
+          grid-area: side2;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+          background-color: transparent; }
+          .productoControlFinanciamos .productoControlFinanciamos__background .side--image .image {
+            width: 100%;
+            height: 100%;
+            background-image: url("../resources/image/revisando-documentos_small.png");
+            background-position: 100%;
+            background-size: contain;
+            background-repeat: no-repeat; }
+        .productoControlFinanciamos .productoControlFinanciamos__background .side--effect {
+          animation: animation__productoControlFinanciamos 0.35s ease-in;
+          animation-delay: 0s;
+          animation-fill-mode: forwards; }
+  @keyframes animation__productoControlFinanciamos {
+    from {
+      margin-top: 100px;
+      opacity: 0; }
+    to {
+      margin-top: 0px;
+      opacity: 1; } } }
+
+@media only screen and (min-width: 1441px) {
+  .productoControlFinanciamos {
+    width: 100%;
+    height: auto;
+    max-height: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f6f6f8; }
+    .productoControlFinanciamos .productoControlFinanciamos__background {
+      width: 75%;
+      height: 28vh;
+      display: grid;
+      grid-template-areas: "side1 side2";
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 100%;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      background-color: transparent; }
+      .productoControlFinanciamos .productoControlFinanciamos__background .side {
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+        opacity: 0; }
+        .productoControlFinanciamos .productoControlFinanciamos__background .side--info {
+          grid-area: side1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          justify-items: center; }
+          .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content {
+            width: 65%; }
+            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title {
+              width: 100%;
+              height: auto; }
+              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title h2 {
+                color: #d61c25;
+                font-family: SFProHeavy; }
+            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text {
+              width: 100%;
+              height: auto; }
+              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text p {
+                color: #1a1a1a;
+                font-family: GelionLight; }
+        .productoControlFinanciamos .productoControlFinanciamos__background .side--image {
+          grid-area: side2;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+          background-color: transparent; }
+          .productoControlFinanciamos .productoControlFinanciamos__background .side--image .image {
+            width: 100%;
+            height: 100%;
+            background-image: url("../resources/image/revisando-documentos_small.png");
+            background-position: 0%;
+            background-size: contain;
+            background-repeat: no-repeat; }
+        .productoControlFinanciamos .productoControlFinanciamos__background .side--effect {
+          animation: animation__productoControlFinanciamos 0.35s ease-in;
+          animation-delay: 0s;
+          animation-fill-mode: forwards; }
+  @keyframes animation__productoControlFinanciamos {
+    from {
+      margin-top: 100px;
+      opacity: 0; }
+    to {
+      margin-top: 0px;
+      opacity: 1; } } }
+
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
   -moz-animation: animation1 1s forwards;
