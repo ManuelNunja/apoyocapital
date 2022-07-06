@@ -70,7 +70,6 @@ createKeyClass();
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            //let xLen = document.querySelector(".homeControlPF__effect").length;
             let count1 = document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image");
             for(i = 0;i<= count1.length - 1;i++){
                 count1[i].classList.add("image--effect");
@@ -79,24 +78,14 @@ const observer = new IntersectionObserver(entries => {
             for(i = 0;i<= count2.length - 1;i++){
                 count2[i].classList.add("image--effect");
             }
-            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image")[1].classList.add("image--effect")
-            //[0].classList.add("image--effect")
             let count3 = document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title");
             for(i = 0;i<= count3.length - 1;i++){
                 count3[i].classList.add("title--effect");
             }
-            //[0].classList.add("")
-            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title")[1].classList.add("title--effect")
-            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .title")[2].classList.add("title--effect")
-
             let count4 = document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")
             for(i = 0;i<= count4.length - 1;i++){
                 count4[i].classList.add("text--effect");
             }
-            //[0].classList.add("text--effect")
-            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")[1].classList.add("text--effect")
-            //document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .text")[2].classList.add("text--effect")
-
             let count5 = document.querySelectorAll(".homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li")
             for(i = 0;i<= count5.length - 1;i++){
                 count5[i].classList.add("li--effect");
@@ -106,5 +95,16 @@ const observer = new IntersectionObserver(entries => {
         }
     })
 })
-
 observer.observe(document.querySelector(".intersectionObserver"))
+
+const observerProducto = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            let count1 = document.querySelectorAll(".productoControlFinanciamos .productoControlFinanciamos__background .side");
+            for(i = 0;i<= count1.length - 1;i++){
+                count1[i].classList.add("side--effect");
+            }
+        }
+    })
+})
+observerProducto.observe(document.querySelector(".intersectionObserverProducto"))
