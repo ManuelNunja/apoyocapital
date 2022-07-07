@@ -56,7 +56,7 @@ body {
 
 .topSeparator {
   width: 100%;
-  height: 72px;
+  height: 80px;
   background-color: transparent; }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -586,6 +586,7 @@ body {
                     text-decoration: none;
                     color: #828282; } }
 
+/*HOME*/
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .homeHead {
     width: 100%;
@@ -1622,6 +1623,7 @@ body {
             .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl:nth-child(4) .image {
               background-image: url("../resources/brand/brandRed.png"); } }
 
+/*HEAD PAGE TODAS*/
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .headPage {
     width: 100%;
@@ -1752,6 +1754,7 @@ body {
   .headPage .headPage__background {
     width: 100%; } }
 
+/*PRODUCTO*/
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .controlCalculator {
     width: 100%;
@@ -2498,6 +2501,7 @@ body {
       margin-top: 0px;
       opacity: 1; } } }
 
+/*CONTACO*/
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .contactoControlContactanos {
     width: 100%;
@@ -2810,6 +2814,65 @@ body {
               font-family: GelionLight;
               color: #1a1a1a;
               text-align: center; } }
+
+/*CENTRO AYUDA*/
+.cayudaControlBuscar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+  .cayudaControlBuscar .cayudaControlBuscar__background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: transparent; }
+    .cayudaControlBuscar .cayudaControlBuscar__background .title {
+      width: 100%;
+      height: auto; }
+      .cayudaControlBuscar .cayudaControlBuscar__background .title h2 {
+        color: #d61c25;
+        font-size: 20px;
+        text-align: center;
+        font-family: SFProHeavy; }
+    .cayudaControlBuscar .cayudaControlBuscar__background .controlInput {
+      width: 100%;
+      height: auto; }
+      .cayudaControlBuscar .cayudaControlBuscar__background .controlInput .input-group .input-group-text .buttonFind {
+        color: #828282;
+        font-size: 14px; }
+      .cayudaControlBuscar .cayudaControlBuscar__background .controlInput .input-group input {
+        font-size: 14px;
+        background-color: #ececec;
+        font-weight: bold;
+        font-family: GelionLight; }
+        .cayudaControlBuscar .cayudaControlBuscar__background .controlInput .input-group input:focus {
+          box-shadow: none; }
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .cayudaControlBuscar .cayudaControlBuscar__background {
+    width: 95%; }
+    .cayudaControlBuscar .cayudaControlBuscar__background .controlInput {
+      width: 100%; } }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .cayudaControlBuscar .cayudaControlBuscar__background {
+    width: 75%; }
+    .cayudaControlBuscar .cayudaControlBuscar__background .controlInput {
+      width: 75%; } }
+
+@media only screen and (min-width: 1025px) {
+  .cayudaControlBuscar .cayudaControlBuscar__background {
+    width: 75%; }
+    .cayudaControlBuscar .cayudaControlBuscar__background .controlInput {
+      width: 50%; } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
