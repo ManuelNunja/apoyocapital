@@ -2874,6 +2874,147 @@ body {
     .cayudaControlBuscar .cayudaControlBuscar__background .controlInput {
       width: 50%; } }
 
+.cayudaControlFAKS {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+  .cayudaControlFAKS .cayudaControlFAKS__background {
+    width: 100%;
+    height: auto;
+    padding-bottom: calc(16px); }
+    .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-items: center;
+      justify-content: center;
+      padding-left: calc(16px);
+      padding-right: calc(16px); }
+      .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: calc(8px); }
+        .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item {
+          padding-left: calc(16px);
+          padding-right: calc(16px);
+          border: solid 1px #dee2e6;
+          border-radius: calc(8px); }
+          .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .title button {
+            color: #1a1a1a;
+            font-family: SFProHeavy;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            padding-right: 0; }
+            .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .title button span:nth-child(1) {
+              width: 99%; }
+            .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .title button span:nth-child(3) {
+              display: none; }
+            .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .title button:focus {
+              box-shadow: none; }
+            .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .title button:not(.collapsed) {
+              background-color: transparent !important;
+              color: #d61c25;
+              box-shadow: none; }
+              .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .title button:not(.collapsed) span:nth-child(2) {
+                display: none; }
+              .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .title button:not(.collapsed) span:nth-child(3) {
+                display: block; }
+            .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .title button::after {
+              background-image: none !important; }
+          .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse {
+            padding-bottom: calc(8px); }
+            .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-items: center;
+              justify-content: center;
+              background-color: transparent;
+              padding: 0; }
+              .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .image {
+                width: 90%;
+                height: calc(256px);
+                background-position: 50%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: calc(8px); }
+              .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text {
+                width: 90%;
+                height: calc(96px);
+                padding-top: calc(8px); }
+                .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text p {
+                  width: 100%;
+                  font-size: 14px;
+                  color: #1a1a1a;
+                  text-align: justify;
+                  font-family: GelionLight; }
+        .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(1) .accordion-item:last-child {
+          border-bottom: solid 1px #dee2e6; }
+        .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(1) .accordion-item:nth-child(1) .accordion-collapse .accordion-body--site .image {
+          background-image: url("../resources/image/controlFAKS/faks1_mobile.jpg"); }
+        .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(1) .accordion-item:nth-child(2) .accordion-collapse .accordion-body--site .image {
+          background-image: url("../resources/image/controlFAKS/faks2_mobile.jpg"); }
+        .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(1) .accordion-item:nth-child(3) .accordion-collapse .accordion-body--site .image {
+          background-image: url("../resources/image/controlFAKS/faks3_mobile.jpg"); }
+        .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(1) .accordion-item:nth-child(4) .accordion-collapse .accordion-body--site .image {
+          background-image: url("../resources/image/controlFAKS/faks4_mobile.jpg"); }
+        .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(2) {
+          padding-top: calc(8px); }
+          .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(2) .accordion-item:nth-child(1) .accordion-collapse .accordion-body--site .image {
+            background-image: url("../resources/image/controlFAKS/faks1_mobile.jpg"); }
+          .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(2) .accordion-item:nth-child(2) .accordion-collapse .accordion-body--site .image {
+            background-image: url("../resources/image/controlFAKS/faks2_mobile.jpg"); }
+          .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(2) .accordion-item:nth-child(3) .accordion-collapse .accordion-body--site .image {
+            background-image: url("../resources/image/controlFAKS/faks3_mobile.jpg"); }
+          .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(2) .accordion-item:nth-child(4) .accordion-collapse .accordion-body--site .image {
+            background-image: url("../resources/image/controlFAKS/faks4_mobile.jpg"); }
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .cayudaControlFAKS .cayudaControlFAKS__background {
+    width: 100%; } }
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .cayudaControlFAKS .cayudaControlFAKS__background {
+    width: 80%; } }
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .cayudaControlFAKS .cayudaControlFAKS__background {
+    width: 85%; }
+    .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site {
+      flex-direction: row;
+      gap: calc(8px); }
+      .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .image {
+        border-radius: calc(8px); }
+      .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text {
+        padding-top: calc(0px); }
+      .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(2) {
+        padding-top: 0; } }
+
+@media only screen and (min-width: 1401px) and (max-width: 5000px) {
+  .cayudaControlFAKS .cayudaControlFAKS__background {
+    width: 70%; }
+    .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site {
+      flex-direction: row;
+      gap: calc(8px); }
+      .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .image {
+        border-radius: calc(0px); }
+      .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text {
+        padding-top: calc(16px); }
+      .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(2) {
+        padding-top: 0; } }
+
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
   -moz-animation: animation1 1s forwards;
