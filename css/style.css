@@ -3017,6 +3017,131 @@ body {
       .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(2) {
         padding-top: 0; } }
 
+/*NOSOTROS*/
+.nosotrosControlTab {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: #ececec; }
+  .nosotrosControlTab .nosotrosControlTab__background {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+    .nosotrosControlTab .nosotrosControlTab__background .tabs {
+      width: 75%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      gap: calc(8px);
+      background-color: transparent; }
+      .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
+        width: 50%;
+        height: calc(48px);
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        cursor: pointer; }
+        .nosotrosControlTab .nosotrosControlTab__background .tabs .item a {
+          width: 100%;
+          height: 100%;
+          padding-top: calc(12.8px);
+          text-align: center;
+          background-color: #ffffff;
+          color: #1a1a1a;
+          font-family: SFProBold;
+          font-size: 13px;
+          text-decoration: none; }
+    .nosotrosControlTab .nosotrosControlTab__background .content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      background-color: transparent; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item {
+        width: 100%;
+        height: auto;
+        opacity: 1; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item:nth-child(1) {
+          background-color: transparent; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item:nth-child(2) {
+          background-color: transparent; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item.active {
+          display: block; }
+
+@keyframes animation__nosotrosControlTab__item__show {
+  0% {
+    opacity: 0;
+    display: none; }
+  10% {
+    opacity: 0;
+    display: block; }
+  100% {
+    opacity: 1;
+    display: block; } }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item.inactive {
+          display: none; }
+
+@keyframes animation__nosotrosControlTab__item__hide {
+  0% {
+    opacity: 1;
+    display: block; }
+  90% {
+    opacity: 0;
+    display: block; }
+  100% {
+    opacity: 0;
+    display: none; } }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .backFloat {
+          background-image: url("../resources/image/head_nosotros/nosotros_desktop.jpg"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .backFloat {
+          background-image: url("../resources/image/head_nosotros/equipo_apoyo_desktop.jpg"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          justify-content: center; }
+          .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
+              z-index: 1074;
+              width: 100%;
+              height: 64vh;
+              background-position: 50%;
+              background-size: contain;
+              background-repeat: no-repeat; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .backFloat {
+              width: 100%;
+              height: 64vh;
+              position: absolute;
+              background-color: black;
+              left: 0;
+              z-index: 1073;
+              filter: blur(40px); }
+
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
   -moz-animation: animation1 1s forwards;
