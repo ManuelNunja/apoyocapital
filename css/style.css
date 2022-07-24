@@ -3035,7 +3035,7 @@ body {
     justify-items: center;
     justify-content: center; }
     .nosotrosControlTab .nosotrosControlTab__background .tabs {
-      width: 75%;
+      width: 100%;
       height: auto;
       display: flex;
       flex-direction: row;
@@ -3045,7 +3045,7 @@ body {
       gap: calc(8px);
       background-color: transparent; }
       .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
-        width: 50%;
+        width: calc(192px);
         height: calc(48px);
         background-color: red;
         display: flex;
@@ -3126,6 +3126,50 @@ body {
             justify-content: center;
             position: relative;
             overflow: hidden; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title {
+              width: 40%;
+              z-index: 1074;
+              position: absolute;
+              left: 16%;
+              bottom: calc(52px);
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-items: center;
+              justify-content: center;
+              gap: 0px; }
+              .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .titleText {
+                width: 100%; }
+                .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .titleText h1 {
+                  width: auto;
+                  color: #d61c25;
+                  font-weight: bold;
+                  font-family: SFProHeavy;
+                  font-size: calc(56px);
+                  letter-spacing: -3px;
+                  line-height: calc(56px);
+                  background-color: rgba(192, 192, 192, 0.205);
+                  padding-left: 8px; }
+              .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle {
+                width: 100%; }
+                .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle p {
+                  width: auto;
+                  color: #ffffff;
+                  font-weight: bold;
+                  font-family: SFProHeavy;
+                  font-size: calc(16px);
+                  letter-spacing: 0px;
+                  line-height: calc(32px);
+                  background-color: rgba(192, 192, 192, 0.205);
+                  padding-left: 8px; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
+              z-index: 1074;
+              width: 100%;
+              height: 40vh;
+              background-position: 40%;
+              background-size: 110%;
+              background-repeat: no-repeat;
+              animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite; }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
               z-index: 1074;
               width: 100%;
@@ -3141,6 +3185,189 @@ body {
               left: 0;
               z-index: 1073;
               filter: blur(40px); }
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
+    width: 50%; }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .backFloat {
+    background-image: url("../resources/image/head_nosotros/nosotros_mobile.jpg"); }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .backFloat {
+    background-image: url("../resources/image/head_nosotros/equipo_apoyo_mobile.jpg"); }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title {
+    width: 75%;
+    z-index: 1074;
+    position: absolute;
+    left: 8%;
+    bottom: calc(0px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: center;
+    gap: 0px; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .titleText {
+      width: 100%; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .titleText h1 {
+        width: auto;
+        color: #d61c25;
+        font-weight: bold;
+        font-family: SFProHeavy;
+        font-size: calc(40px);
+        letter-spacing: -3px;
+        line-height: calc(40px);
+        background-color: rgba(192, 192, 192, 0.205);
+        padding-left: 8px; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle {
+      width: 100%; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle p {
+        width: auto;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: SFProHeavy;
+        font-size: calc(12px);
+        letter-spacing: 0px;
+        line-height: calc(16px);
+        background-color: rgba(192, 192, 192, 0.205);
+        padding-left: 8px; }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
+    z-index: 1074;
+    width: 100%;
+    height: 40vh;
+    background-position: 40%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite; }
+  @keyframes animation__nosotrosControlTab__image__move {
+    0% {
+      background-position: 40%; }
+    25% {
+      background-position: 10%; }
+    75% {
+      background-position: 90%; }
+    100% {
+      background-position: 40%; } } }
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
+    width: 50%; }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .backFloat {
+    background-image: url("../resources/image/head_nosotros/nosotros_mobile.jpg"); }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .backFloat {
+    background-image: url("../resources/image/head_nosotros/equipo_apoyo_mobile.jpg"); }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title {
+    width: 75%;
+    z-index: 1074;
+    position: absolute;
+    left: 8%;
+    bottom: calc(0px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: center;
+    gap: 0px; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .titleText {
+      width: 100%; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .titleText h1 {
+        width: auto;
+        color: #d61c25;
+        font-weight: bold;
+        font-family: SFProHeavy;
+        font-size: calc(40px);
+        letter-spacing: -3px;
+        line-height: calc(40px);
+        background-color: rgba(192, 192, 192, 0.205);
+        padding-left: 8px; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle {
+      width: 100%; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle p {
+        width: auto;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: SFProHeavy;
+        font-size: calc(12px);
+        letter-spacing: 0px;
+        line-height: calc(16px);
+        background-color: rgba(192, 192, 192, 0.205);
+        padding-left: 8px; }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
+    z-index: 1074;
+    width: 100%;
+    height: 60vh;
+    background-position: 40%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite; }
+  @keyframes animation__nosotrosControlTab__image__move {
+    0% {
+      background-position: 40%; }
+    25% {
+      background-position: 10%; }
+    75% {
+      background-position: 90%; }
+    100% {
+      background-position: 40%; } } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
+    width: 50%; }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .backFloat {
+    background-image: url("../resources/image/head_nosotros/nosotros_desktop.jpg"); }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .backFloat {
+    background-image: url("../resources/image/head_nosotros/equipo_apoyo_desktop.jpg"); }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title {
+    width: 75%;
+    z-index: 1074;
+    position: absolute;
+    left: 8%;
+    bottom: calc(0px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: center;
+    gap: 0px; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .titleText {
+      width: 100%; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .titleText h1 {
+        width: auto;
+        color: #d61c25;
+        font-weight: bold;
+        font-family: SFProHeavy;
+        font-size: calc(40px);
+        letter-spacing: -3px;
+        line-height: calc(40px);
+        background-color: rgba(192, 192, 192, 0.205);
+        padding-left: 8px; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle {
+      width: 100%; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle p {
+        width: auto;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: SFProHeavy;
+        font-size: calc(12px);
+        letter-spacing: 0px;
+        line-height: calc(16px);
+        background-color: rgba(192, 192, 192, 0.205);
+        padding-left: 8px; }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
+    z-index: 1074;
+    width: 100%;
+    height: 64vh;
+    background-position: 40%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite; }
+  @keyframes animation__nosotrosControlTab__image__move {
+    0% {
+      background-position: 40%; }
+    25% {
+      background-position: 10%; }
+    75% {
+      background-position: 90%; }
+    100% {
+      background-position: 40%; } } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
