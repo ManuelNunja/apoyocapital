@@ -3185,6 +3185,45 @@ body {
               left: 0;
               z-index: 1073;
               filter: blur(40px); }
+          .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-items: center;
+              justify-content: center;
+              padding-top: 8px;
+              padding-bottom: 8px;
+              gap: 8px;
+              background-color: transparent; }
+              .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side {
+                width: 100%;
+                height: auto;
+                background-color: transparent;
+                padding: 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+                justify-content: center; }
+                .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .title {
+                  width: 100%; }
+                  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .title h2 {
+                    color: #d61c25;
+                    font-family: SFProBold; }
+                .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .paragraph {
+                  width: 100%; }
+                  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .paragraph p {
+                    font-family: GelionLight;
+                    line-height: calc(20px); }
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
@@ -3245,7 +3284,9 @@ body {
     75% {
       background-position: 90%; }
     100% {
-      background-position: 40%; } } }
+      background-position: 40%; } }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background {
+    width: 85%; } }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
@@ -3306,7 +3347,9 @@ body {
     75% {
       background-position: 90%; }
     100% {
-      background-position: 40%; } } }
+      background-position: 40%; } }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background {
+    width: 85%; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
@@ -3367,7 +3410,290 @@ body {
     75% {
       background-position: 90%; }
     100% {
-      background-position: 40%; } } }
+      background-position: 40%; } }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background {
+    width: 75%; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side {
+      width: 100%;
+      height: calc(96px);
+      background-color: transparent;
+      padding: 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .title {
+        width: 35%; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .title h2 {
+          color: #d61c25;
+          font-family: SFProBold; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .paragraph {
+        width: 100%; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .paragraph p {
+          font-family: GelionLight;
+          line-height: calc(20px); } }
+
+@media only screen and (min-width: 1025px) {
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background {
+    width: 45%; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side {
+      width: 100%;
+      height: calc(96px);
+      background-color: transparent;
+      padding: 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .title {
+        width: 35%; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .title h2 {
+          color: #d61c25;
+          font-family: SFProBold; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .paragraph {
+        width: 100%; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .paragraph p {
+          font-family: GelionLight;
+          line-height: calc(20px); } }
+
+.nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: #ffffff; }
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: calc(64px); }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .title {
+      width: 100%;
+      padding-top: calc(32px);
+      padding-bottom: calc(16px); }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .title h2 {
+        color: #1a1a1a;
+        text-align: center;
+        font-family: SFProBold; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items {
+      width: 100%;
+      /*display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-items: center;
+                                justify-content: center;*/
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      padding-bottom: calc(24px);
+      gap: calc(16px); }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item {
+        width: calc(272px);
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        background-color: transparent; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--honestidad .image {
+          background-image: url("../resources/icon/corporate/iconhandheart.png"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--excelelncia .image {
+          background-image: url("../resources/icon/corporate/iconhandstar.png"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--cooperacion .image {
+          background-image: url("../resources/icon/corporate/iconhands.png"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--respeto .image {
+          background-image: url("../resources/icon/corporate/iconheart.png"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image {
+          width: calc(96px);
+          height: calc(96px);
+          background-position: 50%;
+          background-size: 75%;
+          background-repeat: no-repeat;
+          background-color: #ffffff;
+          padding: calc(40px);
+          border-radius: 8px;
+          z-index: 1074;
+          border: solid 1px #ececec; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info {
+          width: 100%;
+          height: auto;
+          background-color: #ffffff;
+          padding: calc(0px);
+          border-radius: 8px;
+          margin-top: calc(-40px);
+          padding-top: calc(48px);
+          padding-left: calc(24px);
+          padding-right: calc(24px);
+          z-index: 1073;
+          border: solid 1px #ececec;
+          background-color: #ffffff; }
+          .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info .title {
+            width: 100%; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info .title h3 {
+              font-family: SFProBold;
+              font-size: calc(16px);
+              text-align: center;
+              line-height: 0px; }
+          .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info .paragraph {
+            width: 100%; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info .paragraph p {
+              font-family: GelionLight;
+              font-size: calc(16px);
+              text-align: center;
+              line-height: calc(16px); }
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background {
+    width: 100%; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items {
+      grid-template-columns: 1fr; } }
+
+@media only screen and (min-width: 901px) {
+  .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background {
+    width: 75%;
+    max-width: 750px; }
+    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items {
+      grid-template-columns: 1fr 1fr; }
+      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item {
+        width: calc(384px);
+        height: 200px;
+        flex-direction: row; }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info {
+          width: 100%;
+          height: auto;
+          background-color: #ffffff;
+          padding: calc(0px);
+          border-radius: 8px;
+          margin-top: calc(0px);
+          margin-left: calc(-48px);
+          padding-top: calc(24px);
+          padding-bottom: calc(24px);
+          padding-left: calc(72px);
+          padding-right: calc(24px);
+          z-index: 1073;
+          border: solid 1px #ececec;
+          background-color: #ffffff; } }
+
+.nosotrosControlExperiencia {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center; }
+  .nosotrosControlExperiencia .nosotrosControlExperiencia__background {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: "col1 col2" "col1 col2" "col3 col3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: calc(32px);
+    margin-top: -100px; }
+    .nosotrosControlExperiencia .nosotrosControlExperiencia__background .image {
+      width: 100%;
+      grid-area: col1;
+      background-color: transparent;
+      position: relative;
+      height: 300px; }
+      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .image .image__object {
+        width: 300px;
+        height: 300px;
+        background-image: url("../resources/image/ejecutivo_mobile.png");
+        background-position: calc(32px) 100%;
+        background-size: 75%;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    .nosotrosControlExperiencia .nosotrosControlExperiencia__background .title {
+      width: 100%;
+      grid-area: col2;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      padding-top: calc(120px);
+      padding-right: calc(32px); }
+      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .title h2 {
+        color: #d61c25;
+        font-size: calc(32px);
+        font-family: SFProBold;
+        text-align: right;
+        line-height: calc(32px); }
+    .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info {
+      width: 85%;
+      grid-area: col3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      background-color: #ffffff;
+      border-radius: calc(16px); }
+      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .item {
+        width: 100%;
+        height: 150px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center; }
+        .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .item .item__back {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          justify-content: center; }
+          .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .item .item__back .item__number {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            justify-content: center; }
+            .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .item .item__back .item__number .number__icon .fas {
+              color: #d61c25;
+              font-size: calc(20px);
+              padding: calc(8px); }
+            .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .item .item__back .item__number .number__text h3 {
+              color: #d61c25;
+              font-size: calc(44px);
+              font-family: SFProBold;
+              letter-spacing: -4px; }
+          .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .item .item__back .text {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center; }
+            .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .item .item__back .text p {
+              text-align: center;
+              color: #1a1a1a;
+              font-family: GelionLight;
+              font-size: calc(20px);
+              line-height: calc(16px); }
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+  .nosotrosControlExperiencia {
+    max-width: 500px; } }
+
+@media only screen and (min-width: 901px) {
+  .nosotrosControlExperiencia {
+    display: none; } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
