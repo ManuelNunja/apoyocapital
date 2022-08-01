@@ -763,8 +763,8 @@ body {
         justify-content: center;
         padding: 8px; }
         .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
-          width: calc(216px);
-          height: calc(216px);
+          width: calc(256px);
+          height: calc(256px);
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -817,10 +817,11 @@ body {
               height: 45%;
               background-color: transparent; }
               .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
+                width: 100%;
                 color: #1a1a1a;
                 font-family: GelionLight;
                 text-align: center;
-                font-size: 14px;
+                font-size: 2.4vw;
                 font-weight: 500; } }
 
 @media only screen and (min-width: 769px) {
@@ -865,8 +866,8 @@ body {
         justify-items: center;
         justify-content: center; }
         .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
-          width: calc(216px);
-          height: calc(216px);
+          width: calc(256px);
+          height: calc(256px);
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -920,10 +921,11 @@ body {
               height: 45%;
               background-color: transparent; }
               .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
+                width: 100%;
                 color: #1a1a1a;
                 font-family: GelionLight;
                 text-align: center;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 500; } }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -1503,12 +1505,14 @@ body {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    max-height: calc(240px); }
+    max-height: calc(240px);
+    padding-top: calc(32px);
+    padding-bottom: calc(32px);
+    background-color: #ffffff; }
     .homeControlIcaGroup .homeControlIcaGroup__background {
       width: 100%;
       height: calc(240px);
       max-height: calc(240px);
-      background-color: transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1535,7 +1539,8 @@ body {
         .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl {
           width: calc(200px);
           height: calc(64px);
-          background-color: transparent; }
+          background-color: #ececec8a;
+          border-radius: 8px; }
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl .image {
             width: 100%;
             height: 100%;
@@ -1567,12 +1572,14 @@ body {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    max-height: calc(240px); }
+    max-height: calc(240px);
+    padding-top: calc(32px);
+    padding-bottom: calc(32px);
+    background-color: #ffffff; }
     .homeControlIcaGroup .homeControlIcaGroup__background {
       width: 75%;
       height: calc(240px);
       max-height: calc(240px);
-      background-color: transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1597,9 +1604,10 @@ body {
         grid-template-rows: 100%;
         gap: 8px; }
         .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl {
-          width: 200px;
-          height: 100px;
-          background-color: transparent; }
+          width: calc(200px);
+          height: calc(72px);
+          background-color: #ececec8a;
+          border-radius: 8px; }
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__items .itemControl .image {
             width: 100%;
             height: 100%;
@@ -3774,6 +3782,247 @@ body {
               width: 100%; }
           .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 {
             width: 75%; } }
+
+.nosotrosControlEquipo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: #f5f5f7; }
+  .nosotrosControlEquipo .nosotrosControlEquipo__background {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: calc(16px);
+    max-width: calc(800px); }
+    .nosotrosControlEquipo .nosotrosControlEquipo__background .title {
+      width: 100%; }
+      .nosotrosControlEquipo .nosotrosControlEquipo__background .title h2 {
+        width: 100%;
+        font-family: SFProBold;
+        font-size: calc(24px);
+        text-align: center;
+        padding-top: calc(16px);
+        padding-bottom: calc(0px); }
+    .nosotrosControlEquipo .nosotrosControlEquipo__background .principal {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center; }
+      .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: calc(24px); }
+        .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .image {
+          grid-area: col1; }
+          .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .image .image__object {
+            width: 200px;
+            height: 200px;
+            background-image: url("../resources/image/equipoapoyo/javierjui.jpg");
+            background-position: 50%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 50%; }
+        .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info {
+          grid-area: col2;
+          width: 100%; }
+          .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .name {
+            width: 100%; }
+            .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .name h3 {
+              width: 100%;
+              font-family: SFProBold;
+              font-size: calc(24px);
+              text-align: center;
+              padding-top: calc(8px);
+              padding-bottom: calc(0px);
+              color: #d61c25;
+              line-height: calc(16px); }
+          .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .level {
+            width: 100%; }
+            .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .level h4 {
+              width: 100%;
+              font-family: GelionLight;
+              font-size: calc(16px);
+              text-align: center;
+              color: #d61c25;
+              line-height: calc(16px); }
+        .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social {
+          grid-area: col3;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-items: center;
+          justify-content: flex-start;
+          gap: calc(8px);
+          padding-top: calc(8px);
+          padding-bottom: calc(8px); }
+          .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social .item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            justify-content: center; }
+            .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social .item .icon {
+              width: calc(24px);
+              height: calc(24px); }
+              .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social .item .icon--lkn {
+                background-image: url("../resources/icon/social/icon_social_linkedin_red.png");
+                background-position: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat; }
+              .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social .item .icon--mail {
+                background-image: url("../resources/icon/social/icon_socia_mail.png");
+                background-position: 50%;
+                background-size: 100%;
+                background-repeat: no-repeat; }
+            .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social .item .link {
+              padding-left: calc(8px);
+              display: none;
+              color: #d61c25;
+              text-decoration: none;
+              font-family: GelionLight;
+              font-size: 12px; }
+        .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .paragraph {
+          grid-area: col4; }
+          .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .paragraph p {
+            text-align: justify;
+            font-family: GelionLight;
+            font-size: calc(16px);
+            color: #1a1a1a; }
+    .nosotrosControlEquipo .nosotrosControlEquipo__background .items {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      padding-top: calc(16px);
+      padding-bottom: calc(16px); }
+      .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        gap: calc(8px); }
+        .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item {
+          width: calc(200px);
+          height: calc(200px);
+          background-color: transparent;
+          border-radius: calc(8px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          justify-content: center; }
+          .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .image {
+            grid-area: col1;
+            height: auto; }
+            .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .image .image__object {
+              width: calc(120px);
+              height: calc(120px);
+              background-position: 50%;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              border-radius: 50%; }
+              .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .image .image__object--1 {
+                background-image: url("../resources/image/equipoapoyo/jorgesarmiento.jpg"); }
+              .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .image .image__object--2 {
+                background-image: url("../resources/image/equipoapoyo/juanflores.jpg"); }
+              .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .image .image__object--3 {
+                background-image: url("../resources/image/equipoapoyo/pedropablo.jpg"); }
+          .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info {
+            grid-area: col2; }
+            .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .name {
+              width: 100%; }
+              .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .name h3 {
+                width: 100%;
+                font-family: SFProBold;
+                font-size: calc(18.4px);
+                text-align: center;
+                padding-top: calc(8px);
+                color: #d61c25;
+                line-height: calc(16px); }
+            .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .level {
+              width: 100%; }
+              .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .level h4 {
+                width: 100%;
+                font-family: GelionLight;
+                font-size: calc(13.6px);
+                text-align: center;
+                color: #d61c25;
+                line-height: calc(16px); }
+          .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .social {
+            grid-area: col3;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            gap: calc(8px);
+            padding-top: calc(8px);
+            padding-bottom: calc(8px); }
+            .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .social .item {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-items: center;
+              justify-content: center; }
+              .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .social .item .icon {
+                width: calc(24px);
+                height: calc(24px); }
+                .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .social .item .icon--lkn {
+                  background-image: url("../resources/icon/social/icon_social_linkedin_red.png");
+                  background-position: 50%;
+                  background-size: 100%;
+                  background-repeat: no-repeat; }
+                .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .social .item .icon--mail {
+                  background-image: url("../resources/icon/social/icon_socia_mail.png");
+                  background-position: 50%;
+                  background-size: 100%;
+                  background-repeat: no-repeat; }
+              .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .social .item .link {
+                display: none;
+                color: #d61c25;
+                text-decoration: none;
+                font-family: SFProBold;
+                font-size: 12px; }
+
+@media only screen and (min-width: 900px) {
+  .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background {
+    display: grid;
+    grid-template-areas: "col1 col2" "col1 col3" "col1 col4"; }
+    .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .image {
+      padding: calc(16px); }
+    .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .name h3, .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .name h4, .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .level h3, .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .level h4 {
+      text-align: left; }
+    .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social {
+      width: 100%;
+      flex-direction: column; }
+      .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social .item {
+        align-items: center;
+        justify-items: center;
+        justify-content: flex-start;
+        padding-left: calc(24px); }
+        .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social .item .link {
+          display: block; }
+  .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background {
+    justify-content: space-between; } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
