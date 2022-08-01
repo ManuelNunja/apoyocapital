@@ -4022,7 +4022,8 @@ body {
         .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .social .item .link {
           display: block; }
   .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background {
-    justify-content: space-between; } }
+    justify-content: space-between;
+    gap: calc(0px); } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
