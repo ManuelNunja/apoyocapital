@@ -3848,7 +3848,7 @@ body {
               font-family: SFProBold;
               font-size: calc(24px);
               text-align: center;
-              padding-top: calc(8px);
+              padding-top: calc(24px);
               padding-bottom: calc(0px);
               color: #d61c25;
               line-height: calc(16px); }
@@ -3919,7 +3919,7 @@ body {
         align-items: center;
         justify-items: center;
         justify-content: center;
-        gap: calc(8px); }
+        gap: calc(24px); }
         .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item {
           width: calc(200px);
           height: calc(200px);
@@ -3966,7 +3966,7 @@ body {
                 font-size: calc(13.6px);
                 text-align: center;
                 color: #d61c25;
-                line-height: calc(16px); }
+                line-height: calc(8px); }
           .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .social {
             grid-area: col3;
             display: flex;
