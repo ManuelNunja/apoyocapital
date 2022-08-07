@@ -3921,8 +3921,8 @@ body {
         justify-content: center;
         gap: calc(24px); }
         .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item {
-          width: calc(176px);
-          height: calc(176px);
+          width: calc(160px);
+          height: calc(160px);
           background-color: transparent;
           border-radius: calc(8px);
           display: flex;
@@ -3953,7 +3953,7 @@ body {
               .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .name h3 {
                 width: 100%;
                 font-family: SFProBold;
-                font-size: calc(18.4px);
+                font-size: calc(16px);
                 text-align: center;
                 padding-top: calc(8px);
                 color: #d61c25;
@@ -3963,7 +3963,7 @@ body {
               .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .level h4 {
                 width: 100%;
                 font-family: GelionLight;
-                font-size: calc(13.6px);
+                font-size: calc(11.2px);
                 text-align: center;
                 color: #d61c25;
                 line-height: calc(8px); }
@@ -4031,9 +4031,9 @@ body {
         width: calc(120px);
         height: calc(120px); }
       .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .name h3 {
-        font-size: calc(16px); }
+        font-size: calc(18.4px); }
       .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .level h4 {
-        font-size: calc(11.2px); }
+        font-size: calc(13.6px); }
       .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .social .item .icon {
         width: calc(24px);
         height: calc(24px); } }
