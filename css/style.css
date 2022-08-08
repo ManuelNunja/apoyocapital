@@ -3711,7 +3711,23 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 900px) {
   .nosotrosControlExperiencia {
-    max-width: 500px; } }
+    max-width: 450px; }
+    .nosotrosControlExperiencia .nosotrosControlExperiencia__background .image {
+      height: calc(272px); }
+      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .image .image__object {
+        width: calc(256px);
+        height: calc(256px); }
+    .nosotrosControlExperiencia .nosotrosControlExperiencia__background .title h2 {
+      font-size: calc(24px); }
+    .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item {
+      width: calc(144px);
+      height: calc(144px); }
+      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item .item__back .item__number .number__icon .fas, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item .item__back .item__number .number__icon .fas {
+        font-size: calc(16px); }
+      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item .item__back .item__number .number__text h3, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item .item__back .item__number .number__text h3 {
+        font-size: calc(32px); }
+      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item .item__back .text p, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item .item__back .text p {
+        font-size: calc(16px); } }
 
 @media only screen and (min-width: 901px) {
   .nosotrosControlExperiencia {
@@ -3910,8 +3926,8 @@ body {
       align-items: center;
       justify-items: center;
       justify-content: center;
-      padding-top: calc(16px);
-      padding-bottom: calc(16px); }
+      padding-top: calc(32px);
+      padding-bottom: calc(32px); }
       .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background {
         width: 100%;
         display: flex;
