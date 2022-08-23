@@ -723,108 +723,110 @@ body {
     .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container .carousel--image {
       background-size: contain; } }
 
-@media only screen and (min-width: 300px) and (max-width: 768px) {
-  .homeControlPF {
-    width: 100%;
-    height: auto;
+.homeControlPF {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: #f5f5f7; }
+  .homeControlPF .homeControlPF__background {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    background-color: transparent;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
     justify-content: center;
-    background-color: #f5f5f7; }
-    .homeControlPF .homeControlPF__background {
-      width: calc(100% - 16px);
-      height: calc(100% - 16px);
-      background-color: transparent;
+    padding: 8px; }
+    .homeControlPF .homeControlPF__background .homeControlPF__title {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin: 0; }
+      .homeControlPF .homeControlPF__background .homeControlPF__title h2 {
+        padding: 8px;
+        margin: 0;
+        font-family: SFProBold;
+        color: #46494c;
+        text-align: center; }
+    .homeControlPF .homeControlPF__background .homeControlPF__items {
+      width: 100%;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-items: center;
       justify-content: center;
       padding: 8px; }
-      .homeControlPF .homeControlPF__background .homeControlPF__title {
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0; }
-        .homeControlPF .homeControlPF__background .homeControlPF__title h2 {
-          padding: 8px;
-          margin: 0;
-          font-family: SFProBold;
-          color: #46494c;
-          text-align: center; }
-      .homeControlPF .homeControlPF__background .homeControlPF__items {
-        width: 100%;
-        height: auto;
+      .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
+        width: calc(244px);
+        height: calc(244px);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
         justify-content: center;
-        padding: 8px; }
-        .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
-          width: calc(256px);
-          height: calc(256px);
+        background-color: transparent; }
+        .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(1) .itemControl_background .image {
+          background-image: url("../resources/icon/corporate/iconperson.png");
+          background-size: 45%; }
+        .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(2) .itemControl_background .image {
+          background-image: url("../resources/icon/corporate/iconmedal.png");
+          background-size: 25%; }
+        .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(3) .itemControl_background .image {
+          background-image: url("../resources/icon/corporate/iconhandworld.png");
+          background-size: 25%; }
+        .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {
+          width: calc(100% - 24px);
+          height: calc(100% - 24px);
+          background-color: #ffffff;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-items: center;
           justify-content: center;
-          background-color: transparent; }
-          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(1) .itemControl_background .image {
-            background-image: url("../resources/icon/corporate/iconperson.png");
-            background-size: 80px 80px; }
-          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(2) .itemControl_background .image {
-            background-image: url("../resources/icon/corporate/iconmedal.png");
-            background-size: 50px 50px; }
-          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(3) .itemControl_background .image {
-            background-image: url("../resources/icon/corporate/iconhandworld.png");
-            background-size: 50px 50px; }
-          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {
-            width: calc(100% - 24px);
-            height: calc(100% - 24px);
-            background-color: #ffffff;
+          border-radius: 8px;
+          box-shadow: 2px 8px 10px #828282;
+          padding: calc(12px); }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
+            width: 100%;
+            height: 35%;
+            background-color: transparent;
+            background-position: 50%;
+            background-repeat: no-repeat; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 10%;
+            background-color: transparent;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            box-shadow: 2px 8px 10px #828282; }
-            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
+            justify-content: center; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title span {
+              color: #1a1a1a;
+              font-family: GelionLight;
+              font-weight: 700;
+              font-size: 16px; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text {
+            width: 100%;
+            height: 55%;
+            background-color: transparent;
+            padding-left: calc(8px);
+            padding-right: calc(8px); }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
               width: 100%;
-              height: 40%;
-              background-color: transparent;
-              background-position: 50%;
-              background-repeat: no-repeat; }
-            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
-              margin: 0;
-              padding: 0;
-              width: 100%;
-              height: 15%;
-              background-color: transparent;
-              display: flex;
-              align-items: center;
-              justify-items: center;
-              justify-content: center; }
-              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title span {
-                color: #1a1a1a;
-                font-family: GelionLight;
-                font-weight: 700;
-                font-size: 16px; }
-            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text {
-              width: 100%;
-              height: 45%;
-              background-color: transparent; }
-              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
-                width: 100%;
-                color: #1a1a1a;
-                font-family: GelionLight;
-                text-align: center;
-                font-size: 2.4vw;
-                font-weight: 500; } }
+              color: #1a1a1a;
+              font-family: GelionLight;
+              text-align: center;
+              font-size: 2.8vw;
+              font-weight: 500; }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) and (max-width: 1600px) {
   .homeControlPF {
     width: 100%;
     height: auto;
@@ -834,7 +836,7 @@ body {
     justify-content: center;
     background-color: #f5f5f7; }
     .homeControlPF .homeControlPF__background {
-      width: 75%;
+      width: 100%;
       height: calc(100% - 16px);
       background-color: transparent;
       display: flex;
@@ -866,8 +868,114 @@ body {
         justify-items: center;
         justify-content: center; }
         .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
-          width: calc(256px);
-          height: calc(256px);
+          width: calc(252px);
+          height: calc(252px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          justify-content: center;
+          background-color: transparent;
+          opacity: 1; }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(1) .itemControl_background .image {
+            background-image: url("../resources/icon/corporate/iconperson.png");
+            background-size: calc(112px); }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(2) .itemControl_background .image {
+            background-image: url("../resources/icon/corporate/iconmedal.png");
+            background-size: calc(64px); }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl:nth-child(3) .itemControl_background .image {
+            background-image: url("../resources/icon/corporate/iconhandworld.png");
+            background-size: calc(64px); }
+          .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {
+            width: calc(100% - 8px);
+            height: calc(100% - 8px);
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: 2px 8px 10px #828282; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
+              width: 100%;
+              height: 40%;
+              background-color: transparent;
+              background-position: 50%;
+              background-repeat: no-repeat; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 10%;
+              background-color: transparent;
+              display: flex;
+              align-items: center;
+              justify-items: center;
+              justify-content: center; }
+              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title span {
+                color: #1a1a1a;
+                font-family: GelionLight;
+                font-weight: 700;
+                font-size: 16px; }
+            .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text {
+              width: 100%;
+              height: 50%;
+              background-color: transparent;
+              padding-left: calc(16px);
+              padding-right: calc(16px); }
+              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
+                width: 100%;
+                color: #1a1a1a;
+                font-family: GelionLight;
+                text-align: center;
+                font-size: 1vw;
+                font-weight: 500; } }
+
+@media only screen and (min-width: 1601px) {
+  .homeControlPF {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: #f5f5f7; }
+    .homeControlPF .homeControlPF__background {
+      width: 100%;
+      height: calc(100% - 16px);
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      padding-top: calc(16px);
+      padding-bottom: calc(24px); }
+      .homeControlPF .homeControlPF__background .homeControlPF__title {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0; }
+        .homeControlPF .homeControlPF__background .homeControlPF__title h2 {
+          padding: 0;
+          margin: 0;
+          font-family: SFProBold;
+          color: #46494c;
+          text-align: center;
+          font-weight: 700;
+          font-size: 24px; }
+      .homeControlPF .homeControlPF__background .homeControlPF__items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        justify-content: center; }
+        .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
+          width: calc(272px);
+          height: calc(272px);
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -897,7 +1005,7 @@ body {
             box-shadow: 2px 8px 10px #828282; }
             .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
               width: 100%;
-              height: 45%;
+              height: 40%;
               background-color: transparent;
               background-position: 50%;
               background-repeat: no-repeat; }
@@ -918,219 +1026,226 @@ body {
                 font-size: 16px; }
             .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text {
               width: 100%;
-              height: 45%;
-              background-color: transparent; }
+              height: 50%;
+              background-color: transparent;
+              padding-left: calc(16px);
+              padding-right: calc(16px); }
               .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
                 width: 100%;
                 color: #1a1a1a;
                 font-family: GelionLight;
                 text-align: center;
-                font-size: 12px;
+                font-size: calc(13.6px);
                 font-weight: 500; } }
 
-@media only screen and (min-width: 300px) and (max-width: 768px) {
-  .homeControlSquare {
-    width: 100%;
-    height: auto;
+.homeControlSquare {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  padding: calc(40px); }
+  .homeControlSquare .homeControlSquare__bacckground {
+    width: calc(340px);
+    height: calc(680px);
+    background-color: transparent;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
     justify-content: center;
-    padding: calc(40px); }
-    .homeControlSquare .homeControlSquare__bacckground {
-      width: calc(340px);
-      height: calc(680px);
-      background-color: transparent;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-items: center;
-      justify-content: center;
-      gap: calc(16px); }
-      .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 1.5fr 1fr;
-        border: solid 0px #828282;
-        border-radius: 5px;
-        box-shadow: 0px 0px 2px #828282; }
-        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
-          padding-top: calc(8px);
-          padding-bottom: calc(8px); }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            line-height: calc(24px); }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li {
-              font-family: GelionLight;
-              font-size: 14px;
+    gap: calc(16px); }
+    .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1.5fr 1fr;
+      border: solid 0px #828282;
+      border-radius: 5px;
+      box-shadow: 0px 0px 2px #828282; }
+      .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
+        padding-top: calc(8px);
+        padding-bottom: calc(8px); }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          line-height: calc(24px); }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li {
+            font-family: GelionLight;
+            font-size: 14px;
+            color: #1a1a1a;
+            font-weight: 500;
+            opacity: 1; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li::before {
+          content: "\2022";
+          color: red;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em; }
+      .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
+        grid-template-areas: "image" "info"; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image {
+          background-color: green;
+          grid-area: image;
+          background-image: url("../resources/image/controlsquare/square1_mobile.jpg");
+          background-position: 50%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info {
+          background-color: transparent;
+          grid-area: info;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+          padding: calc(16px); }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title {
+            width: 100%;
+            height: auto; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h2 {
+              color: #d61c25;
+              font-family: SFProBold;
+              font-weight: 700;
+              font-size: 16px; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h3 {
+              color: #d61c25;
+              font-family: SFProBold;
+              font-weight: 700;
+              font-size: 20px; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text {
+            width: 100%;
+            height: auto; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text p {
               color: #1a1a1a;
-              font-weight: 500;
-              opacity: 1; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li::before {
-            content: "\2022";
-            color: red;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em; }
-        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
-          grid-template-areas: "image" "info"; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image {
-            background-color: green;
-            grid-area: image;
-            background-image: url("../resources/image/controlsquare/square1_mobile.jpg");
-            background-position: 50%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info {
-            background-color: transparent;
-            grid-area: info;
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-            padding: calc(16px); }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title {
-              width: 100%;
-              height: auto; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h2 {
-                color: #d61c25;
-                font-family: SFProBold;
-                font-weight: 700;
-                font-size: 16px; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h3 {
-                color: #d61c25;
-                font-family: SFProBold;
-                font-weight: 700;
-                font-size: 20px; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text {
-              width: 100%;
-              height: auto; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text p {
-                color: #1a1a1a;
-                font-family: GelionLight;
-                font-weight: 300;
-                font-size: 12px; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button {
-              width: 100%;
-              height: auto;
-              display: flex;
-              align-items: center;
-              justify-items: center;
-              justify-content: center;
-              overflow: hidden;
-              max-height: 32px;
-              padding-left: 0px; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton {
-                width: 150px;
-                height: 32px;
-                background-color: #d61c25;
-                color: #ffffff;
-                font-family: GelionLight;
-                font-size: 16px;
-                text-align: center;
-                border-radius: 0px;
-                text-decoration: none;
-                font-weight: 700;
-                padding-top: 2px;
-                margin-top: 0px; }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton:hover {
-                  background-color: #d14b52; }
-        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom {
-          grid-template-areas: "image" "info"; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image {
-            background-color: green;
-            grid-area: image;
-            background-image: url("../resources/image/controlsquare/square2_mobile.jpg");
-            background-position: 50%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px; }
-          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info {
-            background-color: transparent;
-            grid-area: info;
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-            padding: calc(16px); }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title {
-              width: 100%;
-              height: auto; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h2 {
-                color: #d61c25;
-                font-family: SFProBold;
-                font-weight: 700;
-                font-size: 16px; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h3 {
-                color: #d61c25;
-                font-family: SFProBold;
-                font-weight: 700;
-                font-size: 32px;
-                text-align: left; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text {
-              width: 100%;
-              height: auto; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text p {
-                color: #1a1a1a;
-                font-family: GelionLight;
-                font-weight: 300;
-                font-size: 12px; }
-            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button {
-              width: 100%;
-              height: auto;
-              display: flex;
-              align-items: center;
-              justify-items: flex-start;
-              justify-content: flex-start; }
-              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton {
-                width: 150px;
-                height: 32px;
-                background-color: #d61c25;
-                color: #ffffff;
-                font-family: GelionLight;
-                font-size: 16px;
-                text-align: center;
-                border-radius: 8px;
-                text-decoration: none;
-                font-weight: 700;
-                padding-top: 2px; }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
-                  background-color: #d14b52; }
-      .homeControlSquare .homeControlSquare__bacckground--big {
-        padding-top: calc(64px);
-        padding-bottom: calc(64px);
-        width: calc(1000px);
-        height: auto; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row {
-          grid-template-rows: 1fr; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
-            padding-left: 0px;
-            width: 100%; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
-            padding-left: 10px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
+              font-family: GelionLight;
+              font-weight: 300;
+              font-size: 12px; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            overflow: hidden;
+            max-height: 32px;
             padding-left: 0px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
-            height: 200px;
-            background-image: url("../resources/image/controlsquare/big_square1_mobile.jpg"); }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
-            height: 200px;
-            background-image: url("../resources/image/controlsquare/big_square3_mobile.jpg"); }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
-            padding-right: 0px;
-            width: 100%; }
-            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title h3 {
-              font-size: 24px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
-            padding-left: 10px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
-            height: 200px;
-            background-image: url("../resources/image/controlsquare/big_square2_mobile.jpg"); } }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton {
+              width: 150px;
+              height: 32px;
+              background-color: #d61c25;
+              color: #ffffff;
+              font-family: GelionLight;
+              font-size: 16px;
+              text-align: center;
+              border-radius: 0px;
+              text-decoration: none;
+              font-weight: 700;
+              padding-top: 2px;
+              margin-top: 0px; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton:hover {
+                background-color: #d14b52; }
+      .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom {
+        grid-template-areas: "image" "info"; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image {
+          background-color: green;
+          grid-area: image;
+          background-image: url("../resources/image/controlsquare/square2_mobile.jpg");
+          background-position: 50%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info {
+          background-color: transparent;
+          grid-area: info;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+          padding: calc(16px); }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title {
+            width: 100%;
+            height: auto; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h2 {
+              color: #d61c25;
+              font-family: SFProBold;
+              font-weight: 700;
+              font-size: 16px; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h3 {
+              color: #d61c25;
+              font-family: SFProBold;
+              font-weight: 700;
+              font-size: 32px;
+              text-align: left; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text {
+            width: 100%;
+            height: auto; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text p {
+              color: #1a1a1a;
+              font-family: GelionLight;
+              font-weight: 300;
+              font-size: 12px; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-items: flex-start;
+            justify-content: flex-start; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton {
+              width: 150px;
+              height: 32px;
+              background-color: #d61c25;
+              color: #ffffff;
+              font-family: GelionLight;
+              font-size: 16px;
+              text-align: center;
+              border-radius: 8px;
+              text-decoration: none;
+              font-weight: 700;
+              padding-top: 2px; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
+                background-color: #d14b52; }
+    .homeControlSquare .homeControlSquare__bacckground--big {
+      padding-top: calc(16px);
+      padding-bottom: calc(16px);
+      width: calc(1000px);
+      height: auto; }
+      .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row {
+        grid-template-rows: 1fr; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
+          padding-left: 0px;
+          width: 100%; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
+          padding-left: 10px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list ul li {
+            font-size: 12px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
+          padding-left: 0px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .text {
+          font-size: 12px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
+          height: 200px;
+          background-image: url("../resources/image/controlsquare/big_square1_mobile.jpg"); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
+          height: 200px;
+          background-image: url("../resources/image/controlsquare/big_square3_mobile.jpg"); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
+          padding-right: 0px;
+          width: 100%; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title h3 {
+            font-size: 24px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
+          padding-left: 10px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list ul li {
+            font-size: 12px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
+          height: 200px;
+          background-image: url("../resources/image/controlsquare/big_square2_mobile.jpg"); }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) and (max-width: 1600px) {
   .homeControlSquare {
     width: 100%;
     height: auto;
@@ -1139,21 +1254,23 @@ body {
     justify-items: center;
     justify-content: center; }
     .homeControlSquare .homeControlSquare__bacckground {
-      width: calc(680px);
-      height: calc(680px);
+      width: calc(744px);
+      height: calc(744px);
       background-color: transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-items: center;
-      justify-content: center; }
+      justify-content: center;
+      gap: calc(0px); }
       .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
         width: 100%;
         height: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 100%;
-        position: relative; }
+        position: relative;
+        box-shadow: none; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
           padding-top: calc(8px);
           padding-bottom: calc(8px); }
@@ -1221,7 +1338,10 @@ body {
               background-image: url("../resources/image/controlsquare/square1_desktop.jpg");
               background-position: 50%;
               background-size: cover;
-              background-repeat: no-repeat; }
+              background-repeat: no-repeat;
+              border-top-left-radius: 0px;
+              border-top-right-radius: 0px;
+              border-radius: 0; }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image--effect {
                 animation: animation__homeControlSquare__UP .35s ease-out;
                 animation-delay: 0.35s;
@@ -1254,7 +1374,7 @@ body {
                   color: #d61c25;
                   font-family: SFProBold;
                   font-weight: 700;
-                  font-size: 32px; }
+                  font-size: calc(28px); }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h3 {
                   color: #d61c25;
                   font-family: SFProBold;
@@ -1345,7 +1465,8 @@ body {
               background-image: url("../resources/image/controlsquare/square2_desktop.jpg");
               background-position: 50%;
               background-size: cover;
-              background-repeat: no-repeat; }
+              background-repeat: no-repeat;
+              border-radius: 0; }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image--effect {
                 animation: animation__homeControlSquare__DOWN .35s ease-out;
                 animation-delay: 0.35s;
@@ -1369,7 +1490,7 @@ body {
                   color: #d61c25;
                   font-family: SFProBold;
                   font-weight: 700;
-                  font-size: 32px;
+                  font-size: calc(28px);
                   text-align: right; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h3 {
                   color: #d61c25;
@@ -1442,21 +1563,19 @@ body {
               filter: grayscale(100%);
               opacity: 0.35; }
       .homeControlSquare .homeControlSquare__bacckground--big {
-        padding-top: calc(64px);
-        padding-bottom: calc(64px);
-        width: calc(1000px);
+        width: calc(960px);
         height: calc(1080px); }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image {
-          margin-left: -500px;
-          margin-right: 500px; }
+          margin-left: -480px;
+          margin-right: 480px; }
           .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image--effect {
             animation: animation__homeControlSquare__UP__BIG .35s ease-out;
             animation-delay: 0.35s;
             animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__UP__BIG {
     from {
-      margin-left: -500px;
-      margin-right: 500px; }
+      margin-left: -480px;
+      margin-right: 480px; }
     to {
       margin-left: 0px;
       margin-right: 0px; } }
@@ -1470,20 +1589,22 @@ body {
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
           padding-left: 50px; }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
+          height: 100%;
           background-image: url("../resources/image/controlsquare/big_square1_desktop.jpg"); }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
+          height: 100%;
           background-image: url("../resources/image/controlsquare/big_square3_desktop.jpg"); }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image {
-          margin-left: 500px;
-          margin-right: -500px; }
+          margin-left: 480px;
+          margin-right: -480px; }
           .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image--effect {
             animation: animation__homeControlSquare__DOWN__BIG .35s ease-out;
             animation-delay: 0.35s;
             animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__DOWN__BIG {
     from {
-      margin-left: 500px;
-      margin-right: -500px; }
+      margin-left: 480px;
+      margin-right: -480px; }
     to {
       margin-left: 0px;
       margin-right: 0px; } }
@@ -1495,6 +1616,379 @@ body {
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
           padding-right: 30px; }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
+          height: 100%;
+          background-image: url("../resources/image/controlsquare/big_square2_desktop.jpg"); } }
+
+@media only screen and (min-width: 1601px) {
+  .homeControlSquare {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+    .homeControlSquare .homeControlSquare__bacckground {
+      width: calc(788px);
+      height: calc(788px);
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      gap: calc(0px); }
+      .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        position: relative;
+        box-shadow: none; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
+          padding-top: calc(8px);
+          padding-bottom: calc(8px); }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            line-height: calc(32px); }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li {
+              font-family: GelionLight;
+              font-size: 16px;
+              color: #1a1a1a;
+              font-weight: 500;
+              opacity: 0; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(1) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 1.6s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(2) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 1.8s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(3) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 2s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(4) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 2.2s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(5) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 2.4s;
+              animation-fill-mode: forwards; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(6) {
+              animation: animnation__homeControlSquare__LI 0.35s;
+              animation-delay: 2.6s;
+              animation-fill-mode: forwards; }
+  @keyframes animnation__homeControlSquare__LI {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul li::before {
+            content: "\2022";
+            color: red;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
+          grid-template-areas: "info image"; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-items: center;
+            justify-content: center;
+            position: relative; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image {
+              margin-left: -394px;
+              margin-right: 394px;
+              background-color: green;
+              grid-area: image;
+              background-image: url("../resources/image/controlsquare/square1_desktop.jpg");
+              background-position: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              border-radius: 0; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image--effect {
+                animation: animation__homeControlSquare__UP .35s ease-out;
+                animation-delay: 0.35s;
+                animation-fill-mode: forwards; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image--effect--reverse {
+                animation-direction: reverse; }
+  @keyframes animation__homeControlSquare__UP {
+    from {
+      margin-left: -394px;
+      margin-right: 394px; }
+    to {
+      margin-left: 0px;
+      margin-right: 0px; } }
+  @keyframes animation__homeControlSquare__UP_REVERSE {
+    from {
+      margin-left: 0px;
+      margin-right: 0px; }
+    to {
+      margin-left: -394px;
+      margin-right: 394px; } }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info {
+              background-color: transparent;
+              grid-area: info;
+              padding: calc(16px); }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title {
+                width: 75%;
+                height: auto;
+                transform: rotateX(90deg); }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h2 {
+                  color: #d61c25;
+                  font-family: SFProBold;
+                  font-weight: 700;
+                  font-size: calc(36px); }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title h3 {
+                  color: #d61c25;
+                  font-family: SFProBold;
+                  font-weight: 700;
+                  font-size: 32px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title--effect {
+                  animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
+                  animation-delay: 1.4s;
+                  animation-fill-mode: forwards; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text {
+                width: 100%;
+                height: auto;
+                transform: rotateX(90deg); }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text p {
+                  color: #1a1a1a;
+                  font-family: GelionLight;
+                  font-weight: 300;
+                  font-size: 16px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text--effect {
+                  animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
+                  animation-delay: 1.6s;
+                  animation-fill-mode: forwards; }
+  @keyframes animnation__homeControlSquare__TEXT {
+    from {
+      transform: rotateX(90deg); }
+    to {
+      transform: rotateX(0deg); } }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-items: flex-start;
+                justify-content: flex-start;
+                overflow: hidden;
+                max-height: 32px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton {
+                  width: 150px;
+                  height: 32px;
+                  background-color: #d61c25;
+                  color: #ffffff;
+                  font-family: GelionLight;
+                  font-size: 16px;
+                  text-align: center;
+                  border-radius: 0px;
+                  text-decoration: none;
+                  font-weight: 700;
+                  padding-top: 2px;
+                  margin-top: 64px; }
+                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton:hover {
+                    background-color: #d14b52; }
+                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton--effect {
+                    animation: animation__homeControlSquare__BUTTON 0.2s ease-out;
+                    animation-delay: 1.8s;
+                    animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__BUTTON {
+    from {
+      margin-top: 64px; }
+    to {
+      margin-top: 0px; } }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.float {
+              position: absolute;
+              right: 70px;
+              top: 70px;
+              background-color: transparent;
+              width: 200px;
+              height: 200px;
+              background-image: url("../resources/brand/isoac.png");
+              background-position: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              filter: grayscale(100%);
+              opacity: 0.35; }
+        .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom {
+          grid-template-areas: "image info"; }
+          .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-items: center;
+            justify-content: center;
+            position: relative; }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image {
+              margin-right: -394px;
+              margin-left: 394px;
+              background-color: green;
+              grid-area: image;
+              background-image: url("../resources/image/controlsquare/square2_desktop.jpg");
+              background-position: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              border-radius: 0; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image--effect {
+                animation: animation__homeControlSquare__DOWN .35s ease-out;
+                animation-delay: 0.35s;
+                animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__DOWN {
+    from {
+      margin-right: -394px;
+      margin-left: 394px; }
+    to {
+      margin-right: 0px;
+      margin-left: 0px; } }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info {
+              background-color: transparent;
+              grid-area: info;
+              padding: calc(16px); }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title {
+                width: 70%;
+                height: auto;
+                transform: rotateX(90deg); }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h2 {
+                  color: #d61c25;
+                  font-family: SFProBold;
+                  font-weight: 700;
+                  font-size: calc(36px);
+                  text-align: right; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h3 {
+                  color: #d61c25;
+                  font-family: SFProBold;
+                  font-weight: 700;
+                  font-size: 32px;
+                  text-align: right; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title--effect {
+                  animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
+                  animation-delay: 1.4s;
+                  animation-fill-mode: forwards; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text {
+                width: 100%;
+                height: auto;
+                transform: rotateX(90deg); }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text p {
+                  color: #1a1a1a;
+                  font-family: GelionLight;
+                  font-weight: 300;
+                  font-size: 16px;
+                  text-align: right; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text--effect {
+                  animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
+                  animation-delay: 1.6s;
+                  animation-fill-mode: forwards; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-items: flex-end;
+                justify-content: flex-end;
+                overflow: hidden;
+                max-height: 32px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton {
+                  width: 150px;
+                  height: 32px;
+                  background-color: #d61c25;
+                  color: #ffffff;
+                  font-family: GelionLight;
+                  font-size: 16px;
+                  text-align: center;
+                  border-radius: 0px;
+                  text-decoration: none;
+                  font-weight: 700;
+                  padding-top: 2px;
+                  margin-top: 64px; }
+                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
+                    background-color: #d14b52; }
+                  .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton--effect {
+                    animation: animation__homeControlSquare__BUTTON 0.2s ease-out;
+                    animation-delay: 1.8s;
+                    animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__BUTTON {
+    from {
+      margin-top: 64px; }
+    to {
+      margin-top: 0px; } }
+            .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.float {
+              position: absolute;
+              left: 70px;
+              top: 70px;
+              background-color: transparent;
+              width: 200px;
+              height: 200px;
+              background-image: url("../resources/brand/isoac.png");
+              background-position: 50%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              filter: grayscale(100%);
+              opacity: 0.35; }
+      .homeControlSquare .homeControlSquare__bacckground--big {
+        width: calc(960px);
+        height: calc(1080px); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image {
+          margin-left: -480px;
+          margin-right: 480px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image--effect {
+            animation: animation__homeControlSquare__UP__BIG .35s ease-out;
+            animation-delay: 0.35s;
+            animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__UP__BIG {
+    from {
+      margin-left: -480px;
+      margin-right: 480px; }
+    to {
+      margin-left: 0px;
+      margin-right: 0px; } }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
+          padding-left: 50px;
+          width: 100%; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title h3 {
+            font-size: 24px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
+          padding-left: 70px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
+          padding-left: 50px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
+          height: 100%;
+          background-image: url("../resources/image/controlsquare/big_square1_desktop.jpg"); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
+          height: 100%;
+          background-image: url("../resources/image/controlsquare/big_square3_desktop.jpg"); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image {
+          margin-left: 480px;
+          margin-right: -480px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image--effect {
+            animation: animation__homeControlSquare__DOWN__BIG .35s ease-out;
+            animation-delay: 0.35s;
+            animation-fill-mode: forwards; }
+  @keyframes animation__homeControlSquare__DOWN__BIG {
+    from {
+      margin-left: 480px;
+      margin-right: -480px; }
+    to {
+      margin-left: 0px;
+      margin-right: 0px; } }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
+          padding-right: 100px;
+          width: 100%; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title h3 {
+            font-size: 24px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
+          padding-right: 30px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
+          height: 100%;
           background-image: url("../resources/image/controlsquare/big_square2_desktop.jpg"); } }
 
 .homeControlIcaGroup {
@@ -1684,10 +2178,10 @@ body {
       position: absolute;
       background-color: black;
       left: 0;
-      z-index: 1073;
+      z-index: 1072;
       filter: blur(40px); }
     .headPage .headPage__background {
-      z-index: 1074;
+      z-index: 1073;
       width: 75%;
       height: 64vh;
       background-position: 50%;
@@ -1742,138 +2236,143 @@ body {
     width: 100%; } }
 
 /*PRODUCTO*/
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  .controlCalculator {
-    width: 100%;
+.controlCalculator {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  z-index: 1074; }
+  .controlCalculator .controlCalculator__background {
+    min-width: 100%;
+    max-width: calc(480px);
     height: auto;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    margin-top: -50px; }
-    .controlCalculator .controlCalculator__background {
-      width: 100%;
-      height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: #f5e9e9;
+    border-radius: calc(16px); }
+    .controlCalculator .controlCalculator__background .sideInfo {
+      width: 72%;
+      height: 48vh;
+      background-color: transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-items: center;
       justify-content: center;
-      background-color: #f5e9e9;
-      border-radius: calc(16px); }
-      .controlCalculator .controlCalculator__background .sideInfo {
-        width: 72%;
-        height: 48vh;
-        background-color: transparent;
+      gap: calc(16px); }
+      .controlCalculator .controlCalculator__background .sideInfo .title {
+        width: 100%; }
+        .controlCalculator .controlCalculator__background .sideInfo .title h2 {
+          color: #d61c25;
+          font-family: SFProHeavy;
+          font-size: 32px;
+          line-height: calc(32px); }
+        .controlCalculator .controlCalculator__background .sideInfo .title h3 {
+          color: #d61c25;
+          font-family: SFProHeavy;
+          font-size: 16px; }
+      .controlCalculator .controlCalculator__background .sideInfo .info {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        justify-content: center;
-        gap: calc(16px); }
-        .controlCalculator .controlCalculator__background .sideInfo .title {
-          width: 100%; }
-          .controlCalculator .controlCalculator__background .sideInfo .title h2 {
+        justify-content: center; }
+        .controlCalculator .controlCalculator__background .sideInfo .info ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          line-height: calc(32px); }
+          .controlCalculator .controlCalculator__background .sideInfo .info ul li {
             color: #d61c25;
-            font-family: SFProHeavy;
-            font-size: 32px;
-            line-height: calc(32px); }
-          .controlCalculator .controlCalculator__background .sideInfo .title h3 {
-            color: #d61c25;
-            font-family: SFProHeavy;
-            font-size: 16px; }
-        .controlCalculator .controlCalculator__background .sideInfo .info {
-          width: 100%;
+            font-family: GelionLight;
+            font-weight: 700; }
+            .controlCalculator .controlCalculator__background .sideInfo .info ul li img {
+              width: 40px;
+              padding-right: calc(16px); }
+    .controlCalculator .controlCalculator__background .sideTool {
+      width: 85%;
+      height: auto;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      padding-bottom: calc(32px); }
+      .controlCalculator .controlCalculator__background .sideTool .sideTool__background {
+        width: 100%;
+        border-radius: calc(16px);
+        background-color: #ffffff;
+        padding-top: calc(24px);
+        padding-bottom: calc(24px); }
+        .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-items: center;
-          justify-content: center; }
-          .controlCalculator .controlCalculator__background .sideInfo .info ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            line-height: calc(32px); }
-            .controlCalculator .controlCalculator__background .sideInfo .info ul li {
-              color: #d61c25;
-              font-family: GelionLight;
-              font-weight: 700; }
-              .controlCalculator .controlCalculator__background .sideInfo .info ul li img {
-                width: 40px;
-                padding-right: calc(16px); }
-      .controlCalculator .controlCalculator__background .sideTool {
-        width: 85%;
-        height: auto;
-        background-color: transparent;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
-        padding-bottom: calc(32px); }
-        .controlCalculator .controlCalculator__background .sideTool .sideTool__background {
-          width: 100%;
-          border-radius: calc(16px);
-          background-color: #ffffff;
-          padding-top: calc(24px);
-          padding-bottom: calc(24px); }
-          .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm {
+          justify-content: center;
+          gap: calc(8px); }
+          .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row {
+            width: 85%;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-items: flex-start;
+            justify-content: flex-start;
             gap: calc(8px); }
-            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row {
+            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row p {
+              padding-top: 10px;
+              margin: 0;
+              font-weight: bold;
+              font-family: GelionLight;
+              font-size: 15px;
+              vertical-align: middle; }
+            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row input {
+              font-size: 14px;
+              background-color: #ececec;
+              font-weight: bold;
+              font-family: GelionLight; }
+            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select {
+              font-size: 14px;
+              font-weight: bold;
+              font-family: GelionLight; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select option {
+                font-size: 14px;
+                font-weight: bold;
+                font-family: GelionLight; }
+            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button {
+              width: 100%;
+              height: 100px;
+              display: flex;
+              align-items: center;
+              justify-items: center;
+              justify-content: center; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button .buttonSimular {
+                width: 150px;
+                height: 32px;
+                color: #ffffff;
+                background-color: #d61c25;
+                border: none;
+                border-radius: 8px; }
+            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side {
               width: 85%;
               display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-              justify-items: flex-start;
-              justify-content: flex-start;
-              gap: calc(8px); }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row p {
-                padding-top: 10px;
-                margin: 0;
-                font-weight: bold;
-                font-family: GelionLight;
-                font-size: 15px;
-                vertical-align: middle; }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row input {
-                font-size: 14px;
-                background-color: #ececec;
-                font-weight: bold;
-                font-family: GelionLight; }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select {
-                font-size: 14px;
-                font-weight: bold;
-                font-family: GelionLight; }
-                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select option {
-                  font-size: 14px;
-                  font-weight: bold;
-                  font-family: GelionLight; }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button {
-                width: 100%;
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-items: center;
-                justify-content: center; }
-                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button .buttonSimular {
-                  width: 150px;
-                  height: 32px;
-                  color: #ffffff;
-                  background-color: #d61c25;
-                  border: none;
-                  border-radius: 8px; }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side {
-                width: 85%;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-items: center;
-                justify-content: center; }
-                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
-                  width: 50%; } }
+              flex-direction: row;
+              align-items: center;
+              justify-items: center;
+              justify-content: center; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
+                width: 50%; }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .controlCalculator {
@@ -1882,9 +2381,9 @@ body {
     padding: 0;
     margin: 0;
     background-color: transparent;
-    margin-top: -50px; }
+    margin-top: calc(-64px); }
     .controlCalculator .controlCalculator__background {
-      width: 100%;
+      min-width: calc(640px);
       height: auto;
       display: flex;
       flex-direction: column;
@@ -1895,7 +2394,7 @@ body {
       border-radius: calc(16px); }
       .controlCalculator .controlCalculator__background .sideInfo {
         width: 90%;
-        height: 48vh;
+        height: 40vh;
         background-color: transparent;
         display: flex;
         flex-direction: row;
@@ -2027,7 +2526,7 @@ body {
     justify-content: center;
     background-color: #f5e9e9; }
     .controlCalculator .controlCalculator__background {
-      width: 100%;
+      min-width: calc(1280px);
       height: auto;
       display: flex;
       flex-direction: row;
@@ -2037,141 +2536,7 @@ body {
       background-color: #f5e9e9;
       border-radius: calc(16px); }
       .controlCalculator .controlCalculator__background .sideInfo {
-        width: 35%;
-        height: auto;
-        background-color: transparent;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
-        gap: calc(16px); }
-        .controlCalculator .controlCalculator__background .sideInfo .title {
-          width: 100%; }
-          .controlCalculator .controlCalculator__background .sideInfo .title h2 {
-            color: #d61c25;
-            font-family: SFProHeavy;
-            font-size: 32px;
-            line-height: calc(32px); }
-          .controlCalculator .controlCalculator__background .sideInfo .title h3 {
-            color: #d61c25;
-            font-family: SFProHeavy;
-            font-size: 16px; }
-        .controlCalculator .controlCalculator__background .sideInfo .info {
-          width: 100%; }
-          .controlCalculator .controlCalculator__background .sideInfo .info ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            line-height: calc(32px); }
-            .controlCalculator .controlCalculator__background .sideInfo .info ul li {
-              color: #d61c25;
-              font-family: GelionLight;
-              font-weight: 700; }
-              .controlCalculator .controlCalculator__background .sideInfo .info ul li img {
-                width: 40px;
-                padding-right: calc(16px); }
-      .controlCalculator .controlCalculator__background .sideTool {
-        width: 45%;
-        height: auto;
-        background-color: transparent;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;
-        padding-top: calc(32px);
-        padding-bottom: calc(32px); }
-        .controlCalculator .controlCalculator__background .sideTool .sideTool__background {
-          width: 100%;
-          border-radius: calc(16px);
-          background-color: #ffffff;
-          padding-top: calc(24px);
-          padding-bottom: calc(24px); }
-          .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-items: center;
-            justify-content: center;
-            gap: calc(8px); }
-            .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row {
-              width: 85%;
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-              justify-items: flex-start;
-              justify-content: flex-start;
-              gap: calc(8px); }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row p {
-                padding-top: 10px;
-                margin: 0;
-                font-weight: bold;
-                font-family: GelionLight;
-                font-size: 15px;
-                vertical-align: middle; }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row input {
-                font-size: 14px;
-                background-color: #ececec;
-                font-weight: bold;
-                font-family: GelionLight; }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select {
-                font-size: 14px;
-                font-weight: bold;
-                font-family: GelionLight; }
-                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row select option {
-                  font-size: 14px;
-                  font-weight: bold;
-                  font-family: GelionLight; }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button {
-                width: 100%;
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-items: center;
-                justify-content: center; }
-                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button .buttonSimular {
-                  width: 150px;
-                  height: 32px;
-                  color: #ffffff;
-                  background-color: #d61c25;
-                  border: none;
-                  border-radius: 8px; }
-              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side {
-                width: 85%;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-items: center;
-                justify-content: center; }
-                .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
-                  width: 50%; } }
-
-@media only screen and (min-width: 1400px) {
-  .controlCalculator {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    margin-top: 0px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    background-color: #f5e9e9; }
-    .controlCalculator .controlCalculator__background {
-      width: 75%;
-      height: auto;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-items: center;
-      justify-content: center;
-      background-color: #f5e9e9;
-      border-radius: calc(16px); }
-      .controlCalculator .controlCalculator__background .sideInfo {
-        width: 35%;
+        width: calc(480px);
         height: auto;
         background-color: transparent;
         display: flex;
@@ -2207,7 +2572,7 @@ body {
                 width: 40px;
                 padding-right: calc(16px); }
       .controlCalculator .controlCalculator__background .sideTool {
-        width: 35%;
+        width: calc(480px);
         height: auto;
         background-color: transparent;
         display: flex;
@@ -2282,65 +2647,65 @@ body {
                 .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side .toolForm__row__side {
                   width: 50%; } }
 
-@media only screen and (min-width: 300px) and (max-width: 1024px) {
-  .productoControlFinanciamos {
+.productoControlFinanciamos {
+  width: 100%;
+  height: auto;
+  max-height: 32vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #f6f6f8; }
+  .productoControlFinanciamos .productoControlFinanciamos__background {
     width: 100%;
-    height: auto;
-    max-height: 32vh;
-    display: flex;
-    flex-direction: column;
+    height: 32vh;
+    display: grid;
+    grid-template-areas: "side1";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
     align-items: center;
-    justify-items: center;
     justify-content: center;
-    overflow: hidden;
-    background-color: #f6f6f8; }
-    .productoControlFinanciamos .productoControlFinanciamos__background {
+    justify-items: center;
+    background-color: transparent; }
+    .productoControlFinanciamos .productoControlFinanciamos__background .side {
       width: 100%;
-      height: 32vh;
-      display: grid;
-      grid-template-areas: "side1";
-      grid-template-columns: 1fr;
-      grid-template-rows: 100%;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      background-color: transparent; }
-      .productoControlFinanciamos .productoControlFinanciamos__background .side {
-        width: 100%;
-        height: 100%;
-        margin-top: 0px;
-        opacity: 1; }
-        .productoControlFinanciamos .productoControlFinanciamos__background .side--info {
-          grid-area: side1;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          justify-items: center; }
-          .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content {
-            width: 90%; }
-            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title {
-              width: 100%;
-              height: auto; }
-              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title h2 {
-                color: #d61c25;
-                font-family: SFProHeavy;
-                font-size: 20px; }
-            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text {
-              width: 100%;
-              height: auto; }
-              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text p {
-                color: #1a1a1a;
-                font-family: GelionLight;
-                font-size: 16px; }
-        .productoControlFinanciamos .productoControlFinanciamos__background .side--image {
-          display: none; } }
+      height: 100%;
+      margin-top: 0px;
+      opacity: 1; }
+      .productoControlFinanciamos .productoControlFinanciamos__background .side--info {
+        grid-area: side1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center; }
+        .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content {
+          width: 90%; }
+          .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title {
+            width: 100%;
+            height: auto; }
+            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title h2 {
+              color: #d61c25;
+              font-family: SFProHeavy;
+              font-size: 20px; }
+          .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text {
+            width: 100%;
+            height: auto; }
+            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text p {
+              color: #1a1a1a;
+              font-family: GelionLight;
+              font-size: 16px; }
+      .productoControlFinanciamos .productoControlFinanciamos__background .side--image {
+        display: none; }
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1025px) {
   .productoControlFinanciamos {
     width: 100%;
     height: auto;
-    max-height: 28vh;
+    min-height: calc(256px);
+    max-height: calc(256px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2349,8 +2714,11 @@ body {
     overflow: hidden;
     background-color: #f6f6f8; }
     .productoControlFinanciamos .productoControlFinanciamos__background {
-      width: 100%;
-      height: 28vh;
+      width: 75%;
+      min-width: calc(960px);
+      max-width: calc(1312px);
+      min-height: calc(256px);
+      max-height: calc(256px);
       display: grid;
       grid-template-areas: "side1 side2";
       grid-template-columns: 1.5fr 1fr;
@@ -2398,83 +2766,7 @@ body {
             height: 100%;
             background-image: url("../resources/image/revisando-documentos_small.png");
             background-position: 100%;
-            background-size: contain;
-            background-repeat: no-repeat; }
-        .productoControlFinanciamos .productoControlFinanciamos__background .side--effect {
-          animation: animation__productoControlFinanciamos 0.35s ease-in;
-          animation-delay: 0s;
-          animation-fill-mode: forwards; }
-  @keyframes animation__productoControlFinanciamos {
-    from {
-      margin-top: 100px;
-      opacity: 0; }
-    to {
-      margin-top: 0px;
-      opacity: 1; } } }
-
-@media only screen and (min-width: 1441px) {
-  .productoControlFinanciamos {
-    width: 100%;
-    height: auto;
-    max-height: 28vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-color: #f6f6f8; }
-    .productoControlFinanciamos .productoControlFinanciamos__background {
-      width: 75%;
-      height: 28vh;
-      display: grid;
-      grid-template-areas: "side1 side2";
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 100%;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      background-color: transparent; }
-      .productoControlFinanciamos .productoControlFinanciamos__background .side {
-        width: 100%;
-        height: 100%;
-        margin-top: 100px;
-        opacity: 0; }
-        .productoControlFinanciamos .productoControlFinanciamos__background .side--info {
-          grid-area: side1;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          justify-items: center; }
-          .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content {
-            width: 65%; }
-            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title {
-              width: 100%;
-              height: auto; }
-              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title h2 {
-                color: #d61c25;
-                font-family: SFProHeavy; }
-            .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text {
-              width: 100%;
-              height: auto; }
-              .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text p {
-                color: #1a1a1a;
-                font-family: GelionLight; }
-        .productoControlFinanciamos .productoControlFinanciamos__background .side--image {
-          grid-area: side2;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          justify-items: center;
-          background-color: transparent; }
-          .productoControlFinanciamos .productoControlFinanciamos__background .side--image .image {
-            width: 100%;
-            height: 100%;
-            background-image: url("../resources/image/revisando-documentos_small.png");
-            background-position: 0%;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat; }
         .productoControlFinanciamos .productoControlFinanciamos__background .side--effect {
           animation: animation__productoControlFinanciamos 0.35s ease-in;
@@ -3115,7 +3407,7 @@ body {
             overflow: hidden; }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title {
               width: 40%;
-              z-index: 1074;
+              z-index: 1073;
               position: absolute;
               left: 16%;
               bottom: calc(52px);
@@ -3150,7 +3442,7 @@ body {
                   background-color: rgba(192, 192, 192, 0.205);
                   padding-left: 8px; }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
-              z-index: 1074;
+              z-index: 1073;
               width: 100%;
               height: 40vh;
               background-position: 40%;
@@ -3158,7 +3450,7 @@ body {
               background-repeat: no-repeat;
               animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite; }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
-              z-index: 1074;
+              z-index: 1073;
               width: 100%;
               height: 64vh;
               background-position: 50%;
@@ -3170,7 +3462,7 @@ body {
               position: absolute;
               background-color: black;
               left: 0;
-              z-index: 1073;
+              z-index: 1072;
               filter: blur(40px); }
           .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision {
             width: 100%;
@@ -3221,7 +3513,7 @@ body {
     background-image: url("../resources/image/head_nosotros/equipo_apoyo_mobile.jpg"); }
   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title {
     width: 75%;
-    z-index: 1074;
+    z-index: 1073;
     position: absolute;
     left: 8%;
     bottom: calc(0px);
@@ -3256,7 +3548,7 @@ body {
         background-color: rgba(192, 192, 192, 0.205);
         padding-left: 8px; }
   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
-    z-index: 1074;
+    z-index: 1073;
     width: 100%;
     height: 40vh;
     background-position: 40%;
@@ -3284,7 +3576,7 @@ body {
     background-image: url("../resources/image/head_nosotros/equipo_apoyo_mobile.jpg"); }
   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title {
     width: 75%;
-    z-index: 1074;
+    z-index: 1073;
     position: absolute;
     left: 8%;
     bottom: calc(0px);
@@ -3319,7 +3611,7 @@ body {
         background-color: rgba(192, 192, 192, 0.205);
         padding-left: 8px; }
   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
-    z-index: 1074;
+    z-index: 1073;
     width: 100%;
     height: 60vh;
     background-position: 40%;
@@ -3347,7 +3639,7 @@ body {
     background-image: url("../resources/image/head_nosotros/equipo_apoyo_desktop.jpg"); }
   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title {
     width: 75%;
-    z-index: 1074;
+    z-index: 1073;
     position: absolute;
     left: 8%;
     bottom: calc(0px);
@@ -3382,7 +3674,7 @@ body {
         background-color: rgba(192, 192, 192, 0.205);
         padding-left: 8px; }
   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
-    z-index: 1074;
+    z-index: 1073;
     width: 100%;
     height: 64vh;
     background-position: 40%;
@@ -3510,7 +3802,7 @@ body {
           background-color: #ffffff;
           padding: calc(40px);
           border-radius: 8px;
-          z-index: 1074;
+          z-index: 1073;
           border: solid 1px #ececec; }
         .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info {
           width: 100%;
@@ -3522,7 +3814,7 @@ body {
           padding-top: calc(48px);
           padding-left: calc(24px);
           padding-right: calc(24px);
-          z-index: 1073;
+          z-index: 1072;
           border: solid 1px #ececec;
           background-color: #ffffff; }
           .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info .title {
@@ -3568,7 +3860,7 @@ body {
           padding-bottom: calc(24px);
           padding-left: calc(72px);
           padding-right: calc(24px);
-          z-index: 1073;
+          z-index: 1072;
           border: solid 1px #ececec;
           background-color: #ffffff; } }
 
