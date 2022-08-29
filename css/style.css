@@ -728,7 +728,7 @@ body {
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container .carousel--image {
             height: 100%;
             width: 100%;
-            background-position: 50% 80%;
+            background-position: 50% 70%;
             background-size: calc(448px);
             background-repeat: no-repeat; }
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(1) .item__container {
@@ -753,12 +753,42 @@ body {
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .homeHead .homeHead__background {
     min-height: calc(704px);
-    max-height: calc(704px); } }
+    max-height: calc(100vh - 704px); }
+    .homeHead .homeHead__background .site__carouselHead .carousel-floatText {
+      top: calc(0px); }
+      .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText {
+        margin-top: calc(24px);
+        margin-left: calc(0px);
+        width: 88%; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title {
+          font-size: calc(40px);
+          text-align: center; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .text {
+          font-size: calc(16px);
+          text-align: center; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button {
+          justify-items: center;
+          justify-content: center; } }
 
 @media only screen and (min-width: 501px) and (max-width: 1220px) {
   .homeHead .homeHead__background {
-    min-height: calc(768px);
-    max-height: calc(768px); } }
+    min-height: calc(704px);
+    max-height: calc(100vh - 704px); }
+    .homeHead .homeHead__background .site__carouselHead .carousel-floatText {
+      top: calc(0px); }
+      .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText {
+        margin-top: calc(24px);
+        margin-left: calc(0px);
+        width: 88%; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title {
+          font-size: calc(48px);
+          text-align: center; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .text {
+          font-size: calc(24px);
+          text-align: center; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button {
+          justify-items: center;
+          justify-content: center; } }
 
 @media only screen and (min-width: 1221px) {
   .homeHead {
