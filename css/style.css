@@ -669,13 +669,60 @@ body {
     .homeHead .homeHead__background .site__carouselHead {
       width: 100%;
       height: 100%; }
+      .homeHead .homeHead__background .site__carouselHead .carousel-floatText {
+        width: 100%;
+        height: calc(320px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        position: absolute;
+        top: calc(64px);
+        z-index: 1; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText {
+          margin-top: calc(24px);
+          margin-left: calc(-448px);
+          width: calc(704px);
+          background-color: rgba(255, 255, 255, 0.459); }
+          .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title {
+            color: #d61c25;
+            font-family: SFProHeavy;
+            font-weight: 700;
+            font-size: calc(48px); }
+          .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .text {
+            color: #1a1a1a;
+            font-family: SFProHeavy;
+            font-weight: 700;
+            font-size: calc(28px); }
+          .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-items: flex-start;
+            justify-content: flex-start;
+            overflow: hidden;
+            max-height: 32px; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton {
+              width: calc(192px);
+              height: 32px;
+              background-color: #d61c25;
+              color: #ffffff;
+              font-family: GelionLight;
+              font-size: 16px;
+              text-align: center;
+              border-radius: 0px;
+              text-decoration: none;
+              font-weight: 700;
+              padding-top: 2px; }
       .homeHead .homeHead__background .site__carouselHead .carousel-inner {
         height: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-items: center;
-        justify-content: flex-start; }
+        justify-content: flex-start;
+        z-index: 0; }
         .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item {
           height: 100%; }
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container .carousel--image {
@@ -697,7 +744,7 @@ body {
             .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(3) .item__container .carousel--image {
               background-image: url("../resources/image/carousel_image_1_mobile.png"); }
       .homeHead .homeHead__background .site__carouselHead .site__carousel__button {
-        display: none; }
+        display: block; }
       .homeHead .homeHead__background .site__carouselHead .carousel-indicators {
         margin-bottom: 1.5rem; }
         .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
@@ -724,8 +771,8 @@ body {
     background-color: transparent; }
     .homeHead .homeHead__background {
       width: 100%;
-      min-height: calc(704px);
-      max-height: calc(704px);
+      min-height: calc(512px);
+      max-height: calc(512px);
       background-color: transparent;
       display: flex;
       flex-direction: column;
@@ -742,10 +789,8 @@ body {
           justify-content: flex-start; }
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item .item__container .carousel--image {
             height: calc(600px);
-            /*min-height: calc(560px);
-                            max-height: calc(584px);*/
             width: 100%;
-            background-position: 50% 100%;
+            background-position: 61% 8%;
             background-size: calc(896px);
             background-repeat: no-repeat; }
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(1) .item__container .carousel--image {
@@ -762,85 +807,6 @@ body {
           .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
             background-color: #d61c25; } }
 
-/*@media only screen and (min-width: 300px) and (max-width: 480px){
-    .homeHead{
-        .homeHead__background{
-            .site__carouselHead{
-                .carousel-inner{
-                    .carousel-item{
-                        .item__container .carousel--image{
-                            background-size: contain;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media only screen and (min-width: 481px) and (max-width: 600px){
-    .homeHead{
-        .homeHead__background{
-            width: 100%;
-            .site__carouselHead{
-                .carousel-inner{
-                    .carousel-item{
-                        .item__container .carousel--image{
-                            background-size: 80%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media only screen and (min-width: 601px) and (max-width: 768px){
-    .homeHead{
-        .homeHead__background{
-            width: 100%;
-            .site__carouselHead{
-                .carousel-inner{
-                    .carousel-item{
-                        .item__container .carousel--image{
-                            background-size: 65%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media only screen and (min-width: 769px) and (max-width: 1220px){
-    .homeHead{
-        .homeHead__background{
-            width: 100%;
-            .site__carouselHead{
-                .carousel-inner{
-                    .carousel-item{
-                        .item__container .carousel--image{
-                            background-size: contain
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media only screen and (min-width: 1221px){
-    .homeHead{
-        .homeHead__background{
-            width: 75%;
-            .site__carouselHead{
-                .carousel-inner{
-                    .carousel-item{
-                        .item__container .carousel--image{
-                            background-size: contain;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}*/
 .homeControlPF {
   width: 100%;
   height: auto;
@@ -1372,21 +1338,22 @@ body {
     justify-items: center;
     justify-content: center; }
     .homeControlSquare .homeControlSquare__bacckground {
-      width: calc(744px);
-      height: calc(744px);
+      width: calc(788px);
+      height: calc(788px);
       background-color: transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-items: center;
       justify-content: center;
-      gap: calc(0px); }
+      gap: calc(40px); }
       .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 48% 48%;
         grid-template-rows: 100%;
+        justify-content: space-between;
         position: relative;
         box-shadow: none; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
@@ -1449,8 +1416,8 @@ body {
             justify-content: center;
             position: relative; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image {
-              margin-left: -340px;
-              margin-right: 340px;
+              margin-left: -394px;
+              margin-right: 394px;
               background-color: green;
               grid-area: image;
               background-image: url("../resources/image/controlsquare/square1_desktop.jpg");
@@ -1459,7 +1426,7 @@ body {
               background-repeat: no-repeat;
               border-top-left-radius: 0px;
               border-top-right-radius: 0px;
-              border-radius: 0; }
+              border-radius: calc(8px); }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image--effect {
                 animation: animation__homeControlSquare__UP .35s ease-out;
                 animation-delay: 0.35s;
@@ -1468,8 +1435,8 @@ body {
                 animation-direction: reverse; }
   @keyframes animation__homeControlSquare__UP {
     from {
-      margin-left: -340px;
-      margin-right: 340px; }
+      margin-left: -394px;
+      margin-right: 394px; }
     to {
       margin-left: 0px;
       margin-right: 0px; } }
@@ -1478,8 +1445,8 @@ body {
       margin-left: 0px;
       margin-right: 0px; }
     to {
-      margin-left: -340px;
-      margin-right: 340px; } }
+      margin-left: -394px;
+      margin-right: 394px; } }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info {
               background-color: transparent;
               grid-area: info;
@@ -1576,23 +1543,23 @@ body {
             justify-content: center;
             position: relative; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image {
-              margin-right: -340px;
-              margin-left: 340px;
+              margin-right: -394px;
+              margin-left: 394px;
               background-color: green;
               grid-area: image;
               background-image: url("../resources/image/controlsquare/square2_desktop.jpg");
               background-position: 50%;
               background-size: cover;
               background-repeat: no-repeat;
-              border-radius: 0; }
+              border-radius: calc(8px); }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image--effect {
                 animation: animation__homeControlSquare__DOWN .35s ease-out;
                 animation-delay: 0.35s;
                 animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__DOWN {
     from {
-      margin-right: -340px;
-      margin-left: 340px; }
+      margin-right: -394px;
+      margin-left: 394px; }
     to {
       margin-right: 0px;
       margin-left: 0px; } }
@@ -1758,13 +1725,14 @@ body {
       align-items: center;
       justify-items: center;
       justify-content: center;
-      gap: calc(0px); }
+      gap: calc(40px); }
       .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 48% 48%;
         grid-template-rows: 100%;
+        justify-content: space-between;
         position: relative;
         box-shadow: none; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
@@ -1835,7 +1803,7 @@ body {
               background-position: 50%;
               background-size: cover;
               background-repeat: no-repeat;
-              border-radius: 0; }
+              border-radius: calc(8px); }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image--effect {
                 animation: animation__homeControlSquare__UP .35s ease-out;
                 animation-delay: 0.35s;
@@ -1886,7 +1854,7 @@ body {
                   color: #1a1a1a;
                   font-family: GelionLight;
                   font-weight: 300;
-                  font-size: 16px; }
+                  font-size: calc(20px); }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
                   animation-delay: 1.6s;
@@ -1960,7 +1928,7 @@ body {
               background-position: 50%;
               background-size: cover;
               background-repeat: no-repeat;
-              border-radius: 0; }
+              border-radius: calc(8px); }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image--effect {
                 animation: animation__homeControlSquare__DOWN .35s ease-out;
                 animation-delay: 0.35s;
@@ -2004,7 +1972,7 @@ body {
                   color: #1a1a1a;
                   font-family: GelionLight;
                   font-weight: 300;
-                  font-size: 16px;
+                  font-size: calc(20px);
                   text-align: right; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
@@ -2025,7 +1993,7 @@ body {
                   background-color: #d61c25;
                   color: #ffffff;
                   font-family: GelionLight;
-                  font-size: 16px;
+                  font-size: calc(20px);
                   text-align: center;
                   border-radius: 0px;
                   text-decoration: none;
