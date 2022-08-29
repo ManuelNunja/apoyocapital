@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="modalSite" class="modalSite modalSite__animation_hide">
+        <div class="spinner-border text-danger m-1" role="status">
+            <span class="sr-only"></span>
+        </div>
+        <div class="modalSite_text text-danger fw-bold">
+            <span>Estamos procesando tu solicitud</span><span class="dots"></span>
+        </div>
+    </div>
     <header>
         <div class="siteMenu">
             <div class="siteMenu__background">
@@ -99,7 +107,7 @@
                 <div class="headPage__background">
                     <div class="headPage__title">
                         <h1>
-                            MANTÉN TUS<br>CUENTAS CLARAS
+                            MANTÉN TUS CUENTAS<br>CLARAS
                         </h1>
                     </div>
                     <div class="headPage__text">
@@ -128,9 +136,9 @@
                                 <div class="toolForm__row">
                                     <p>Monto a Cotizar</p>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Monto.." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <input id="inputMontoDocumento" type="text" class="form-control" placeholder="Monto.." aria-label="Recipient's username" aria-describedby="basic-addon2">
                                         <span class="input-group-text" id="basic-addon2">
-                                            <select id="formCalculator_moneda" class="form-select">
+                                            <select id="inputMoneda" class="form-select">
                                                 <option value="1" selected>Soles</option>
                                                 <option value="2">Dolares</option>
                                             </select>
@@ -139,30 +147,34 @@
                                 </div>
                                 <div class="toolForm__row">
                                     <p>Fecha de Pago</p>
-                                    <input class="form-control form-control-lg" type="date" placeholder="Fecha de pago" aria-label=".form-control-lg example">
+                                    <input id="inputFechaPago" class="form-control form-control-lg" type="date" placeholder="Fecha de pago" aria-label=".form-control-lg example">
                                 </div>
                                 <div class="toolForm__row toolForm__row--side">
                                     <div class="toolForm__row__side">
                                         <p>Financiamiento</p>
-                                        <input class="form-control form-control-lg" type="text" placeholder="Tiempo en meses" aria-label=".form-control-lg example">
+                                        <input id="inputFinanciamiento" class="form-control form-control-lg" type="text" placeholder="Tiempo en meses" aria-label=".form-control-lg example" disabled>
                                     </div>
                                     <div class="toolForm__row__side">
                                         <p>Tasa</p>
-                                        <input class="form-control form-control-lg" type="text" placeholder="Tasa" aria-label=".form-control-lg example">
+                                        <input id="inputTasa" class="form-control form-control-lg" type="text" placeholder="Tasa" aria-label=".form-control-lg example" disabled>
                                     </div>
                                 </div>
                                 <div class="toolForm__row">
                                     <p>Empresa</p>
-                                    <input class="form-control form-control-lg" type="text" placeholder="Razon social" aria-label=".form-control-lg example">
+                                    <input id="inputEmpresa" class="form-control form-control-lg" type="text" placeholder="Razon social" aria-label=".form-control-lg example">
                                 </div>
                                 <div class="toolForm__row">
                                     <p>Email</p>
-                                    <input class="form-control form-control-lg" type="email" placeholder="name@example.com">
+                                    <input id="inputEmail" class="form-control form-control-lg" type="email" placeholder="name@example.com">
                                 </div>
                                 <div class="toolForm__row">
                                     <div class="toolForm__row__button">
-                                        <input type="submit" value="Simular" class="buttonSimular">
+                                        <!--<input type="submit" value="Simular" class="buttonSimular">-->
+                                        <button id="btnProcesar" type="button" class="buttonSimular">
+                                            Simular
+                                        </button>
                                     </div>
+                                    
                                 </div>
                             </form>
                         </div>
@@ -325,6 +337,10 @@
 </body>
 </html>
 <script src="js/site.js"></script>
+<script src="js/simulator.js" type="text/javascript"></script>
+<script src="js/FormatDate.js" type="text/javascript"></script>
+<script src="js/Scroll.js" type="text/javascript"></script>
+<script src="js/ControlValidate.js" type="text/javascript"></script>
 <script>
     function readySiteMenu(){
         $('.nav__itemMenu__nivel.child').hide(1)
@@ -368,5 +384,36 @@
         responsiveControl();
         $(window).resize(responsiveControl);
     });
+</script>
+<script>
+    let intervalDots;
+    $(".buttonSimular").on("click", function(){
+        disableScroll()
+        $(".modalSite").toggleClass("modalSite__animation_hide modalSite__animation_show");
+        intervalDots = setInterval(() => {
+            let cantDots = $(".modalSite .modalSite_text .dots").text().length;
+            console.log(cantDots);
+            if(cantDots < 3){
+                $(".modalSite .modalSite_text .dots").text(".".repeat(cantDots + 1));
+            }else{
+                $(".modalSite .modalSite_text .dots").text("");
+            }
+        }, 500);
+        (async () => {
+            let exito = await CalculateFinancing1();
+            if(exito){
+                console.log("Simulacion procesada correctamente !!!");
+                $(".modalSite").toggleClass("modalSite__animation_hide");
+                setTimeout(() => {
+                    $(".modalSite").toggleClass("modalSite__animation_show");
+                }, 500);
+                enableScroll();
+            }else{
+                console.log("Error !!!")
+            }
+            clearInterval(intervalDots);
+        })();
+    });
+    
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
