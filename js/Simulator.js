@@ -16,8 +16,8 @@ let objDate = 'error';
 const getDays = (vFechaPago) => {
     currentDate = new Date().getTime();
     objDate = FormatDate(vFechaPago);
-    days = (objDate.getDiference + 2);
-    console.log(vFechaPago)
+    days = (objDate.getDiference + 1);
+    console.log(days)
 }
 
 let desembolso = -1;
