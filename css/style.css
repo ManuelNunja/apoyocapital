@@ -626,6 +626,91 @@ body {
     margin-top: 80px;
     opacity: 1; } }
 
+.modalSite--response {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999;
+  position: fixed;
+  background-color: #f5f5f7d3;
+  display: none;
+  opacity: 0;
+  text-align: center; }
+  .modalSite--response .responseInfo {
+    background-color: #f5e9e9;
+    width: calc(448px);
+    height: calc(640px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border-radius: calc(16px);
+    gap: calc(24px); }
+    .modalSite--response .responseInfo .responseInfo_background {
+      width: 88%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      gap: calc(24px); }
+      .modalSite--response .responseInfo .responseInfo_background .row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: calc(20px); }
+        .modalSite--response .responseInfo .responseInfo_background .row:nth-child(1) {
+          grid-template-columns: 2fr; }
+        .modalSite--response .responseInfo .responseInfo_background .row:nth-child(9) {
+          grid-template-columns: 2fr; }
+        .modalSite--response .responseInfo .responseInfo_background .row:nth-child(10) {
+          grid-template-columns: 2fr; }
+        .modalSite--response .responseInfo .responseInfo_background .row:last-child {
+          grid-template-columns: 2fr; }
+        .modalSite--response .responseInfo .responseInfo_background .row .title {
+          text-align: center;
+          color: #d61c25;
+          font-family: SFProHeavy;
+          font-size: calc(28px); }
+        .modalSite--response .responseInfo .responseInfo_background .row .label {
+          padding-left: calc(28px);
+          text-align: left;
+          font-weight: bold; }
+        .modalSite--response .responseInfo .responseInfo_background .row .data {
+          padding-left: calc(36px);
+          text-align: left; }
+        .modalSite--response .responseInfo .responseInfo_background .row .message {
+          text-align: center;
+          font-family: GelionLight;
+          font-weight: bold;
+          color: #d61c25; }
+        .modalSite--response .responseInfo .responseInfo_background .row .button {
+          width: 100%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          justify-content: center;
+          overflow: hidden;
+          max-height: 32px; }
+          .modalSite--response .responseInfo .responseInfo_background .row .button .linkButton {
+            width: 150px;
+            height: 32px;
+            background-color: #d61c25;
+            color: #ffffff;
+            font-family: GelionLight;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 0px;
+            text-decoration: none;
+            font-weight: 700;
+            padding-top: 2px; }
+
 .modalSite__animation_show {
   display: flex;
   animation: animation__modalSite_show 0.35s ease-in-out;
@@ -761,10 +846,10 @@ body {
         margin-left: calc(0px);
         width: 88%; }
         .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title {
-          font-size: calc(40px);
+          font-size: calc(32px);
           text-align: center; }
         .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .text {
-          font-size: calc(16px);
+          font-size: calc(12px);
           text-align: center; }
         .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button {
           justify-items: center;
@@ -779,12 +864,12 @@ body {
       .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText {
         margin-top: calc(24px);
         margin-left: calc(0px);
-        width: 88%; }
+        width: 96%; }
         .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title {
-          font-size: calc(48px);
+          font-size: calc(32px);
           text-align: center; }
         .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .text {
-          font-size: calc(24px);
+          font-size: calc(16px);
           text-align: center; }
         .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button {
           justify-items: center;

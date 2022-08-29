@@ -2,7 +2,8 @@ document.getElementById("inputFinanciamiento").value = "100%";
 document.getElementById("inputTasa").value = "2%";
 
 var inputMoneda = document.getElementById("inputMoneda");
-var inputEmpresa = document.getElementById("inputEmpresa"); 
+let inputEmpresa = document.getElementById("inputEmpresa").value;
+var inputContacto = document.getElementById("inputContacto"); 
 var inputEmail = document.getElementById("inputEmail");
 
 var vMoneda = inputMoneda;
@@ -81,10 +82,27 @@ async function CalculateFinancing1() {
             formatSymbol();
             exito = true;
             let modal = document.getElementById("modalSite");            
+            
+            let monto = new Intl.NumberFormat('es-MX').format(inputMontoDocumento);
+            let empresa = document.getElementById("inputEmpresa").value;
+            let contacto = document.getElementById("inputEmail").value;
+            document.getElementById('labelMonto').innerHTML = parseInt(inputMontoDocumento).toFixed(2);
+            document.getElementById('labelFechaPago').innerHTML = vFechaPago;
+            document.getElementById('labelTasa').innerHTML = "2%";
+            document.getElementById('labelEmpresa').innerHTML = empresa;
+            document.getElementById('labelContacto').innerHTML = contacto;
+            document.getElementById('labelAdelanto').innerHTML = desembolsoFormat;
+            document.getElementById('labelInteres').innerHTML = "PEN " + parseFloat(descuento).toFixed(2);
+
+            document.getElementById("inputMontoDocumento").value = "";
+            document.getElementById("inputFechaPago").value = "";
+            document.getElementById("inputEmpresa").value = "";
+            document.getElementById("inputEmail").value = "";
+
             resolve(exito);
         }, 3000)
     });
-  
+
     let result = await promise;
     return result;
   }
