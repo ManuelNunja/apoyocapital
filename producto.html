@@ -19,6 +19,51 @@
             <span>Estamos procesando tu solicitud</span><span class="dots"></span>
         </div>
     </div>
+    <div id="modalSite_response" class="modalSite--response modalSite__animation_hide">
+        <div class="responseInfo">
+            <div class="responseInfo_background">
+                <div class="row">
+                    <div class="title">Simulacion finalizada</div>
+                </div>
+                <div class="row">
+                    <div class="label">Monto:</div>
+                    <div class="data"><label id="labelMonto"></label></div>
+                </div>
+                <div class="row">
+                    <div class="label">Fecha de Pago:</div>
+                    <div class="data"><label id="labelFechaPago"></label></div>
+                </div>
+                <div class="row">
+                    <div class="label">Tasa Referencial:</div>
+                    <div class="data"><label id="labelTasa">2%</label></div>
+                </div>
+                <div class="row">
+                    <div class="label">Empresa:</div>
+                    <div class="data"><label id="labelEmpresa"></label></div>
+                </div>
+                <div class="row">
+                    <div class="label">Telefono de Contacto:</div>
+                    <div class="data"><label id="labelContacto"></label></div>
+                </div>
+                <div class="row">
+                    <div class="label">Adelanto:</div>
+                    <div class="data"><label id="labelAdelanto"></label></div>
+                </div>
+                <div class="row">
+                    <div class="label">Intereses:</div>
+                    <div class="data"><label id="labelInteres"></label></div>
+                </div>
+                <div class="row">
+                    <div class="message">Uno de nuestros ejecutivos comerciales se contactará con usted</div>
+                </div>
+                <div class="row">
+                    <div class="button">
+                        <a id="linkcerrarmessage" class="linkButton" href="#">Aceptar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="siteMenu">
             <div class="siteMenu__background">
@@ -164,8 +209,8 @@
                                     <input id="inputEmpresa" class="form-control form-control-lg" type="text" placeholder="Razon social" aria-label=".form-control-lg example">
                                 </div>
                                 <div class="toolForm__row">
-                                    <p>Email</p>
-                                    <input id="inputEmail" class="form-control form-control-lg" type="email" placeholder="name@example.com">
+                                    <p>Telefono de Contacto</p>
+                                    <input id="inputEmail" class="form-control form-control-lg" type="number" placeholder="000 000 000">
                                 </div>
                                 <div class="toolForm__row">
                                     <div class="toolForm__row__button">
@@ -408,12 +453,22 @@
                     $(".modalSite").toggleClass("modalSite__animation_show");
                 }, 500);
                 enableScroll();
+                $(".modalSite--response").toggleClass("modalSite__animation_hide");
+                setTimeout(() => {
+                    $(".modalSite--response").toggleClass("modalSite__animation_show");
+                }, 500);
             }else{
                 console.log("Error !!!")
             }
             clearInterval(intervalDots);
         })();
     });
-    
+    $("#linkcerrarmessage").on("click", function(){
+        $(".modalSite--response").toggleClass("modalSite__animation_show");
+        setTimeout(() => {
+            $(".modalSite--response").toggleClass("modalSite__animation_hide");
+        }, 500);
+        return false;
+    })
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
