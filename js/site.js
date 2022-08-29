@@ -23,7 +23,7 @@ function createKeyClass(){
         control[i].classList.add(code)
     }
     removeOnClick(code);
-    console.log(code);
+    //console.log(code);
 }
 function responsiveControl(){
     let vWidth = window.innerWidth;
