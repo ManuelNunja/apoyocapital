@@ -177,14 +177,15 @@
                     </div>
                     <div class="sideTool">
                         <div class="sideTool__background">
-                            <form id="formCalculator" class="toolForm">
+                            <form id="formCalculator" class="toolForm was-validated">
                                 <div class="toolForm__row">
                                     <p>Monto a Cotizar</p>
                                     <div class="input-group">
-                                        <input id="inputMontoDocumento" type="text" class="form-control" placeholder="Monto.." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <input id="inputMontoDocumento" type="number" class="form-control" placeholder="Monto.." aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                                         <span class="input-group-text" id="basic-addon2">
-                                            <select id="inputMoneda" class="form-select">
-                                                <option value="1" selected>Soles</option>
+                                            <select id="inputMoneda" class="form-select" required>
+                                                <option value="">Moneda ?</option>
+                                                <option value="1">Soles</option>
                                                 <option value="2">Dolares</option>
                                             </select>
                                         </span>
@@ -192,7 +193,7 @@
                                 </div>
                                 <div class="toolForm__row">
                                     <p>Fecha de Pago</p>
-                                    <input id="inputFechaPago" class="form-control form-control-lg" type="date" placeholder="Fecha de pago" aria-label=".form-control-lg example">
+                                    <input id="inputFechaPago" class="form-control form-control-lg" type="date" placeholder="Fecha de pago" aria-label=".form-control-lg example" required>
                                 </div>
                                 <div class="toolForm__row toolForm__row--side">
                                     <div class="toolForm__row__side">
@@ -206,15 +207,14 @@
                                 </div>
                                 <div class="toolForm__row">
                                     <p>Empresa</p>
-                                    <input id="inputEmpresa" class="form-control form-control-lg" type="text" placeholder="Razon social" aria-label=".form-control-lg example">
+                                    <input id="inputEmpresa" class="form-control form-control-lg" type="text" placeholder="Razon social" aria-label=".form-control-lg example" required>
                                 </div>
                                 <div class="toolForm__row">
                                     <p>Telefono de Contacto</p>
-                                    <input id="inputEmail" class="form-control form-control-lg" type="number" placeholder="000 000 000">
+                                    <input id="inputEmail" class="form-control form-control-lg" type="number" placeholder="Phone number" required>
                                 </div>
                                 <div class="toolForm__row">
                                     <div class="toolForm__row__button">
-                                        <!--<input type="submit" value="Simular" class="buttonSimular">-->
                                         <button id="btnProcesar" type="button" class="buttonSimular">
                                             Simular
                                         </button>
@@ -227,6 +227,7 @@
                 </div>
             </div>
             <div class="homeControlSquare">
+                <div class="intersectionObserver__homeControlSquare"></div>
                 <div class="homeControlSquare__bacckground homeControlSquare__bacckground--big">
                     <div class="homeControlSquare_row top">
                         <div class="row__square float"></div>
@@ -284,7 +285,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="intersectionObserver"></div>
             </div>
             <div class="productoControlFinanciamos">
                 <div class="productoControlFinanciamos__background">
@@ -309,9 +309,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="intersectionObserverProducto"></div>
+                <div class="intersectionObserver__productoControlFinanciamos"></div>
             </div>
-
         </div>
     </div>
     <footer>
@@ -386,6 +385,9 @@
 <script src="js/FormatDate.js" type="text/javascript"></script>
 <script src="js/Scroll.js" type="text/javascript"></script>
 <script src="js/ControlValidate.js" type="text/javascript"></script>
+<script src="js/ControlAlert.js"></script>
+<script src="js/ObserverEffect.js"></script>
+
 <script>
     function readySiteMenu(){
         $('.nav__itemMenu__nivel.child').hide(1)
@@ -433,35 +435,39 @@
 <script>
     let intervalDots;
     $(".buttonSimular").on("click", function(){
-        disableScroll()
-        $(".modalSite").toggleClass("modalSite__animation_hide modalSite__animation_show");
-        intervalDots = setInterval(() => {
-            let cantDots = $(".modalSite .modalSite_text .dots").text().length;
-            console.log(cantDots);
-            if(cantDots < 3){
-                $(".modalSite .modalSite_text .dots").text(".".repeat(cantDots + 1));
-            }else{
-                $(".modalSite .modalSite_text .dots").text("");
-            }
-        }, 500);
-        (async () => {
-            let exito = await CalculateFinancing1();
-            if(exito){
-                console.log("Simulacion procesada correctamente !!!");
-                $(".modalSite").toggleClass("modalSite__animation_hide");
-                setTimeout(() => {
-                    $(".modalSite").toggleClass("modalSite__animation_show");
-                }, 500);
-                enableScroll();
-                $(".modalSite--response").toggleClass("modalSite__animation_hide");
-                setTimeout(() => {
-                    $(".modalSite--response").toggleClass("modalSite__animation_show");
-                }, 500);
-            }else{
-                console.log("Error !!!")
-            }
-            clearInterval(intervalDots);
-        })();
+        let exito = false;
+        exito = validateControlCalculator();
+        if(exito){
+            disableScroll()
+            $(".modalSite").toggleClass("modalSite__animation_hide modalSite__animation_show");
+            intervalDots = setInterval(() => {
+                let cantDots = $(".modalSite .modalSite_text .dots").text().length;
+                console.log(cantDots);
+                if(cantDots < 3){
+                    $(".modalSite .modalSite_text .dots").text(".".repeat(cantDots + 1));
+                }else{
+                    $(".modalSite .modalSite_text .dots").text("");
+                }
+            }, 500);
+            (async () => {
+                let exito = await CalculateFinancing1();
+                if(exito){
+                    console.log("Simulacion procesada correctamente !!!");
+                    $(".modalSite").toggleClass("modalSite__animation_hide");
+                    setTimeout(() => {
+                        $(".modalSite").toggleClass("modalSite__animation_show");
+                    }, 500);
+                    enableScroll();
+                    $(".modalSite--response").toggleClass("modalSite__animation_hide");
+                    setTimeout(() => {
+                        $(".modalSite--response").toggleClass("modalSite__animation_show");
+                    }, 500);
+                }else{
+                    console.log("Error !!!")
+                }
+                clearInterval(intervalDots);
+            })();
+        }
     });
     $("#linkcerrarmessage").on("click", function(){
         $(".modalSite--response").toggleClass("modalSite__animation_show");

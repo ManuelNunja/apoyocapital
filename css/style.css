@@ -1,4 +1,5 @@
 /* MODAL LOADING */
+/* COLOR ALERT - MESSAGE*/
 @font-face {
   font-family: roboto;
   src: url(../resources/font/Roboto-Regular.ttf) format("truetype");
@@ -587,6 +588,72 @@ body {
                     text-decoration: none;
                     color: #828282; } }
 
+.siteAlert {
+  width: calc(400px);
+  height: calc(80px);
+  background-color: transparent;
+  position: fixed;
+  bottom: calc(8px);
+  right: calc(-80px);
+  opacity: 1;
+  z-index: 9999999;
+  padding: 8px; }
+  .siteAlert .siteAlert__background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: transparent; }
+    .siteAlert .siteAlert__background .alert__message {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border-radius: calc(8px);
+      box-shadow: 8px 8px 8px 0px rgba(88, 88, 88, 0.5); }
+      .siteAlert .siteAlert__background .alert__message--success {
+        background-color: #198754; }
+      .siteAlert .siteAlert__background .alert__message--danger {
+        background-color: #dc3545; }
+      .siteAlert .siteAlert__background .alert__message--warning {
+        background-color: #ffc107; }
+      .siteAlert .siteAlert__background .alert__message .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        background-color: transparent; }
+        .siteAlert .siteAlert__background .alert__message .text p {
+          text-align: center;
+          color: #ffffff;
+          font-family: GelionLight;
+          font-weight: 500;
+          font-size: calc(17.6px);
+          padding-top: calc(12px); }
+  .siteAlert--show {
+    animation: animation__siteAlert__show 3.5s ease-in-out;
+    animation-fill-mode: forwards; }
+
+@keyframes animation__siteAlert__show {
+  0% {
+    opacity: 0;
+    right: calc(-80px); }
+  3.5% {
+    opacity: 1;
+    right: calc(8px); }
+  96.5% {
+    opacity: 1;
+    right: calc(8px); }
+  100% {
+    opacity: 0;
+    right: calc(-400px); } }
+
 /*MODAL LOADING*/
 .modalSite {
   margin: 0;
@@ -642,8 +709,8 @@ body {
   text-align: center; }
   .modalSite--response .responseInfo {
     background-color: #f5e9e9;
-    width: calc(448px);
-    height: calc(640px);
+    width: calc(384px);
+    height: calc(576px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -676,19 +743,22 @@ body {
           text-align: center;
           color: #d61c25;
           font-family: SFProHeavy;
-          font-size: calc(28px); }
+          font-size: calc(20px); }
         .modalSite--response .responseInfo .responseInfo_background .row .label {
           padding-left: calc(28px);
           text-align: left;
-          font-weight: bold; }
+          font-weight: bold;
+          font-size: calc(16px); }
         .modalSite--response .responseInfo .responseInfo_background .row .data {
           padding-left: calc(36px);
-          text-align: left; }
+          text-align: left;
+          font-size: calc(16px); }
         .modalSite--response .responseInfo .responseInfo_background .row .message {
           text-align: center;
           font-family: GelionLight;
           font-weight: bold;
-          color: #d61c25; }
+          color: #d61c25;
+          font-size: calc(16px); }
         .modalSite--response .responseInfo .responseInfo_background .row .button {
           width: 100%;
           height: auto;
@@ -704,7 +774,7 @@ body {
             background-color: #d61c25;
             color: #ffffff;
             font-family: GelionLight;
-            font-size: 16px;
+            font-size: calc(16px);
             text-align: center;
             border-radius: 0px;
             text-decoration: none;
@@ -1866,27 +1936,27 @@ body {
               opacity: 0; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(1) {
               animation: animnation__homeControlSquare__LI 0.35s;
-              animation-delay: 1.6s;
+              animation-delay: 0.6s;
               animation-fill-mode: forwards; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(2) {
               animation: animnation__homeControlSquare__LI 0.35s;
-              animation-delay: 1.8s;
+              animation-delay: 0.8s;
               animation-fill-mode: forwards; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(3) {
               animation: animnation__homeControlSquare__LI 0.35s;
-              animation-delay: 2s;
+              animation-delay: 1s;
               animation-fill-mode: forwards; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(4) {
               animation: animnation__homeControlSquare__LI 0.35s;
-              animation-delay: 2.2s;
+              animation-delay: 1.2s;
               animation-fill-mode: forwards; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(5) {
               animation: animnation__homeControlSquare__LI 0.35s;
-              animation-delay: 2.4s;
+              animation-delay: 1.4s;
               animation-fill-mode: forwards; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list ul .li--effect:nth-child(6) {
               animation: animnation__homeControlSquare__LI 0.35s;
-              animation-delay: 2.6s;
+              animation-delay: 1.6s;
               animation-fill-mode: forwards; }
   @keyframes animnation__homeControlSquare__LI {
     from {
@@ -1959,7 +2029,7 @@ body {
                   font-size: 32px; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .title--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
-                  animation-delay: 1.4s;
+                  animation-delay: 0.4s;
                   animation-fill-mode: forwards; }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text {
                 width: 100%;
@@ -1972,7 +2042,7 @@ body {
                   font-size: calc(20px); }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
-                  animation-delay: 1.6s;
+                  animation-delay: 0.6s;
                   animation-fill-mode: forwards; }
   @keyframes animnation__homeControlSquare__TEXT {
     from {
@@ -2005,7 +2075,7 @@ body {
                     background-color: #d14b52; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton--effect {
                     animation: animation__homeControlSquare__BUTTON 0.2s ease-out;
-                    animation-delay: 1.8s;
+                    animation-delay: 0.8s;
                     animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__BUTTON {
     from {
@@ -2014,7 +2084,7 @@ body {
       margin-top: 0px; } }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.float {
               position: absolute;
-              right: 70px;
+              right: 96px;
               top: 70px;
               background-color: transparent;
               width: 200px;
@@ -2077,7 +2147,7 @@ body {
                   text-align: right; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
-                  animation-delay: 1.4s;
+                  animation-delay: 0.4s;
                   animation-fill-mode: forwards; }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text {
                 width: 100%;
@@ -2091,7 +2161,7 @@ body {
                   text-align: right; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
-                  animation-delay: 1.6s;
+                  animation-delay: 0.6s;
                   animation-fill-mode: forwards; }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button {
                 width: 100%;
@@ -2119,7 +2189,7 @@ body {
                     background-color: #d14b52; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton--effect {
                     animation: animation__homeControlSquare__BUTTON 0.2s ease-out;
-                    animation-delay: 1.8s;
+                    animation-delay: 0.8s;
                     animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__BUTTON {
     from {
@@ -2128,7 +2198,7 @@ body {
       margin-top: 0px; } }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.float {
               position: absolute;
-              left: 70px;
+              left: 96px;
               top: 70px;
               background-color: transparent;
               width: 200px;
@@ -2167,6 +2237,8 @@ body {
             font-size: calc(17.6px); }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
           padding-left: 50px; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.float {
+          right: 144px; }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
           height: 100%;
           background-image: url("../resources/image/controlsquare/big_square1_desktop.jpg"); }
@@ -2196,6 +2268,8 @@ body {
           padding-right: 30px; }
           .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list ul li {
             font-size: calc(17.6px); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.float {
+          left: 144px; }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
           height: 100%;
           background-image: url("../resources/image/controlsquare/big_square2_desktop.jpg"); } }
@@ -2242,6 +2316,7 @@ body {
       justify-content: center;
       gap: calc(16px); }
       .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column {
+        max-height: calc(72px);
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -2271,6 +2346,14 @@ body {
             background-position: 50%;
             background-size: 70%;
             background-repeat: no-repeat; }
+
+@keyframes animation__homeControlIcaGroup__item {
+  from {
+    margin-top: calc(72px);
+    opacity: 0; }
+  to {
+    margin-top: calc(0px);
+    opacity: 1; } }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .homeControlIcaGroup .homeControlIcaGroup__background {
@@ -2311,7 +2394,22 @@ body {
         grid-template-areas: "col1 col2"; }
         .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column {
           flex-direction: row;
-          flex-wrap: nowrap; } }
+          flex-wrap: nowrap; }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl {
+            margin-top: calc(72px);
+            opacity: 0; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl--effect--col1:nth-child(1) {
+              animation: animation__homeControlIcaGroup__item 1s ease-in-out;
+              animation-fill-mode: forwards; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl--effect--col1:nth-child(2) {
+              animation: animation__homeControlIcaGroup__item 0.75s ease-in-out;
+              animation-fill-mode: forwards; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl--effect--col2:nth-child(1) {
+              animation: animation__homeControlIcaGroup__item 0.9s ease-in-out;
+              animation-fill-mode: forwards; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl--effect--col2:nth-child(2) {
+              animation: animation__homeControlIcaGroup__item 0.55s ease-in-out;
+              animation-fill-mode: forwards; } }
 
 /*HEAD PAGE TODAS*/
 @media only screen and (min-width: 300px) and (max-width: 768px) {
