@@ -1,49 +1,39 @@
-//desembolsoFormat = new Intl.NumberFormat('es-MX').format(desembolso.toFixed(2));
-
-/*const input = document.getElementById('inputMontoDocumento');
-
-
-
-input.addEventListener('focusout', (event) => {
-    let xValue = input.value;
-    //valueFormat = new Intl.NumberFormat('es-MX').format(xValue);
-    input.value = xValue;
-});
-
-input.addEventListener('keypress', logKey);
-function logKey(e) {
-    let value = `${e.which}`;
-    if(value >= 48 && value <= 57){
-        return true;
-    }else{
-        return false;
-    }
-    //alert(`${e.which}`);
-  }*/
-
-
-
 function validateControlCalculator(){
     exito = true;
-    let controlMonto = document.getElementById("inputMontoDocumento").value = "";
-    let controlFecha = document.getElementById("inputFechaPago").value = "";
-    let controlEmpresa = document.getElementById("inputEmpresa").value = "";
-    let controlEmail = document.getElementById("inputEmail").value = "";
-    if(controlMonto == "" || parseInt(controlMonto) == 0 ) {
+    let controlMonto = document.getElementById("inputMontoDocumento");
+    let controlMoneda = document.getElementById("inputMoneda");
+    let controlFecha = document.getElementById("inputFechaPago");
+    let controlEmpresa = document.getElementById("inputEmpresa");
+    let controlEmail = document.getElementById("inputEmail");
+    if(controlMonto.value == "" || parseInt(controlMonto.value) == 0 ) {
         exito = false;
-        alert("Debe ingresar un monto");
-    }   
-    if(controlFecha == "") {
+        AlertShow(1,"Debe ingresar un monto");
+        controlMonto.focus();
+        return exito;
+    }
+    if(controlMoneda.value == "" || parseInt(controlMoneda.value) == 0 ) {
         exito = false;
-        alert("Debe ingresar una fecha valida")
-    }   
-    if(controlEmpresa == "") {
+        AlertShow(1,"Debe seleccionar una moneda");
+        controlMoneda.focus();
+        return exito;
+    }      
+    if(controlFecha.value == "") {
         exito = false;
-        alert("Debe ingresar una razon social")
+        AlertShow(1,"Debe ingresar una fecha de pago");
+        controlFecha.focus();
+        return exito;
     }   
-    if(controlEmail == "") {
+    if(controlEmpresa.value == "") {
         exito = false;
-        alert("Debe ingresar un medio de contacto")
+        AlertShow(1,"Debe ingresar una razon social");
+        controlEmpresa.focus();
+        return exito;
     }   
+    if(controlEmail.value == "") {
+        exito = false;
+        AlertShow(1,"Debe ingresar un medio de contacto");
+        controlEmail.focus();
+        return exito;
+    }
+    return exito;
 }
-

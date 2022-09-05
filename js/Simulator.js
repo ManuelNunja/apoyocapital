@@ -95,6 +95,7 @@ async function CalculateFinancing1() {
             document.getElementById('labelInteres').innerHTML = "PEN " + parseFloat(descuento).toFixed(2);
 
             document.getElementById("inputMontoDocumento").value = "";
+            document.getElementById("inputMoneda").value = "";
             document.getElementById("inputFechaPago").value = "";
             document.getElementById("inputEmpresa").value = "";
             document.getElementById("inputEmail").value = "";
