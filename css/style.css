@@ -854,22 +854,47 @@ body {
             height: auto;
             display: flex;
             align-items: center;
-            justify-items: flex-start;
+            justify-items: center;
             justify-content: flex-start;
-            overflow: hidden;
-            max-height: 32px; }
+            overflow: hidden; }
             .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton {
-              width: calc(192px);
-              height: 32px;
+              width: calc(272px);
+              height: calc(36px);
               background-color: #d61c25;
               color: #ffffff;
               font-family: GelionLight;
-              font-size: 16px;
-              text-align: center;
-              border-radius: 0px;
+              font-size: calc(20px);
               text-decoration: none;
               font-weight: 700;
-              padding-top: 2px; }
+              padding-top: 2px;
+              display: grid;
+              grid-template-columns: 20% 80%;
+              border-radius: 8px; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton p {
+                text-align: left; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton div {
+                text-align: center; }
+                .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton div #svg__check {
+                  width: 20px; }
+                  .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton div #svg__check g .check {
+                    fill-opacity: 0;
+                    stroke: #fff;
+                    stroke-width: calc(16px);
+                    stroke-dashoffset: 0;
+                    stroke-dasharray: 2000;
+                    animation: animation__button 3s ease-in-out infinite; }
+
+@keyframes animation__button {
+  0% {
+    stroke-dashoffset: 2000; }
+  35% {
+    stroke-dashoffset: 0; }
+  45% {
+    stroke-dashoffset: 0; }
+  55% {
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 2000; } }
       .homeHead .homeHead__background .site__carouselHead .carousel-inner {
         height: 100%;
         display: flex;
@@ -1058,13 +1083,12 @@ body {
           justify-items: center;
           justify-content: center;
           border-radius: 8px;
-          box-shadow: 2px 8px 10px #828282;
           padding: calc(12px); }
           .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
             width: 100%;
             height: 35%;
             background-color: transparent;
-            background-position: 50%;
+            background-position: 50% 50%;
             background-repeat: no-repeat; }
           .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
             margin: 0;
@@ -1164,13 +1188,11 @@ body {
             align-items: center;
             justify-items: center;
             justify-content: center;
-            border-radius: 8px;
-            box-shadow: 2px 8px 10px #828282; }
+            border-radius: 8px; }
             .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
               width: 100%;
               height: 40%;
               background-color: transparent;
-              background-position: 50%;
               background-repeat: no-repeat; }
             .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
               margin: 0;
@@ -1270,13 +1292,11 @@ body {
             align-items: center;
             justify-items: center;
             justify-content: center;
-            border-radius: 8px;
-            box-shadow: 2px 8px 10px #828282; }
+            border-radius: 8px; }
             .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
               width: 100%;
               height: 40%;
               background-color: transparent;
-              background-position: 50%;
               background-repeat: no-repeat; }
             .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .title {
               margin: 0;
@@ -1403,12 +1423,10 @@ body {
             max-height: 32px;
             padding-left: 0px; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton {
-              width: 150px;
-              height: 32px;
               background-color: #d61c25;
               color: #ffffff;
               font-family: GelionLight;
-              font-size: 16px;
+              font-size: calc(20px);
               text-align: center;
               border-radius: 0px;
               text-decoration: none;
@@ -1464,19 +1482,45 @@ body {
             justify-items: flex-start;
             justify-content: flex-start; }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton {
-              width: 150px;
-              height: 32px;
+              width: calc(176px);
+              height: calc(36px);
               background-color: #d61c25;
               color: #ffffff;
               font-family: GelionLight;
-              font-size: 16px;
+              font-size: calc(20px);
               text-align: center;
               border-radius: 8px;
               text-decoration: none;
               font-weight: 700;
-              padding-top: 2px; }
+              padding-top: 2px;
+              display: grid;
+              grid-template-columns: 20% 80%;
+              border-radius: 8px; }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
                 background-color: #d14b52; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton p {
+                text-align: center; }
+              .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton div #svg__check1 {
+                width: 20px; }
+                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton div #svg__check1 g .check {
+                  fill-opacity: 0;
+                  stroke: #fff;
+                  stroke-width: calc(16px);
+                  stroke-dashoffset: 0;
+                  stroke-dasharray: 2000;
+                  animation: animation__button 3s ease-in-out infinite; }
+
+@keyframes animation__button {
+  0% {
+    stroke-dashoffset: 2000; }
+  35% {
+    stroke-dashoffset: 0; }
+  45% {
+    stroke-dashoffset: 0; }
+  55% {
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 2000; } }
     .homeControlSquare .homeControlSquare__bacckground--big {
       padding-top: calc(16px);
       padding-bottom: calc(16px);
@@ -1493,6 +1537,36 @@ body {
             font-size: 12px; }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
           padding-left: 0px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton {
+            width: calc(176px);
+            height: calc(36px);
+            font-size: calc(20px);
+            display: grid;
+            grid-template-columns: 20% 80%;
+            border-radius: 8px; }
+            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton p {
+              text-align: center; }
+            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton div #svg__check1 {
+              width: 20px; }
+              .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton div #svg__check1 g .check {
+                fill-opacity: 0;
+                stroke: #fff;
+                stroke-width: calc(16px);
+                stroke-dashoffset: 0;
+                stroke-dasharray: 2000;
+                animation: animation__button 3s ease-in-out infinite; }
+
+@keyframes animation__button {
+  0% {
+    stroke-dashoffset: 2000; }
+  35% {
+    stroke-dashoffset: 0; }
+  45% {
+    stroke-dashoffset: 0; }
+  55% {
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 2000; } }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .text {
           font-size: 12px; }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
@@ -1682,18 +1756,14 @@ body {
                 overflow: hidden;
                 max-height: 32px; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton {
-                  width: 150px;
-                  height: 32px;
                   background-color: #d61c25;
                   color: #ffffff;
                   font-family: GelionLight;
-                  font-size: 16px;
                   text-align: center;
-                  border-radius: 0px;
                   text-decoration: none;
                   font-weight: 700;
                   padding-top: 2px;
-                  margin-top: 64px; }
+                  margin-top: 74px; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton:hover {
                     background-color: #d14b52; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton--effect {
@@ -1702,7 +1772,7 @@ body {
                     animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__BUTTON {
     from {
-      margin-top: 64px; }
+      margin-top: 74px; }
     to {
       margin-top: 0px; } }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.float {
@@ -1796,18 +1866,16 @@ body {
                 overflow: hidden;
                 max-height: 32px; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton {
-                  width: 150px;
-                  height: 32px;
                   background-color: #d61c25;
                   color: #ffffff;
                   font-family: GelionLight;
-                  font-size: 16px;
                   text-align: center;
-                  border-radius: 0px;
                   text-decoration: none;
                   font-weight: 700;
                   padding-top: 2px;
-                  margin-top: 64px; }
+                  margin-top: 74px;
+                  display: grid;
+                  grid-template-columns: 1fr 5fr; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
                     background-color: #d14b52; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton--effect {
@@ -1816,7 +1884,7 @@ body {
                     animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__BUTTON {
     from {
-      margin-top: 64px; }
+      margin-top: 74px; }
     to {
       margin-top: 0px; } }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.float {
@@ -2059,18 +2127,14 @@ body {
                 overflow: hidden;
                 max-height: 32px; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton {
-                  width: 150px;
-                  height: 32px;
                   background-color: #d61c25;
                   color: #ffffff;
                   font-family: GelionLight;
-                  font-size: 16px;
                   text-align: center;
-                  border-radius: 0px;
                   text-decoration: none;
                   font-weight: 700;
                   padding-top: 2px;
-                  margin-top: 64px; }
+                  margin-top: 74px; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton:hover {
                     background-color: #d14b52; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton--effect {
@@ -2079,7 +2143,7 @@ body {
                     animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__BUTTON {
     from {
-      margin-top: 64px; }
+      margin-top: 74px; }
     to {
       margin-top: 0px; } }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.float {
@@ -2170,21 +2234,16 @@ body {
                 align-items: center;
                 justify-items: flex-end;
                 justify-content: flex-end;
-                overflow: hidden;
-                max-height: 32px; }
+                overflow: hidden; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton {
-                  width: 150px;
-                  height: 32px;
                   background-color: #d61c25;
                   color: #ffffff;
                   font-family: GelionLight;
-                  font-size: calc(20px);
                   text-align: center;
-                  border-radius: 0px;
                   text-decoration: none;
                   font-weight: 700;
                   padding-top: 2px;
-                  margin-top: 64px; }
+                  margin-top: 74px; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
                     background-color: #d14b52; }
                   .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton--effect {
@@ -2193,7 +2252,7 @@ body {
                     animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__BUTTON {
     from {
-      margin-top: 64px; }
+      margin-top: 74px; }
     to {
       margin-top: 0px; } }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.float {
@@ -2664,14 +2723,38 @@ body {
               display: flex;
               align-items: center;
               justify-items: center;
-              justify-content: center; }
+              justify-content: center;
+              position: relative; }
               .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button .buttonSimular {
-                width: 150px;
-                height: 32px;
+                width: calc(144px);
+                height: calc(32px);
                 color: #ffffff;
                 background-color: #d61c25;
-                border: none;
-                border-radius: 8px; }
+                border-radius: 8px;
+                z-index: 1;
+                border: solid 1px #f5e9e9 !important; }
+              .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row .toolForm__row__button .float {
+                position: absolute;
+                background-color: #d14b52;
+                width: calc(160px);
+                height: calc(32px);
+                z-index: 0;
+                border-radius: 8px;
+                animation: animation__call_to_action 1s ease-in-out infinite; }
+
+@keyframes animation__call_to_action {
+  0% {
+    width: calc(152px);
+    height: calc(32px);
+    opacity: 0; }
+  50% {
+    width: calc(160px);
+    height: calc(40px);
+    opacity: 1; }
+  100% {
+    width: calc(164px);
+    height: calc(48px);
+    opacity: 0; } }
             .controlCalculator .controlCalculator__background .sideTool .sideTool__background .toolForm .toolForm__row--side {
               width: 85%;
               display: flex;
@@ -3693,9 +3776,9 @@ body {
     opacity: 0;
     display: none; } }
         .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--nosotros .background .head .backFloat {
-          background-image: url("../resources/image/head_nosotros/nosotros_desktop.jpg"); }
+          background-image: url("../resources/image/head_nosotros/new/nosotros_desktop.jpg"); }
         .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .image, .nosotrosControlTab .nosotrosControlTab__background .content .item--equipo .background .head .backFloat {
-          background-image: url("../resources/image/head_nosotros/equipo_apoyo_desktop.jpg"); }
+          background-image: url("../resources/image/head_nosotros/new/equipo_apoyo_desktop.jpg"); }
         .nosotrosControlTab .nosotrosControlTab__background .content .item .background {
           width: 100%;
           height: auto;
@@ -3712,7 +3795,24 @@ body {
             justify-items: center;
             justify-content: center;
             position: relative;
-            overflow: hidden; }
+            overflow: hidden;
+            /*.image{
+                            z-index: $zindex_head;
+                            width: 100%;
+                            height: 40vh;
+                            background-position: 40%;
+                            background-size: 110%;
+                            background-repeat: no-repeat;
+                            //animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite;
+                        }
+                        .image{
+                            z-index: $zindex_head;
+                            width: 100%;
+                            height: 64vh;
+                            background-position: 50%;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }*/ }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title {
               width: 40%;
               z-index: 1073;
@@ -3735,35 +3835,27 @@ body {
                   font-size: calc(56px);
                   letter-spacing: -3px;
                   line-height: calc(56px);
-                  background-color: rgba(192, 192, 192, 0.205);
                   padding-left: 8px; }
               .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle {
                 width: 100%; }
                 .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle p {
                   width: auto;
-                  color: #ffffff;
+                  color: #d61c25;
                   font-weight: bold;
                   font-family: SFProHeavy;
                   font-size: calc(16px);
                   letter-spacing: 0px;
                   line-height: calc(32px);
-                  background-color: rgba(192, 192, 192, 0.205);
                   padding-left: 8px; }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
               z-index: 1073;
               width: 100%;
-              height: 40vh;
-              background-position: 40%;
-              background-size: 110%;
-              background-repeat: no-repeat;
-              animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite; }
-            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
-              z-index: 1073;
-              width: 100%;
-              height: 64vh;
+              height: 56vh;
               background-position: 50%;
-              background-size: contain;
-              background-repeat: no-repeat; }
+              background-size: cover;
+              background-repeat: no-repeat;
+              min-height: calc(512px - 0px);
+              max-height: calc(512px - 0px); }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .backFloat {
               width: 100%;
               height: 64vh;
@@ -3771,7 +3863,8 @@ body {
               background-color: black;
               left: 0;
               z-index: 1072;
-              filter: blur(40px); }
+              filter: blur(40px);
+              display: none; }
           .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision {
             width: 100%;
             height: auto;
@@ -3824,7 +3917,7 @@ body {
     z-index: 1073;
     position: absolute;
     left: 8%;
-    bottom: calc(0px);
+    bottom: calc(16px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -3844,25 +3937,16 @@ body {
         background-color: rgba(192, 192, 192, 0.205);
         padding-left: 8px; }
     .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle {
-      width: 100%; }
-      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle p {
-        width: auto;
-        color: #ffffff;
-        font-weight: bold;
-        font-family: SFProHeavy;
-        font-size: calc(12px);
-        letter-spacing: 0px;
-        line-height: calc(16px);
-        background-color: rgba(192, 192, 192, 0.205);
-        padding-left: 8px; }
+      display: none; }
   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
     z-index: 1073;
     width: 100%;
     height: 40vh;
-    background-position: 40%;
-    background-size: 110%;
+    background-position: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
-    animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite; }
+    min-height: calc(320px - 0px);
+    max-height: calc(320px - 0px); }
   @keyframes animation__nosotrosControlTab__image__move {
     0% {
       background-position: 40%; }
@@ -3904,7 +3988,6 @@ body {
         font-size: calc(40px);
         letter-spacing: -3px;
         line-height: calc(40px);
-        background-color: rgba(192, 192, 192, 0.205);
         padding-left: 8px; }
     .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle {
       width: 100%; }
@@ -3916,16 +3999,16 @@ body {
         font-size: calc(12px);
         letter-spacing: 0px;
         line-height: calc(16px);
-        background-color: rgba(192, 192, 192, 0.205);
         padding-left: 8px; }
   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
     z-index: 1073;
     width: 100%;
-    height: 60vh;
+    height: 56vh;
     background-position: 40%;
-    background-size: 110%;
+    background-size: cover;
     background-repeat: no-repeat;
-    animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite; }
+    min-height: calc(320px - 0px);
+    max-height: calc(320px - 0px); }
   @keyframes animation__nosotrosControlTab__image__move {
     0% {
       background-position: 40%; }
@@ -3967,28 +4050,16 @@ body {
         font-size: calc(40px);
         letter-spacing: -3px;
         line-height: calc(40px);
-        background-color: rgba(192, 192, 192, 0.205);
-        padding-left: 8px; }
-    .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle {
-      width: 100%; }
-      .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle p {
-        width: auto;
-        color: #ffffff;
-        font-weight: bold;
-        font-family: SFProHeavy;
-        font-size: calc(12px);
-        letter-spacing: 0px;
-        line-height: calc(16px);
-        background-color: rgba(192, 192, 192, 0.205);
         padding-left: 8px; }
   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .image {
     z-index: 1073;
     width: 100%;
-    height: 64vh;
+    height: 56vh;
     background-position: 40%;
-    background-size: 110%;
+    background-size: cover;
     background-repeat: no-repeat;
-    animation: animation__nosotrosControlTab__image__move 20s ease-in-out infinite; }
+    min-height: calc(448px - 0px);
+    max-height: calc(448px - 0px); }
   @keyframes animation__nosotrosControlTab__image__move {
     0% {
       background-position: 40%; }
