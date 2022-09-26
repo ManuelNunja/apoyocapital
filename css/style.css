@@ -4934,7 +4934,8 @@ body {
       display: flex;
       align-items: center;
       justify-items: center;
-      justify-content: center; }
+      justify-content: center;
+      display: none; }
       .controlSimularFactoring .controlSimularFactoring__background .sideLeft img {
         width: 88%;
         border-radius: calc(16px); }
@@ -5021,6 +5022,10 @@ body {
             font-size: calc(24px); }
         .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step--hide {
           display: none; }
+
+@media only screen and (min-width: 1025px) {
+  .controlSimularFactoring .controlSimularFactoring__background .sideLeft {
+    display: block; } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
