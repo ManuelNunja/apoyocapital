@@ -67,6 +67,10 @@ const observerICAGroup = new IntersectionObserver(entries => {
             for(i = 0;i<= control2.length - 1;i++){
                 control2[i].classList.add("itemControl--effect--col2");
             }
+            let control3 = document.querySelectorAll(".homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .col3 .itemControl");
+            for(i = 0;i<= control3.length - 1;i++){
+                control3[i].classList.add("itemControl--effect--col3");
+            }
         }
     })
 })
