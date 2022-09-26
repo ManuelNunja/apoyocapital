@@ -4922,8 +4922,8 @@ body {
   justify-items: center;
   justify-content: center; }
   .controlSimularFactoring .controlSimularFactoring__background {
-    width: calc(832px);
-    height: calc(640px);
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -4940,7 +4940,7 @@ body {
         width: 88%;
         border-radius: calc(16px); }
     .controlSimularFactoring .controlSimularFactoring__background .sideRight {
-      width: 50%;
+      width: 88%;
       display: flex;
       align-items: center;
       justify-items: center;
@@ -5024,8 +5024,13 @@ body {
           display: none; }
 
 @media only screen and (min-width: 1025px) {
-  .controlSimularFactoring .controlSimularFactoring__background .sideLeft {
-    display: block; } }
+  .controlSimularFactoring .controlSimularFactoring__background {
+    width: calc(832px);
+    height: calc(640px); }
+    .controlSimularFactoring .controlSimularFactoring__background .sideLeft {
+      display: block; }
+    .controlSimularFactoring .controlSimularFactoring__background .sideRight {
+      width: 50%; } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
