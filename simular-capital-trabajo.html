@@ -94,51 +94,66 @@
     <div class="topSeparator"></div>
     <div class="siteContainer">
         <div class="siteContainer__background">
-            <div class="controlSimularFactoring controlSimularFactoring--factoring">
+            <div class="controlSimularFactoring controlSimularFactoring--capital controlSimularFactoring--exito">
                 <div class="controlSimularFactoring__background">
-                    <div class="sideLeft">
-                        <img src="resources/image/simulador.jpg">
-                    </div>
                     <div class="sideRight">
                         <form id="form_step1" class="form_step form_step--step1 was-validated">
                             <div class="form_step__row">
-                                <h2 class="title">Simula tu financiamiento</h2>
+                                <h2 class="title">Datos Personales</h2>
                             </div>
                             <div class="form_step__row">
-                                <span class="label">RUC de tu empresa:</span>
+                                <span class="label">Nombre:</span>
                                 <input id="inputMonto" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
-                                <span class="label">Monto de la factura:</span>
+                                <span class="label">Apellido:</span>
                                 <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
-                                <span class="label">Días de crédito de la factura:</span>
-                                <div class="multiple multiple--4">
-                                    <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
-                                    <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
-                                    <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
-                                    <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
-                                </div>
+                                <span class="label">Correo electrónico:</span>
+                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
-                                <span class="label">RUC de tu cliente (Únicamente RUC 20):</span>
-                                <input id="inputAdelanto" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                <span class="label">Teléfono:</span>
+                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                            </div>
+                            <div class="form_step__row">
+                                <span class="label">Datos de tu empresa:</span>
+                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <div class="multiple multiple--2">
-                                    <span class="label">Tu correo:</span>
-                                    <span class="label">Tu teléfono:</span>
+                                    <span class="label">Financiamiento:</span>
                                 </div>
-                                <div class="multiple multiple--2">
+                                <div class="multiple multiple--15">
                                     <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
-                                    <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <select id="inputMoneda" class="form-select" required>
+                                            <option value="">Moneda ?</option>
+                                            <option value="1">Soles</option>
+                                            <option value="2">Dolares</option>
+                                        </select>
+                                    </span>
                                 </div>
                             </div>
                             <div class="form_step__row">
-                                <a id="buttonCargar" type="button" class="buttonCargar">
-                                    Cargar factura
-                                </a>
+                                <span class="label">Plazo:</span>
+                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                            </div>
+                            <div class="form_step__row">
+                                <div class="multiple multiple--2">
+                                    <span class="label">Valor de garantía:</span>
+                                </div>
+                                <div class="multiple multiple--15">
+                                    <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <select id="inputMoneda" class="form-select" required>
+                                            <option value="">Moneda ?</option>
+                                            <option value="1">Soles</option>
+                                            <option value="2">Dolares</option>
+                                        </select>
+                                    </span>
+                                </div>
                             </div>
                             <div class="form_step__row form_step__row--button">
                                 <div class="form-check">
@@ -147,33 +162,22 @@
                                       He leído los <a href="#">términos y condiciones</a>
                                     </label>
                                 </div>
-                                <a id="btnCotizar" type="button" class="buttonSeguir">
-                                    Cotizar mi Factura
+                                <a id="buttonFinalizar" type="button" class="buttonFinalizar">
+                                    Finalizar
                                 </a>
                             </div>
                         </form>
                         <form id="form_step2" class="form_step form_step--step2 form_step--hide was-validated">
                             <div class="form_step__row">
-                                <h2 class="title">Simula tu financiamiento</h2>
-                            </div>
-                            <div class="form_step__row">
-                                <span class="label">Monto:</span>
-                                <input id="inputMonto" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
-                            </div>
-                            <div class="form_step__row">
-                                <span class="label">Interes:</span>
-                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
-                            </div>
-                            <div class="form_step__row">
-                                <span class="label">Adelanto:</span>
-                                <input id="inputAdelanto" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                <div class="mensajeExito">
+                                    <h2>¡ Has completado tu solicitud !</h2>
+                                    <h3>Uno de nuestros ejecutivos se contactará con usted<br>para indicarle los siguientes pasos</h3>
+                                </div>
                             </div>
                             <div class="form_step__row form_step__row--button">
-                                <p class="span1">*Precio referencial puede variar según deudor.</p>
-                                <a id="btnSeguir" type="button" class="buttonSeguir">
-                                    Sigue simulando tu Factura
+                                <a href="producto.html" type="button" class="buttonSeguir">
+                                    Volver
                                 </a>
-                                <p class="span2">Nuestros ejecutivos se contactaran con usted</p>
                             </div>
                         </form>
                     </div>
@@ -301,8 +305,9 @@
     });
 </script>
 <script>
-    $("#btnCotizar").on("click", function(){
+    $("#buttonFinalizar").on("click", function(){
         $("#form_step1").toggleClass("form_step--hide");
+        $("#controlSimularFactoring").toggleClass("controlSimularFactoring--exito");
         $("#form_step2").toggleClass("form_step--hide");
     })
     $("#btnSeguir").on("click", function(){

@@ -1118,7 +1118,7 @@ body {
               color: #1a1a1a;
               font-family: GelionLight;
               text-align: center;
-              font-size: 2.8vw;
+              font-size: calc(13.6px);
               font-weight: 500; }
 
 @media only screen and (min-width: 769px) and (max-width: 1600px) {
@@ -1163,8 +1163,8 @@ body {
         justify-items: center;
         justify-content: center; }
         .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl {
-          width: calc(252px);
-          height: calc(252px);
+          width: calc(272px);
+          height: calc(272px);
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -1182,8 +1182,8 @@ body {
             background-image: url("../resources/icon/corporate/iconhandworld.png");
             background-size: calc(64px); }
           .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {
-            width: calc(100% - 8px);
-            height: calc(100% - 8px);
+            width: calc(248px);
+            height: calc(248px);
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -1222,7 +1222,7 @@ body {
                 color: #1a1a1a;
                 font-family: GelionLight;
                 text-align: center;
-                font-size: 1vw;
+                font-size: calc(13.6px);
                 font-weight: 500; } }
 
 @media only screen and (min-width: 1601px) {
@@ -1286,8 +1286,8 @@ body {
             background-image: url("../resources/icon/corporate/iconhandworld.png");
             background-size: calc(64px); }
           .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background {
-            width: calc(100% - 24px);
-            height: calc(100% - 24px);
+            width: calc(248px);
+            height: calc(248px);
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -2390,18 +2390,12 @@ body {
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(1) .itemControl:nth-child(1) .image {
             background-image: url("../resources/client/apoyocapital.png"); }
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(1) .itemControl:nth-child(2) .image {
-            background-image: url("../resources/client/icredit.png"); }
+            background-image: url("../resources/client/ameritan.png"); }
         .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(2) {
           grid-area: col2; }
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(2) .itemControl:nth-child(1) .image {
-            background-image: url("../resources/client/ameritan.png"); }
-          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(2) .itemControl:nth-child(2) .image {
             background-image: url("../resources/client/ps29.png"); }
-        .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(3) {
-          grid-area: col3; }
-          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(3) .itemControl:nth-child(1) .image {
-            background-image: url("../resources/client/solicitalo.png"); }
-          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(3) .itemControl:nth-child(2) .image {
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(2) .itemControl:nth-child(2) .image {
             background-image: url("../resources/client/solicitalo.png"); }
         .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl {
           width: calc(200px);
@@ -4995,9 +4989,24 @@ body {
             text-decoration: none;
             border: 2px solid #f5e9e9;
             font-weight: 700; }
+          .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row .buttonFinalizar {
+            width: 56%;
+            height: calc(32px);
+            color: #ffffff;
+            background-color: #d61c25;
+            border-radius: 8px;
+            border: solid 1px #f5e9e9 !important;
+            font-size: calc(20px);
+            text-align: center;
+            text-decoration: none; }
           .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row--button {
             padding-top: calc(16px);
-            padding-bottom: calc(16px); }
+            padding-bottom: calc(16px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center; }
             .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row--button .form-check {
               text-align: center; }
               .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row--button .form-check .form-check-label a {
@@ -5011,6 +5020,8 @@ body {
               grid-template-columns: 1fr 1fr 1fr 3fr; }
             .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row .multiple--2 {
               grid-template-columns: 1fr 1fr; }
+            .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row .multiple--15 {
+              grid-template-columns: 2fr 1fr; }
           .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row .mensajeExito h2 {
             color: #d61c25;
             font-weight: bold;
@@ -5024,12 +5035,30 @@ body {
           display: none; }
 
 @media only screen and (min-width: 1025px) {
-  .controlSimularFactoring .controlSimularFactoring__background {
+  .controlSimularFactoring--factoring .controlSimularFactoring__background {
     width: calc(832px);
     height: calc(640px); }
-    .controlSimularFactoring .controlSimularFactoring__background .sideLeft {
+    .controlSimularFactoring--factoring .controlSimularFactoring__background .sideLeft {
       display: block; }
-    .controlSimularFactoring .controlSimularFactoring__background .sideRight {
+    .controlSimularFactoring--factoring .controlSimularFactoring__background .sideRight {
+      width: 50%; }
+  .controlSimularFactoring--capital .controlSimularFactoring__background {
+    width: calc(1024px);
+    height: auto;
+    padding-top: calc(16px);
+    padding-bottom: calc(16px); }
+    .controlSimularFactoring--capital .controlSimularFactoring__background .sideLeft {
+      display: block; }
+    .controlSimularFactoring--capital .controlSimularFactoring__background .sideRight {
+      width: 50%; }
+  .controlSimularFactoring--exito .controlSimularFactoring__background {
+    width: calc(1152px);
+    height: auto;
+    padding-top: calc(16px);
+    padding-bottom: calc(16px); }
+    .controlSimularFactoring--exito .controlSimularFactoring__background .sideLeft {
+      display: block; }
+    .controlSimularFactoring--exito .controlSimularFactoring__background .sideRight {
       width: 50%; } }
 
 .effect_homeControlPF:nth-child(1) {
