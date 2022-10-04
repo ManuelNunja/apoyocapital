@@ -96,18 +96,18 @@
         <div class="siteContainer__background">
             <div class="homeHead">
                 <div class="homeHead__background">
-                    <div id="carouselExampleIndicators" class="carousel slide site__carouselHead" data-bs-ride="carousel" data-pause="hover">
+                    <div id="bootstrap__carousel" class="carousel slide site__carouselHead" data-bs-ride="carousel" data-pause="false" data-interval="false" disabled>
                         <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#bootstrap__carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#bootstrap__carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#bootstrap__carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-floatText">
                             <div class="floatText floatText--one">
-                                <h2 class="title">EN APOYO CAPITAL</h2>
-                                <h3 class="text">BUSCAMOS ACERCAR EL FINANCIAMIENTO<br>A NUESTROS CLIENTES</h3>
-                                <div class="button">
-                                    <a class="linkButton" href="#">
+                                <h2 id="head__title__effect" class="head__title__effect title title--effect__show">APOYO CAPITAL</h2>
+                                <h3 id="head__text__effect" class="head__text__effect text text--effect__show">TE OFRECEMOS SERVICIOS FINANCIEROS A TU MEDIDA</h3>
+                                <div class="head__button__effect button button--effect__show">
+                                    <a class="linkButton linkButton__head" href="nosotros.html">
                                         <div>
                                             <svg version="1.1" id="svg__check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 370.643 370.643" style="enable-background:new 0 0 370.643 370.643;" xml:space="preserve">
@@ -123,32 +123,32 @@
                                                         c2.853-3.463,2.349-8.592-1.114-11.445L19.563,191.957l44.748-54.405L150.457,208.401z"/>
                                                 </g>
                                             </svg>    
-                                        </div><p>Conoce sobre nosotros</p>
+                                        </div><p id="head__button__effect" >Conoce sobre nosotros</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="3000">
+                            <div class="carousel-item active" data-bs-interval="7700" data-item-current="1">
                             <div class="item__container">
                             <div class="carousel--image"></div>
                             </div>                      
                             </div>
-                            <div class="carousel-item" data-bs-interval="3000">
+                            <div class="carousel-item" data-bs-interval="7700" data-item-current="2">
                             <div class="item__container">
                             <div class="carousel--image"></div>
                             </div> 
                             </div>
-                            <div class="carousel-item" data-bs-interval="3000">
+                            <div class="carousel-item"  data-bs-interval="7700" data-item-current="3">
                             <div class="item__container">
                             <div class="carousel--image"></div>
                             </div> 
                             </div>
                         </div>
-                        <button class="carousel-control-prev site__carousel__button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <button class="carousel-control-prev site__carousel__button" type="button" data-bs-target="#bootstrap__carousel" data-bs-slide="prev">
                         <i class="fas fa-angle-left"></i>
                         </button>
-                        <button class="carousel-control-next site__carousel__button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <button class="carousel-control-next site__carousel__button" type="button" data-bs-target="#bootstrap__carousel" data-bs-slide="next">
                         <i class="fas fa-angle-right"></i>
                         </button>
                     </div>
@@ -399,6 +399,54 @@
     $(document).ready(function() {
         responsiveControl();
         $(window).resize(responsiveControl);
+        $('#bootstrap__carousel').carousel({
+            pause: "false"
+        });
     });
+    let arrayDataCarousel__title = ["Apoyo Capital", "En Apoyo Capital", "Apoyo Capital"];
+    let arrayDataCarousel__text = ["Te ofrece servicios financieros <br>a tu medida", "BUSCAMOS ACERCAR EL FINANCIAMIENTO A<br>NUESTROS CLIENTES", "Conoce<br>Nuestros Productos"];
+    let arrayDataCarousel__button = ["Conoce sobre nosotros", "Conoce sobre nosotros", "Conocem mas Aquí"];
+    let arrayDataCarousel__link = ["nosotros.html", "nosotros.html", "producto.html"];
+    $('#bootstrap__carousel').bind('slide.bs.carousel', function (e) {
+        let vWidth = window.innerWidth;
+        if (vWidth > 768) {
+            //console.log('hola!');
+            //$("#head__title__effect").addClass("title--effect__hide");
+            $(".head__title__effect").toggle("title--effect__show");
+            $(".head__text__effect").toggle("text--effect__show");
+            $(".head__button__effect").toggle("button--effect__show");   
+        }
+    });
+    $('#bootstrap__carousel').bind('slid.bs.carousel', function (e) {
+        let vWidth = window.innerWidth;
+        if (vWidth > 768) {
+            //console.log("mundo!");
+            let indexItem = $(".carousel-item.active").attr("data-item-current");
+            console.log(indexItem)
+            let datoTitle = arrayDataCarousel__title[indexItem - 1]
+            let datoText = arrayDataCarousel__text[indexItem - 1]
+            let datoButton = arrayDataCarousel__button[indexItem - 1]
+            $("#head__title__effect").text(datoTitle.toUpperCase());
+            $("#head__text__effect").html(datoText.toUpperCase());
+            $("#head__button__effect").text(datoButton);
+            $(".linkButton__head").attr("href", arrayDataCarousel__link[indexItem - 1]);
+            
+            /*if(indexItem == 3){
+                $(".head__button__effect .linkButton").width("150")
+            }else{
+                $(".head__button__effect .linkButton").width("272")
+            }*/
+            console.log(datoTitle);
+            setTimeout(() => {
+                $(".head__title__effect").toggle("title--effect__show");
+                $(".head__text__effect").toggle("text--effect__show");
+                $(".head__button__effect").toggle("button--effect__show");
+            }, 0);
+            //$("#head__title__effect").removeClass("title--effect__hide");   
+        }
+    });
+</script>
+<script>
+    
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

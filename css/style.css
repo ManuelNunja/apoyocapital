@@ -825,29 +825,49 @@ body {
     justify-content: center; }
     .homeHead .homeHead__background .site__carouselHead {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      /*&:hover{
+                .carousel-floatText{
+                    .floatText{
+                        .title{
+                            &--effect__show{
+                                animation-play-state: paused;
+                            }
+                        }
+                        .text{
+                            &--effect__show{
+                                animation-play-state: paused;
+                            }
+                        }
+                        .button{
+                            &--effect__show{
+                                animation-play-state: paused;
+                            }
+                        }
+                    }
+                }
+            }*/ }
       .homeHead .homeHead__background .site__carouselHead .carousel-floatText {
-        width: 100%;
+        width: auto;
         height: calc(320px);
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: transparent;
         position: absolute;
-        top: calc(64px);
+        top: calc(25% + 32px);
+        left: calc(100%/20);
         z-index: 1; }
         .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText {
-          margin-top: calc(24px);
-          margin-left: calc(-448px);
           width: calc(704px);
-          background-color: rgba(255, 255, 255, 0.459); }
+          position: relative; }
           .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title {
             color: #d61c25;
             font-family: SFProHeavy;
             font-weight: 700;
             font-size: calc(48px); }
           .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .text {
-            color: #1a1a1a;
+            color: #d61c25;
             font-family: SFProHeavy;
             font-weight: 700;
             font-size: calc(28px); }
@@ -862,8 +882,8 @@ body {
             .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton {
               width: calc(272px);
               height: calc(36px);
-              background-color: #d61c25;
-              color: #ffffff;
+              background-color: #f6f6f8;
+              color: #d61c25;
               font-family: GelionLight;
               font-size: calc(20px);
               text-decoration: none;
@@ -880,7 +900,7 @@ body {
                   width: 20px; }
                   .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton div #svg__check g .check {
                     fill-opacity: 0;
-                    stroke: #fff;
+                    stroke: #d61c25;
                     stroke-width: calc(16px);
                     stroke-dashoffset: 0;
                     stroke-dasharray: 2000;
@@ -932,16 +952,16 @@ body {
         .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
           background-color: #d61c25; }
 
-@media only screen and (min-width: 300px) and (max-width: 500px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
   .homeHead .homeHead__background {
     min-height: calc(704px);
     max-height: calc(100vh - 704px); }
     .homeHead .homeHead__background .site__carouselHead .carousel-floatText {
-      top: calc(0px); }
+      top: 0;
+      left: 0;
+      width: 100%; }
       .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText {
-        margin-top: calc(24px);
-        margin-left: calc(0px);
-        width: 88%; }
+        width: 100%; }
         .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title {
           font-size: calc(32px);
           text-align: center; }
@@ -952,27 +972,7 @@ body {
           justify-items: center;
           justify-content: center; } }
 
-@media only screen and (min-width: 501px) and (max-width: 1220px) {
-  .homeHead .homeHead__background {
-    min-height: calc(704px);
-    max-height: calc(100vh - 704px); }
-    .homeHead .homeHead__background .site__carouselHead .carousel-floatText {
-      top: calc(0px); }
-      .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText {
-        margin-top: calc(24px);
-        margin-left: calc(0px);
-        width: 96%; }
-        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title {
-          font-size: calc(32px);
-          text-align: center; }
-        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .text {
-          font-size: calc(16px);
-          text-align: center; }
-        .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button {
-          justify-items: center;
-          justify-content: center; } }
-
-@media only screen and (min-width: 1221px) {
+@media only screen and (min-width: 769px) {
   .homeHead {
     width: 100%;
     height: auto;
@@ -993,6 +993,154 @@ body {
       justify-content: center; }
       .homeHead .homeHead__background .site__carouselHead {
         width: 100%; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-floatText {
+          width: auto;
+          height: calc(320px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: transparent;
+          position: absolute;
+          top: calc(25% + 32px);
+          left: calc(100%/20);
+          z-index: 1; }
+          .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText {
+            width: calc(704px);
+            position: relative; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title {
+              width: 100%;
+              color: #ffffff;
+              font-family: SFProHeavy;
+              font-weight: 700;
+              font-size: calc(48px);
+              position: absolute;
+              margin-top: 0;
+              opacity: 0; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .title--effect__show {
+                animation: animation__head__title__show 7s ease-in-out;
+                animation-fill-mode: forwards;
+                animation-delay: 0.3s; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .text {
+              width: 100%;
+              color: #f6f6f8;
+              font-family: SFProHeavy;
+              font-weight: 700;
+              font-size: calc(28px);
+              position: absolute;
+              margin-top: calc(64px);
+              margin-left: calc(64px);
+              opacity: 0; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .text--effect__show {
+                animation: animation__head__text__show 7s ease-in-out;
+                animation-fill-mode: forwards;
+                animation-delay: 0.3s; }
+            .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button {
+              width: 100%;
+              height: auto;
+              display: flex;
+              align-items: center;
+              justify-items: center;
+              justify-content: flex-start;
+              overflow: hidden;
+              position: absolute;
+              margin-top: calc(192px);
+              opacity: 0; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button--effect__show {
+                animation: animation__head__button__show 7s ease-in-out;
+                animation-fill-mode: forwards;
+                animation-delay: 0.3s; }
+              .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton {
+                width: calc(272px);
+                height: calc(36px);
+                background-color: #f6f6f8;
+                color: #d61c25;
+                font-family: GelionLight;
+                font-size: calc(20px);
+                text-decoration: none;
+                font-weight: 700;
+                padding-top: 2px;
+                display: grid;
+                grid-template-columns: 20% 80%;
+                border-radius: 8px; }
+                .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton p {
+                  text-align: center; }
+                .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton div {
+                  text-align: center; }
+                  .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton div #svg__check {
+                    width: 20px; }
+                    .homeHead .homeHead__background .site__carouselHead .carousel-floatText .floatText .button .linkButton div #svg__check g .check {
+                      fill-opacity: 0;
+                      stroke: #d61c25;
+                      stroke-width: calc(16px);
+                      stroke-dashoffset: 0;
+                      stroke-dasharray: 2000;
+                      animation: animation__button 3s ease-in-out infinite; }
+  @keyframes animation__button {
+    0% {
+      stroke-dashoffset: 2000; }
+    35% {
+      stroke-dashoffset: 0; }
+    45% {
+      stroke-dashoffset: 0; }
+    55% {
+      stroke-dashoffset: 0; }
+    100% {
+      stroke-dashoffset: 2000; } }
+  @keyframes animation__head__title__show {
+    0% {
+      margin-top: calc(-16px);
+      opacity: 0; }
+    10% {
+      margin-top: calc(0px);
+      opacity: 1; }
+    20% { }
+    40% { }
+    60% { }
+    80% {
+      margin-left: calc(0px);
+      opacity: 1; }
+    85% {
+      margin-left: calc(-16px);
+      opacity: 0; }
+    95% { }
+    100% { } }
+  @keyframes animation__head__text__show {
+    0% {
+      margin-left: calc(64px);
+      opacity: 0;
+      margin-top: calc(64px); }
+    10% {
+      margin-left: calc(0px);
+      opacity: 1; }
+    20% { }
+    40% { }
+    60% { }
+    80% { }
+    85% {
+      margin-left: calc(0px);
+      opacity: 1; }
+    90% {
+      margin-left: calc(-16px);
+      opacity: 0;
+      margin-top: calc(64px); } }
+  @keyframes animation__head__button__show {
+    0% {
+      margin-top: calc(192px);
+      opacity: 0; }
+    10% {
+      margin-top: calc(144px);
+      opacity: 1; }
+    20% { }
+    40% { }
+    60% { }
+    80% { }
+    90% {
+      margin-left: calc(0px);
+      opacity: 1; }
+    95% {
+      margin-left: calc(-16px);
+      opacity: 0;
+      margin-top: calc(144px); } }
         .homeHead .homeHead__background .site__carouselHead .carousel-inner {
           display: flex;
           flex-direction: row;
@@ -1003,21 +1151,22 @@ body {
             height: calc(600px);
             width: 100%;
             background-position: 61% 8%;
-            background-size: calc(896px);
+            background-size: calc(1920px) 100%;
             background-repeat: no-repeat; }
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(1) .item__container .carousel--image {
-            background-image: url("../resources/image/carousel_image_1_desktop_alpha.png"); }
+            background-image: url("../resources/image/head/new/homenew1.jpg"); }
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(2) .item__container .carousel--image {
-            background-image: url("../resources/image/carousel_image_1_desktop_alpha.png"); }
+            background-image: url("../resources/image/head/new/homenew2.jpg"); }
           .homeHead .homeHead__background .site__carouselHead .carousel-inner .carousel-item:nth-child(3) .item__container .carousel--image {
-            background-image: url("../resources/image/carousel_image_1_desktop_alpha.png"); }
+            background-image: url("../resources/image/head/new/homenew3.png"); }
         .homeHead .homeHead__background .site__carouselHead .site__carousel__button {
           color: #d61c25;
-          font-size: 30px; }
+          font-size: 30px;
+          display: none; }
         .homeHead .homeHead__background .site__carouselHead .carousel-indicators {
           margin-bottom: 1.5rem; }
           .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
-            background-color: #d61c25; } }
+            background-color: #f6f6f8; } }
 
 .homeControlPF {
   width: 100%;
