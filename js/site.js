@@ -27,7 +27,7 @@ function createKeyClass(){
 }
 function responsiveControl(){
     let vWidth = window.innerWidth;
-    if (vWidth > 768) {
+    if (vWidth > 1024) {
         var element = document.getElementsByClassName("siteMenu__background__sideRight");
         if(element != null){
             if(element.length > 0){
