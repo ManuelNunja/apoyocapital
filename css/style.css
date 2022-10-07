@@ -4402,15 +4402,19 @@ body {
         justify-items: center;
         justify-content: center;
         background-color: transparent; }
-        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--honestidad .image {
-          background-image: url("../resources/icon/corporate/iconhandheart.png"); }
-        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--excelelncia .image {
-          background-image: url("../resources/icon/corporate/iconhandstar.png"); }
-        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--cooperacion .image {
-          background-image: url("../resources/icon/corporate/iconhands.png"); }
-        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--respeto .image {
-          background-image: url("../resources/icon/corporate/iconheart.png"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--honestidad .image img {
+          content: url("../resources/icon/corporate/iconhandheart.png"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--excelelncia .image img {
+          content: url("../resources/icon/corporate/iconhandstar.png"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--cooperacion .image img {
+          content: url("../resources/icon/corporate/iconhands.png"); }
+        .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item--respeto .image img {
+          content: url("../resources/icon/corporate/iconheart.png"); }
         .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image {
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          justify-content: center;
           width: calc(96px);
           height: calc(96px);
           background-position: 50%;
@@ -4420,7 +4424,67 @@ body {
           padding: calc(40px);
           border-radius: 8px;
           z-index: 1073;
-          border: solid 1px #ececec; }
+          border: solid 1px #ececec;
+          overflow: hidden; }
+          .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl {
+            width: calc(64px);
+            height: calc(64px);
+            transform: translateX(calc(0px));
+            transform: scale(0); }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl--effect1 {
+              animation: animation__valores 0.35s ease-out;
+              animation-fill-mode: forwards;
+              animation-delay: 0.35s; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl--effect2 {
+              animation: animation__valores 0.35s ease-out;
+              animation-fill-mode: forwards;
+              animation-delay: 0.45s; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl--effect3 {
+              animation: animation__valores 0.35s ease-out;
+              animation-fill-mode: forwards;
+              animation-delay: 0.55s; }
+            .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl--effect4 {
+              animation: animation__valores 0.35s ease-out;
+              animation-fill-mode: forwards;
+              animation-delay: 0.65s; }
+
+@keyframes animation__valores {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes animation__valores2 {
+  0% {
+    transform: scale(0); }
+  10% {
+    transform: scale(0); }
+  20% {
+    transform: scale(0); }
+  30% {
+    transform: scale(0); }
+  40% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1.1); }
+  60% {
+    transform: scale(1.1); }
+  70% {
+    transform: scale(0.8); }
+  80% {
+    transform: scale(0.8); }
+  90% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes animation__valores1 {
+  from {
+    opacity: 0;
+    transform: translateX(calc(80px)); }
+  to {
+    opacity: 1;
+    transform: translateX(calc(0px)); } }
         .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info {
           width: 100%;
           height: auto;
@@ -4910,7 +4974,10 @@ body {
 @media only screen and (min-width: 900px) {
   .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background {
     display: grid;
-    grid-template-areas: "col1 col2" "col1 col3" "col1 col4"; }
+    grid-template-areas: "col1 col2" "col1 col3" "col1 col4";
+    background-color: transparent; }
+    .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background--effect {
+      background-color: #ffffff; }
     .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .image {
       padding: calc(16px); }
     .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .name h3, .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .name h4, .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .level h3, .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .info .level h4 {
@@ -5046,14 +5113,33 @@ body {
   .nosotrosConrolAliados {
     padding-top: calc(16px); }
     .nosotrosConrolAliados .nosotrosConrolAliados__background {
-      max-width: 800px; }
+      max-width: 800px;
+      overflow: hidden; }
       .nosotrosConrolAliados .nosotrosConrolAliados__background .nosotrosConrolAliados__columns {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 100%;
         grid-template-areas: "col1 col3 col2"; }
         .nosotrosConrolAliados .nosotrosConrolAliados__background .nosotrosConrolAliados__columns .column {
           flex-wrap: nowrap;
-          flex-direction: column; } }
+          flex-direction: column;
+          opacity: 0; }
+          .nosotrosConrolAliados .nosotrosConrolAliados__background .nosotrosConrolAliados__columns .column--effect1 {
+            animation: animation__aliados 0.7s ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: 0.35s; }
+          .nosotrosConrolAliados .nosotrosConrolAliados__background .nosotrosConrolAliados__columns .column--effect2 {
+            animation: animation__aliados 0.7s ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: 0.45s; }
+          .nosotrosConrolAliados .nosotrosConrolAliados__background .nosotrosConrolAliados__columns .column--effect3 {
+            animation: animation__aliados 0.7s ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: 0.55s; }
+  @keyframes animation__aliados {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } } }
 
 .controlSimularFactoring {
   width: 100%;
@@ -5209,6 +5295,111 @@ body {
       display: block; }
     .controlSimularFactoring--exito .controlSimularFactoring__background .sideRight {
       width: 50%; } }
+
+.controlGridNews {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+  .controlGridNews .controlGridNews__background {
+    grid-column: 3 / 11;
+    background-color: transparent; }
+    .controlGridNews .controlGridNews__background .items {
+      width: 100%;
+      background-color: transparent;
+      display: flex;
+      flex-wrap: wrap;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      gap: calc(16px);
+      padding-top: calc(16px);
+      padding-bottom: calc(16px); }
+      .controlGridNews .controlGridNews__background .items .item {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: calc(416px);
+        height: calc(320px);
+        background-color: transparent;
+        padding: calc(0px); }
+        .controlGridNews .controlGridNews__background .items .item .item__background {
+          height: 100%;
+          width: 100%;
+          display: grid;
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          grid-template-rows: 65% 25% 10%;
+          background-color: transparent;
+          border-radius: calc(8px);
+          overflow: hidden;
+          border: solid 1px #ececec; }
+          .controlGridNews .controlGridNews__background .items .item .item__background .imagePreview {
+            width: 100%;
+            height: 100%;
+            background-color: gray; }
+          .controlGridNews .controlGridNews__background .items .item .item__background .description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center; }
+            .controlGridNews .controlGridNews__background .items .item .item__background .description .linkparagraph {
+              width: 90%;
+              background-color: transparent;
+              text-decoration: none;
+              color: #d61c25;
+              font-family: GelionLight;
+              font-weight: bold; }
+              .controlGridNews .controlGridNews__background .items .item .item__background .description .linkparagraph p {
+                text-align: justify; }
+          .controlGridNews .controlGridNews__background .items .item .item__background .buttonBar {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            justify-items: center;
+            padding-right: calc(24px);
+            padding-bottom: calc(16px); }
+            .controlGridNews .controlGridNews__background .items .item .item__background .buttonBar .linkicon {
+              background-color: transparent;
+              color: #d61c25;
+              font-size: calc(24px); }
+        .controlGridNews .controlGridNews__background .items .item:nth-child(1) .item__background .imagePreview {
+          overflow: hidden; }
+          .controlGridNews .controlGridNews__background .items .item:nth-child(1) .item__background .imagePreview .imagePreview__control {
+            content: url("../resources/image/news/first.jpg");
+            width: 100%;
+            height: 110%; }
+        .controlGridNews .controlGridNews__background .items .item:nth-child(2) .item__background .imagePreview {
+          overflow: hidden; }
+          .controlGridNews .controlGridNews__background .items .item:nth-child(2) .item__background .imagePreview .imagePreview__control {
+            content: url("../resources/image/news/second.jpg");
+            width: 100%;
+            height: 110%; }
+        .controlGridNews .controlGridNews__background .items .item:nth-child(3) .item__background .imagePreview {
+          overflow: hidden; }
+          .controlGridNews .controlGridNews__background .items .item:nth-child(3) .item__background .imagePreview .imagePreview__control {
+            content: url("../resources/image/news/third.jpg");
+            width: 100%;
+            height: 110%; }
+        .controlGridNews .controlGridNews__background .items .item:nth-child(4) .item__background .imagePreview {
+          overflow: hidden; }
+          .controlGridNews .controlGridNews__background .items .item:nth-child(4) .item__background .imagePreview .imagePreview__control {
+            content: url("../resources/image/news/fourth.jpg");
+            width: 100%;
+            height: 110%; }
+
+@media only screen and (min-width: 300px) and (max-width: 1280px) {
+  .controlGridNews .controlGridNews__background {
+    grid-column: 1 / 13; } }
+
+@media only screen and (min-width: 1281px) and (max-width: 1768px) {
+  .controlGridNews .controlGridNews__background {
+    grid-column: 3 / 11; } }
 
 .effect_homeControlPF:nth-child(1) {
   -webkit-animation: animation1 1s forwards;
