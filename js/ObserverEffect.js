@@ -77,3 +77,45 @@ const observerICAGroup = new IntersectionObserver(entries => {
 if(document.querySelector(".intersectionObserverICaGroup") != null){
     observerICAGroup.observe(document.querySelector(".intersectionObserverICaGroup"));
 }
+// OBSERVER CONTROL VALORES ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+const observerValores = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            let control1 = document.querySelectorAll(".nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl");
+            for(i = 0;i<= control1.length - 1;i++){
+                control1[i].classList.add("imgControl--effect" + (i + 1));
+            }
+        }
+    })
+})
+if(document.querySelector(".intersectionObserverValores") != null){
+    observerValores.observe(document.querySelector(".intersectionObserverValores"));
+}
+// OBSERVER CONTROL EQUIPO ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+const observerEquipo = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            let control1 = document.querySelectorAll(".nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background");
+            for(i = 0;i<= control1.length - 1;i++){
+                control1[i].classList.add("principal__background--effect");
+            }
+        }
+    })
+})
+if(document.querySelector(".intersectionObserverEquipo") != null){
+    observerEquipo.observe(document.querySelector(".intersectionObserverEquipo"));
+}
+// OBSERVER CONTROL ALIADOS ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+const observerAliados = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            let control1 = document.querySelectorAll(".nosotrosConrolAliados .nosotrosConrolAliados__background .nosotrosConrolAliados__columns .column");
+            for(i = 0;i<= control1.length - 1;i++){
+                control1[i].classList.add("column--effect" + (i + 1));
+            }
+        }
+    })
+})
+if(document.querySelector(".intersectionObserverAliados") != null){
+    observerAliados.observe(document.querySelector(".intersectionObserverAliados"));
+}
