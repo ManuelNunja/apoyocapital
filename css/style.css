@@ -4966,7 +4966,7 @@ body {
         align-items: center;
         justify-items: center;
         justify-content: center;
-        gap: calc(56px); }
+        gap: calc(48px); }
         .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item {
           width: calc(160px);
           height: calc(160px);
