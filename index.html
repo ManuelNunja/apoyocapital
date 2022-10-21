@@ -24,7 +24,7 @@
                         </div>
                     </a>
                     <div class="menu menuIcon menuIcon--active arrow">
-                        <i class="fas fa-angle-right"></i>
+                        <i class="fas fa-angle-right d-none"></i>
                     </div>
                 </div>
                 <div class="siteMenu__background__sideRight">
@@ -98,9 +98,9 @@
                 <div class="homeHead__background">
                     <div id="bootstrap__carousel" class="carousel slide site__carouselHead" data-bs-ride="carousel" data-pause="false" data-interval="false" disabled>
                         <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#bootstrap__carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#bootstrap__carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#bootstrap__carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#bootstrap__carousel" data-bs-slide-to="0" class="site__indicator active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#bootstrap__carousel" data-bs-slide-to="1" class="site__indicator" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#bootstrap__carousel" data-bs-slide-to="2" class="site__indicator" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-floatText">
                             <div class="floatText floatText--one">
@@ -236,7 +236,7 @@
                                 <p>Nuestros ejecutivos se encargarán de contactarte para resolver tus dudas</p>
                             </div>
                             <div class="button">
-                                <a class="linkButton" href="#">
+                                <a class="linkButton" href="contacto.html">
                                     <div>
                                         <svg version="1.1" id="svg__check1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 370.643 370.643" style="enable-background:new 0 0 370.643 370.643;" xml:space="preserve">
@@ -282,6 +282,11 @@
                                 <div class="image"></div>
                             </div>
                         </div>
+                        <div class="column col3">
+                            <div class="itemControl">
+                                <div class="image"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="intersectionObserverICaGroup"></div>
@@ -311,7 +316,7 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </span>
                                 <span class="item_info">
-                                    Edificio Fibra 585 Piso 12, San Isidro - Lima - Peru 
+                                    <a href="https://www.google.com.pe/maps/" target="_blank">Edificio Fibra 585 Piso 12, San Isidro - Lima - Peru </a>
                                 </span>
                             </li>
                             <li class="contact__list__item">
@@ -319,8 +324,8 @@
                                     <i class="fas fa-phone-volume"></i>
                                 </span>
                                 <span class="item_info item_info--number">
-                                    <p>T: (01) 712 3967</p>
-                                    <p>C: (51) 998 887 200</p>
+                                    <p><a href="tel:(01) 712 3967">T: (01) 712 3967</a></p>
+                                    <p><a href="tel:(51) 998 887 200">C: (51) 998 887 200</a></p>
                                 </span>
                             </li>
                             <li class="contact__list__item">
@@ -328,7 +333,7 @@
                                     <i class="far fa-envelope"></i>
                                 </span>
                                 <span class="item_info">
-                                    informes@apoyocapital.com.pe
+                                    <a href="mailto:informes@apoyocapital.com.pe">informes@apoyocapital.com.pe</a>
                                 </span>
                             </li>
                         </ul>
@@ -336,16 +341,16 @@
                     <div class="siteMap">
                         <div class="side">
                             <ul class="siteMap__list">
-                                <li class="siteMap__list__item"><a href="#">Inicio</a></li>
-                                <li class="siteMap__list__item"><a href="#">Nosotros</a></li>
-                                <li class="siteMap__list__item"><a href="#">Producto</a></li>
+                                <li class="siteMap__list__item"><a href="index.html">Inicio</a></li>
+                                <li class="siteMap__list__item"><a href="nosotros.html">Nosotros</a></li>
+                                <li class="siteMap__list__item"><a href="producto.html">Producto</a></li>
                             </ul>
                         </div>
                         <div class="side">
                             <ul class="siteMap__list">
-                                <li class="siteMap__list__item"><a href="#">Noticias</a></li>
-                                <li class="siteMap__list__item"><a href="#">Contactos</a></li>
-                                <li class="siteMap__list__item"><a href="#">Centro de Ayuda</a></li>
+                                <li class="siteMap__list__item"><a href="noticias.html">Noticias</a></li>
+                                <li class="siteMap__list__item"><a href="contacto.html">Contactos</a></li>
+                                <li class="siteMap__list__item"><a href="centro-ayuda.html">Centro de Ayuda</a></li>
                             </ul>
                         </div>
                     </div>
@@ -384,9 +389,14 @@
         $('.imageBrand').toggleClass("imageBrand--active");
         $('.menuIcon').toggleClass("menuIcon--active");
     })
-    $(".nav__itemMenu__nivel.parent").on("click", function(){
+    $(".nav__itemMenu__nivel.parent").hover(function(){
+        let xPosT = $(this).position().top;
+        let xPosL = $(this).position().left;
+        console.log(xPosT)
+        console.log(xPosL)
         let childId = $(this).attr("data-attr-child");
         $(".nav__itemMenu__nivel.child:not(#" + childId + ")").hide();
+        $("#" + childId).css({top: (xPosT + 40), left: xPosL});
         $("#" + childId).toggle();
         if($(".nav__itemMenu__nivel.child#" + childId).is(":visible")){
             $('.imageBrand').addClass("imageBrand--zoom");
@@ -395,6 +405,9 @@
             $('.imageBrand').removeClass("imageBrand--zoom");
         }
     })
+    $(".nav__itemMenu__nivel.child").hover( function(){
+        $(this).toggle();
+    });
     //readySiteMenu();
     $(document).ready(function() {
         responsiveControl();
