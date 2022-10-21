@@ -1,5 +1,6 @@
 /* MODAL LOADING */
 /* COLOR ALERT - MESSAGE*/
+/* COLOR BORDER */
 @font-face {
   font-family: 'roboto';
   src: url("../resources/font/Roboto-Regular.ttf") format("truetype"), url("../resources/font/Roboto-Regular.ttf") format("truetype");
@@ -222,7 +223,8 @@ body {
                   .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link:active {
                     background-color: #d14b52; }
             .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child {
-              z-index: 1077; }
+              z-index: 1077;
+              border-bottom: solid 1px #dee2e6; }
               .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link {
                 width: 100%;
                 height: 50px;
@@ -244,7 +246,8 @@ body {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    position: fixed; }
+    position: fixed;
+    border-bottom: solid 1px #dee2e6; }
     .siteMenu .siteMenu__background {
       height: 64px;
       background-color: transparent;
@@ -339,20 +342,23 @@ body {
                       background-color: #d61c25;
                       color: #ffffff; }
               .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child {
-                z-index: 1077; }
-                .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link {
-                  width: 100%;
-                  height: 40px;
-                  padding-top: 8px;
-                  font-size: 14px;
-                  font-weight: 300;
-                  background-color: transparent;
-                  cursor: pointer; }
-                  .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link:active {
-                    background-color: #d14b52; }
-                  .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link:hover {
-                    color: #d61c25;
-                    border-bottom: solid 1px #d61c25; } }
+                z-index: 1077;
+                position: absolute;
+                width: 150px; }
+                .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu {
+                  background-color: #ffffff; }
+                  .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link {
+                    width: 100%;
+                    height: 40px;
+                    padding-top: 8px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    background-color: transparent;
+                    cursor: pointer; }
+                    .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link:active {
+                      background-color: #d14b52; }
+                    .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link:hover {
+                      color: #d61c25; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1220px) {
   .siteMenu .siteMenu__background {
@@ -467,6 +473,12 @@ body {
                     padding-bottom: calc(8px); }
                     .siteFooter .siteFooter__background .footer__item:nth-child(3) .contact .contact__list .contact__list__item .item_info--number p {
                       height: 5px; }
+                      .siteFooter .siteFooter__background .footer__item:nth-child(3) .contact .contact__list .contact__list__item .item_info--number p a {
+                        text-decoration: none;
+                        color: #ffffff; }
+                  .siteFooter .siteFooter__background .footer__item:nth-child(3) .contact .contact__list .contact__list__item .item_info a {
+                    text-decoration: none;
+                    color: #ffffff; }
           .siteFooter .siteFooter__background .footer__item:nth-child(3) .siteMap {
             display: flex;
             flex-direction: row;
@@ -576,12 +588,18 @@ body {
                 .siteFooter .siteFooter__background .footer__item:nth-child(3) .contact .contact__list .contact__list__item .item_info {
                   color: #ffffff;
                   font-size: 14px;
-                  font-weight: 700; }
+                  font-weight: 100; }
                   .siteFooter .siteFooter__background .footer__item:nth-child(3) .contact .contact__list .contact__list__item .item_info--number {
                     padding-top: calc(8px);
                     padding-bottom: calc(8px); }
                     .siteFooter .siteFooter__background .footer__item:nth-child(3) .contact .contact__list .contact__list__item .item_info--number p {
                       height: 5px; }
+                      .siteFooter .siteFooter__background .footer__item:nth-child(3) .contact .contact__list .contact__list__item .item_info--number p a {
+                        text-decoration: none;
+                        color: #ffffff; }
+                  .siteFooter .siteFooter__background .footer__item:nth-child(3) .contact .contact__list .contact__list__item .item_info a {
+                    text-decoration: none;
+                    color: #ffffff; }
           .siteFooter .siteFooter__background .footer__item:nth-child(3) .siteMap {
             width: 50%;
             display: flex;
@@ -596,12 +614,12 @@ body {
                 padding-left: 24px;
                 padding-top: 0;
                 margin: 0;
-                line-height: 52px; }
+                line-height: 48px; }
                 .siteFooter .siteFooter__background .footer__item:nth-child(3) .siteMap .side .siteMap__list .siteMap__list__item {
                   color: #ffffff;
                   font-size: 14px;
                   font-family: GelionLight;
-                  font-weight: 700; }
+                  font-weight: 100; }
                   .siteFooter .siteFooter__background .footer__item:nth-child(3) .siteMap .side .siteMap__list .siteMap__list__item a {
                     text-decoration: none;
                     color: #ffffff; } }
@@ -964,9 +982,15 @@ body {
         display: block;
         color: #ffffff !important; }
       .homeHead .homeHead__background .site__carouselHead .carousel-indicators {
-        margin-bottom: 1.5rem; }
+        margin-bottom: 1.5rem;
+        display: flex;
+        gap: calc(16px); }
         .homeHead .homeHead__background .site__carouselHead .carousel-indicators > button {
           background-color: #ffffff; }
+        .homeHead .homeHead__background .site__carouselHead .carousel-indicators .site__indicator {
+          border-radius: 50%;
+          height: calc(8px);
+          width: calc(8px); }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .homeHead .homeHead__background {
@@ -1251,6 +1275,7 @@ body {
           justify-items: center;
           justify-content: center;
           border-radius: 8px;
+          border: solid 1px #dee2e6;
           padding: calc(12px); }
           .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .image {
             width: 100%;
@@ -1382,14 +1407,7 @@ body {
               height: 50%;
               background-color: transparent;
               padding-left: calc(16px);
-              padding-right: calc(16px); }
-              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
-                width: 100%;
-                color: #1a1a1a;
-                font-family: GelionLight;
-                text-align: center;
-                font-size: calc(13.6px);
-                font-weight: 500; } }
+              padding-right: calc(16px); } }
 
 @media only screen and (min-width: 1601px) {
   .homeControlPF {
@@ -1486,14 +1504,7 @@ body {
               height: 50%;
               background-color: transparent;
               padding-left: calc(16px);
-              padding-right: calc(16px); }
-              .homeControlPF .homeControlPF__background .homeControlPF__items > .itemControl .itemControl_background .text p {
-                width: 100%;
-                color: #1a1a1a;
-                font-family: GelionLight;
-                text-align: center;
-                font-size: calc(13.6px);
-                font-weight: 500; } }
+              padding-right: calc(16px); } }
 
 .homeControlSquare {
   width: 100%;
@@ -1501,11 +1512,9 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
-  justify-content: center;
-  padding-left: calc(40px);
-  padding-right: calc(40px); }
+  justify-content: center; }
   .homeControlSquare .homeControlSquare__bacckground {
-    width: calc(340px);
+    width: 88%;
     height: auto;
     background-color: transparent;
     display: flex;
@@ -1518,11 +1527,11 @@ body {
     padding-bottom: calc(16px); }
     .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row {
       width: 100%;
+      max-width: 450px;
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 1.5fr 1fr;
-      border: solid 0px #828282;
-      border-radius: 5px;
+      border-radius: calc(8px);
       box-shadow: 0px 0px 2px #828282; }
       .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
         padding-top: calc(8px);
@@ -1546,9 +1555,9 @@ body {
           width: 1em;
           margin-left: -1em; }
       .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
-        grid-template-areas: "image" "info"; }
+        grid-template-areas: "image" "info";
+        border: solid 1px #dee2e6; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.image {
-          background-color: green;
           grid-area: image;
           background-image: url("../resources/image/controlsquare/square1_mobile.jpg");
           background-position: 50%;
@@ -1574,7 +1583,7 @@ body {
               color: #d61c25;
               font-family: SFProBold;
               font-weight: 700;
-              font-size: 20px; }
+              font-size: calc(16px); }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text {
             width: 100%;
             height: auto; }
@@ -1582,7 +1591,7 @@ body {
               color: #1a1a1a;
               font-family: GelionLight;
               font-weight: 300;
-              font-size: 12px; }
+              font-size: calc(16px); }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button {
             width: 100%;
             height: auto;
@@ -1599,7 +1608,6 @@ body {
               font-family: GelionLight;
               font-size: calc(20px);
               text-align: center;
-              border-radius: 0px;
               text-decoration: none;
               font-weight: 700;
               padding-top: 2px;
@@ -1607,7 +1615,8 @@ body {
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .button .linkButton:hover {
                 background-color: #d14b52; }
       .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom {
-        grid-template-areas: "image" "info"; }
+        grid-template-areas: "image" "info";
+        border: solid 1px #dee2e6; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.image {
           background-color: green;
           grid-area: image;
@@ -1630,7 +1639,7 @@ body {
               color: #d61c25;
               font-family: SFProBold;
               font-weight: 700;
-              font-size: 16px; }
+              font-size: calc(16px); }
             .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .title h3 {
               color: #d61c25;
               font-family: SFProBold;
@@ -1644,7 +1653,7 @@ body {
               color: #1a1a1a;
               font-family: GelionLight;
               font-weight: 300;
-              font-size: 12px; }
+              font-size: calc(16px); }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button {
             width: 100%;
             height: auto;
@@ -1660,13 +1669,12 @@ body {
               font-family: GelionLight;
               font-size: calc(20px);
               text-align: center;
-              border-radius: 8px;
+              border-radius: calc(8px);
               text-decoration: none;
               font-weight: 700;
               padding-top: 2px;
               display: grid;
-              grid-template-columns: 20% 80%;
-              border-radius: 8px; }
+              grid-template-columns: 20% 80%; }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton:hover {
                 background-color: #d14b52; }
               .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .button .linkButton p {
@@ -1699,34 +1707,38 @@ body {
       height: auto;
       gap: calc(16px); }
       .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row {
-        grid-template-rows: 1fr; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
-          padding-left: 0px;
-          width: 100%; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
-          padding-left: 10px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list ul li {
-            font-size: 12px; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
-          padding-left: 0px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton {
-            width: calc(176px);
-            height: calc(36px);
-            font-size: calc(20px);
-            display: grid;
-            grid-template-columns: 20% 80%;
-            border-radius: 8px; }
-            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton p {
-              text-align: center; }
-            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton div #svg__check1 {
-              width: 20px; }
-              .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton div #svg__check1 g .check {
-                fill-opacity: 0;
-                stroke: #fff;
-                stroke-width: calc(16px);
-                stroke-dashoffset: 0;
-                stroke-dasharray: 2000;
-                animation: animation__button 3s ease-in-out infinite; }
+        grid-template-rows: 1fr;
+        max-width: 450px;
+        width: 88%; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top {
+          border: solid 1px #dee2e6; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
+            padding-left: 0px;
+            width: 100%; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
+            padding-left: 10px; }
+            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list ul li {
+              font-size: calc(16px); }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
+            padding-left: 0px; }
+            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton {
+              width: calc(176px);
+              height: calc(36px);
+              font-size: calc(20px);
+              display: grid;
+              grid-template-columns: 20% 80%;
+              border-radius: 8px; }
+              .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton p {
+                text-align: center; }
+              .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton div #svg__check1 {
+                width: 20px; }
+                .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button .linkButton div #svg__check1 g .check {
+                  fill-opacity: 0;
+                  stroke: #fff;
+                  stroke-width: calc(16px);
+                  stroke-dashoffset: 0;
+                  stroke-dasharray: 2000;
+                  animation: animation__button 3s ease-in-out infinite; }
 
 @keyframes animation__button {
   0% {
@@ -1739,26 +1751,28 @@ body {
     stroke-dashoffset: 0; }
   100% {
     stroke-dashoffset: 2000; } }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .text {
-          font-size: 12px; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
-          height: 200px;
-          background-image: url("../resources/image/controlsquare/big_square1_mobile.jpg"); }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
-          height: 200px;
-          background-image: url("../resources/image/controlsquare/big_square3_mobile.jpg"); }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
-          padding-right: 0px;
-          width: 100%; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title h3 {
-            font-size: 24px; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
-          padding-left: 10px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list ul li {
-            font-size: 12px; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
-          height: 200px;
-          background-image: url("../resources/image/controlsquare/big_square2_mobile.jpg"); }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .text {
+            font-size: calc(16px); }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
+            height: 200px;
+            background-image: url("../resources/image/controlsquare/big_square1_mobile.jpg"); }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
+            height: 200px;
+            background-image: url("../resources/image/controlsquare/big_square3_mobile.jpg"); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom {
+          border: solid 1px #dee2e6; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
+            padding-right: 0px;
+            width: 100%; }
+            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title h3 {
+              font-size: calc(16px); }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
+            padding-left: 10px; }
+            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list ul li {
+              font-size: calc(16px); }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
+            height: 200px;
+            background-image: url("../resources/image/controlsquare/big_square2_mobile.jpg"); }
 
 @media only screen and (min-width: 769px) and (max-width: 1600px) {
   .homeControlSquare {
@@ -1786,7 +1800,8 @@ body {
         grid-template-rows: 100%;
         justify-content: space-between;
         position: relative;
-        box-shadow: none; }
+        box-shadow: none;
+        max-width: none; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
           padding-top: calc(8px);
           padding-bottom: calc(8px); }
@@ -1838,7 +1853,8 @@ body {
             width: 1em;
             margin-left: -1em; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
-          grid-template-areas: "info image"; }
+          grid-template-areas: "info image";
+          border: none; }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square {
             display: flex;
             flex-direction: column;
@@ -1904,11 +1920,6 @@ body {
                 width: 100%;
                 height: auto;
                 transform: rotateX(90deg); }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text p {
-                  color: #1a1a1a;
-                  font-family: GelionLight;
-                  font-weight: 300;
-                  font-size: calc(17.6px); }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
                   animation-delay: 1.6s;
@@ -1961,7 +1972,8 @@ body {
               filter: grayscale(100%);
               opacity: 0.35; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom {
-          grid-template-areas: "image info"; }
+          grid-template-areas: "image info";
+          border: none; }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square {
             display: flex;
             flex-direction: column;
@@ -2019,10 +2031,6 @@ body {
                 height: auto;
                 transform: rotateX(90deg); }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text p {
-                  color: #1a1a1a;
-                  font-family: GelionLight;
-                  font-weight: 300;
-                  font-size: calc(17.6px);
                   text-align: right; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
@@ -2092,12 +2100,8 @@ body {
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
           padding-left: 50px;
           width: 100%; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title h3 {
-            font-size: 24px; }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
           padding-left: 70px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list ul li {
-            font-size: calc(17.6px); }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
           padding-left: 50px; }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
@@ -2123,12 +2127,8 @@ body {
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
           padding-right: 100px;
           width: 100%; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title h3 {
-            font-size: 24px; }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
           padding-right: 30px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list ul li {
-            font-size: calc(17.6px); }
         .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
           height: 100%;
           background-image: url("../resources/image/controlsquare/big_square2_desktop.jpg"); } }
@@ -2159,7 +2159,8 @@ body {
         grid-template-rows: 100%;
         justify-content: space-between;
         position: relative;
-        box-shadow: none; }
+        box-shadow: none;
+        max-width: none; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row .row__square.info .list {
           padding-top: calc(8px);
           padding-bottom: calc(8px); }
@@ -2211,7 +2212,8 @@ body {
             width: 1em;
             margin-left: -1em; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top {
-          grid-template-areas: "info image"; }
+          grid-template-areas: "info image";
+          border: none; }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square {
             display: flex;
             flex-direction: column;
@@ -2275,11 +2277,6 @@ body {
                 width: 100%;
                 height: auto;
                 transform: rotateX(90deg); }
-                .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text p {
-                  color: #1a1a1a;
-                  font-family: GelionLight;
-                  font-weight: 300;
-                  font-size: calc(20px); }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.top .row__square.info .text--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
                   animation-delay: 0.6s;
@@ -2332,7 +2329,8 @@ body {
               filter: grayscale(100%);
               opacity: 0.35; }
         .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom {
-          grid-template-areas: "image info"; }
+          grid-template-areas: "image info";
+          border: none; }
           .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square {
             display: flex;
             flex-direction: column;
@@ -2390,10 +2388,6 @@ body {
                 height: auto;
                 transform: rotateX(90deg); }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text p {
-                  color: #1a1a1a;
-                  font-family: GelionLight;
-                  font-weight: 300;
-                  font-size: calc(20px);
                   text-align: right; }
                 .homeControlSquare .homeControlSquare__bacckground .homeControlSquare_row.bottom .row__square.info .text--effect {
                   animation: animnation__homeControlSquare__TEXT 0.2s ease-in;
@@ -2444,13 +2438,15 @@ body {
       .homeControlSquare .homeControlSquare__bacckground--big {
         width: calc(960px);
         height: calc(1080px); }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image {
-          margin-left: -480px;
-          margin-right: 480px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image--effect {
-            animation: animation__homeControlSquare__UP__BIG .35s ease-out;
-            animation-delay: 0.35s;
-            animation-fill-mode: forwards; }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top {
+          border: none; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image {
+            margin-left: -480px;
+            margin-right: 480px; }
+            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.image--effect {
+              animation: animation__homeControlSquare__UP__BIG .35s ease-out;
+              animation-delay: 0.35s;
+              animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__UP__BIG {
     from {
       margin-left: -480px;
@@ -2458,32 +2454,30 @@ body {
     to {
       margin-left: 0px;
       margin-right: 0px; } }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
-          padding-left: 50px;
-          width: 100%; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title h3 {
-            font-size: 24px; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
-          padding-left: 70px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list ul li {
-            font-size: calc(17.6px); }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
-          padding-left: 50px; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.float {
-          right: 144px; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
-          height: 100%;
-          background-image: url("../resources/image/controlsquare/big_square1_desktop.jpg"); }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
-          height: 100%;
-          background-image: url("../resources/image/controlsquare/big_square3_desktop.jpg"); }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image {
-          margin-left: 480px;
-          margin-right: -480px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image--effect {
-            animation: animation__homeControlSquare__DOWN__BIG .35s ease-out;
-            animation-delay: 0.35s;
-            animation-fill-mode: forwards; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .title {
+            padding-left: 50px;
+            width: 100%; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .list {
+            padding-left: 70px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.info .button {
+            padding-left: 50px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top .row__square.float {
+            right: 144px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(1) .row__square.image {
+            height: 100%;
+            background-image: url("../resources/image/controlsquare/big_square1_desktop.jpg"); }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.top:nth-child(3) .row__square.image {
+            height: 100%;
+            background-image: url("../resources/image/controlsquare/big_square3_desktop.jpg"); }
+        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom {
+          border: none; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image {
+            margin-left: 480px;
+            margin-right: -480px; }
+            .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.image--effect {
+              animation: animation__homeControlSquare__DOWN__BIG .35s ease-out;
+              animation-delay: 0.35s;
+              animation-fill-mode: forwards; }
   @keyframes animation__homeControlSquare__DOWN__BIG {
     from {
       margin-left: 480px;
@@ -2491,20 +2485,16 @@ body {
     to {
       margin-left: 0px;
       margin-right: 0px; } }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
-          padding-right: 100px;
-          width: 100%; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title h3 {
-            font-size: 24px; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
-          padding-right: 30px; }
-          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list ul li {
-            font-size: calc(17.6px); }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.float {
-          left: 144px; }
-        .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
-          height: 100%;
-          background-image: url("../resources/image/controlsquare/big_square2_desktop.jpg"); } }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .title {
+            padding-right: 50px;
+            width: 100%; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.info .list {
+            padding-right: 30px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom .row__square.float {
+            left: 144px; }
+          .homeControlSquare .homeControlSquare__bacckground--big .homeControlSquare_row.bottom:nth-child(2) .row__square.image {
+            height: 100%;
+            background-image: url("../resources/image/controlsquare/big_square2_desktop.jpg"); } }
 
 .homeControlIcaGroup {
   width: 100%;
@@ -2567,11 +2557,18 @@ body {
             background-image: url("../resources/client/ps29.png"); }
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(2) .itemControl:nth-child(2) .image {
             background-image: url("../resources/client/solicitalo.png"); }
+        .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(3) {
+          grid-area: col3; }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(3) .itemControl:nth-child(1) .image {
+            background-image: url("../resources/client/icredit.png"); }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(3) .itemControl:nth-child(2) .image {
+            background-image: url("../resources/client/icredit.png"); }
         .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl {
           width: calc(200px);
           height: calc(72px);
           background-color: #ececec8a;
-          border-radius: 8px; }
+          border-radius: 8px;
+          border: solid 1px #dee2e6; }
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl .image {
             width: 100%;
             height: 100%;
@@ -2605,8 +2602,8 @@ body {
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl .image {
             width: 100%;
             height: 100%;
-            background-position: 50%;
-            background-size: 60%;
+            background-position: 50% 50%;
+            background-size: 72%;
             background-repeat: no-repeat; }
   .homeControlIcaGroup--home .homeControlIcaGroup__background {
     max-width: 340px; }
@@ -2615,7 +2612,34 @@ body {
       .homeControlIcaGroup--home .homeControlIcaGroup__background .homeControlIcaGroup__columns .column {
         justify-content: space-between; } }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .homeControlIcaGroup .homeControlIcaGroup__background {
+    max-width: 510px; }
+    .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns {
+      width: 85%;
+      gap: calc(8px); }
+      .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column {
+        width: 100%;
+        gap: calc(8px); }
+        .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl {
+          width: calc(200px);
+          height: calc(56px);
+          background-color: #ececec8a;
+          border-radius: 8px; }
+          .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl .image {
+            width: 100%;
+            height: 100%;
+            background-position: 50%;
+            background-size: 60%;
+            background-repeat: no-repeat; }
+  .homeControlIcaGroup--home .homeControlIcaGroup__background {
+    max-width: 410px; }
+    .homeControlIcaGroup--home .homeControlIcaGroup__background .homeControlIcaGroup__columns {
+      width: 100%; }
+      .homeControlIcaGroup--home .homeControlIcaGroup__background .homeControlIcaGroup__columns .column {
+        justify-content: space-between; } }
+
+@media only screen and (min-width: 1201px) {
   .homeControlIcaGroup {
     padding-top: calc(16px); }
     .homeControlIcaGroup .homeControlIcaGroup__background {
@@ -2647,7 +2671,9 @@ body {
               animation-fill-mode: forwards; }
             .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl--effect--col3:nth-child(2) {
               animation: animation__homeControlIcaGroup__item 0.55s ease-in-out;
-              animation-fill-mode: forwards; } }
+              animation-fill-mode: forwards; }
+            .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column .itemControl .image {
+              background-size: 75%; } }
 
 /*HEAD PAGE TODAS*/
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -2687,7 +2713,8 @@ body {
           font-family: SFProHeavy;
           letter-spacing: -2px;
           line-height: calc(32px);
-          background-color: rgba(192, 192, 192, 0.205); }
+          background-color: rgba(192, 192, 192, 0.205);
+          font-size: calc(28px); }
       .headPage .headPage__background .headPage__text {
         width: 100%;
         height: auto;
@@ -2985,7 +3012,7 @@ body {
             padding-left: calc(40px);
             padding-top: calc(16px);
             text-decoration: none;
-            border: 1px solid #46494c46; }
+            border: 1px solid #dee2e6; }
             .controlCalculator .controlCalculator__background .sideOptions .sideOptions__background .itemOption .itemOption__button p {
               background-color: transparent;
               font-family: GelionLight;
@@ -3460,7 +3487,7 @@ body {
       justify-content: center;
       gap: calc(32px); }
       .contactoControlContactanos .contactoControlContactanos__background .row .pharagrap {
-        font-size: 16px;
+        font-size: calc(16px);
         text-align: center;
         color: #1a1a1a;
         font-weight: bold;
@@ -3471,24 +3498,26 @@ body {
         .contactoControlContactanos .contactoControlContactanos__background .row--title h2 {
           color: #d61c25;
           text-align: center;
-          font-size: 20px;
+          font-size: calc(24px);
           padding-top: calc(16px);
           font-family: SFProHeavy; }
       .contactoControlContactanos .contactoControlContactanos__background .row--form {
         display: flex;
         align-items: center;
         justify-items: center;
-        justify-content: center; }
+        justify-content: center;
+        width: 88%; }
         .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto {
-          width: 75%;
-          background-color: white;
+          width: 100%;
+          background-color: #ffffff;
           border-radius: calc(8px);
           padding: calc(16px);
           display: flex;
           flex-direction: column;
           gap: calc(16px);
           padding-top: calc(24px);
-          padding-bottom: calc(24px); }
+          padding-bottom: calc(24px);
+          border: solid 1px #dee2e6; }
           .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row {
             width: 100%;
             height: auto;
@@ -3506,11 +3535,11 @@ body {
                 margin: 0;
                 font-weight: bold;
                 font-family: GelionLight;
-                font-size: 15px;
+                font-size: calc(16px);
                 vertical-align: middle;
                 text-align: left; }
               .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-control, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-control {
-                font-size: 14px;
+                font-size: calc(16px);
                 background-color: #f6f6f8;
                 font-weight: bold;
                 font-family: GelionLight; }
@@ -3526,7 +3555,7 @@ body {
                   padding-top: 3px;
                   padding-left: 3px;
                   color: #828282;
-                  font-size: 12px; }
+                  font-size: calc(16px); }
               .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .buttonBar, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .buttonBar {
                 width: 100%;
                 display: flex;
@@ -3564,9 +3593,10 @@ body {
             justify-content: center;
             width: calc(200px);
             height: calc(200px);
-            border: solid 1px #ced4da;
             border-radius: calc(16px);
-            padding: calc(0px); }
+            padding: calc(0px);
+            border: solid 1px #dee2e6;
+            text-decoration: none; }
             .contactoControlContactanos .contactoControlContactanos__background .row--medios .items .item:nth-child(1) .image {
               width: 100%;
               height: 75px;
@@ -3607,7 +3637,10 @@ body {
                 font-size: 14px;
                 font-family: GelionLight;
                 color: #1a1a1a;
-                text-align: center; } }
+                text-align: center; }
+                .contactoControlContactanos .contactoControlContactanos__background .row--medios .items .item .text p a {
+                  text-decoration: none;
+                  color: #1a1a1a; } }
 
 @media only screen and (min-width: 769px) {
   .contactoControlContactanos {
@@ -3630,7 +3663,6 @@ body {
       justify-content: center;
       gap: calc(24px); }
       .contactoControlContactanos .contactoControlContactanos__background .row .pharagrap {
-        font-size: 16px;
         text-align: center;
         color: #1a1a1a;
         font-weight: bold;
@@ -3641,7 +3673,6 @@ body {
         .contactoControlContactanos .contactoControlContactanos__background .row--title h2 {
           color: #d61c25;
           text-align: center;
-          font-size: 20px;
           padding-top: calc(24px);
           font-family: SFProHeavy; }
       .contactoControlContactanos .contactoControlContactanos__background .row--form {
@@ -3661,7 +3692,8 @@ body {
           flex-direction: column;
           align-items: center;
           justify-items: center;
-          justify-content: center; }
+          justify-content: center;
+          border: solid 1px #dee2e6; }
           .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row {
             width: 100%;
             height: auto;
@@ -3680,11 +3712,9 @@ body {
                 margin: 0;
                 font-weight: bold;
                 font-family: GelionLight;
-                font-size: 15px;
                 vertical-align: middle;
                 text-align: left; }
               .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-control, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-control {
-                font-size: 14px;
                 background-color: #f6f6f8;
                 font-weight: bold;
                 font-family: GelionLight; }
@@ -3742,7 +3772,9 @@ body {
             align-items: center;
             justify-items: center;
             justify-content: center;
-            background-color: white; }
+            background-color: white;
+            border: solid 1px #dee2e6;
+            text-decoration: none; }
             .contactoControlContactanos .contactoControlContactanos__background .row--medios .items .item:nth-child(1) .image {
               width: 100%;
               height: 75px;
@@ -3768,12 +3800,12 @@ body {
               width: 100%;
               height: auto; }
               .contactoControlContactanos .contactoControlContactanos__background .row--medios .items .item .title p {
-                font-size: 14px;
                 font-family: GelionLight;
                 color: #1a1a1a;
                 font-weight: bold;
                 text-align: center;
-                line-height: 1px; }
+                line-height: 1px;
+                font-size: 14px; }
             .contactoControlContactanos .contactoControlContactanos__background .row--medios .items .item .text {
               display: flex;
               justify-content: center;
@@ -3781,11 +3813,14 @@ body {
               padding-right: calc(24px); }
               .contactoControlContactanos .contactoControlContactanos__background .row--medios .items .item .text p {
                 width: 100%;
-                font-size: 14px;
                 font-family: GelionLight;
                 color: #1a1a1a;
                 text-align: center;
-                background-color: transparent; } }
+                background-color: transparent;
+                font-size: 14px; }
+                .contactoControlContactanos .contactoControlContactanos__background .row--medios .items .item .text p a {
+                  text-decoration: none;
+                  color: #1a1a1a; } }
 
 /*CENTRO AYUDA*/
 .cayudaControlBuscar {
@@ -3814,22 +3849,24 @@ body {
       height: auto; }
       .cayudaControlBuscar .cayudaControlBuscar__background .title h2 {
         color: #d61c25;
-        font-size: 20px;
+        font-size: calc(24px);
         text-align: center;
         font-family: SFProHeavy; }
     .cayudaControlBuscar .cayudaControlBuscar__background .controlInput {
       width: 100%;
       height: auto; }
       .cayudaControlBuscar .cayudaControlBuscar__background .controlInput .input-group .input-group-text {
-        background-color: #f6f6f8; }
+        background-color: #ffffff;
+        border-color: #dee2e6; }
         .cayudaControlBuscar .cayudaControlBuscar__background .controlInput .input-group .input-group-text .buttonFind {
           color: #828282;
-          font-size: 14px; }
+          font-size: calc(16px); }
       .cayudaControlBuscar .cayudaControlBuscar__background .controlInput .input-group input {
-        font-size: 14px;
-        background-color: #f6f6f8;
+        font-size: calc(16px);
+        background-color: #ffffff;
         font-weight: bold;
-        font-family: GelionLight; }
+        font-family: GelionLight;
+        border-color: #dee2e6; }
         .cayudaControlBuscar .cayudaControlBuscar__background .controlInput .input-group input:focus {
           box-shadow: none; }
 
@@ -3870,7 +3907,8 @@ body {
     .cayudaControlFAKS > .title p {
       color: #1a1a1a;
       text-align: center;
-      font-family: SFProHeavy; }
+      font-family: SFProHeavy;
+      font-size: calc(16px); }
   .cayudaControlFAKS .cayudaControlFAKS__background {
     width: 100%;
     height: auto;
@@ -3943,7 +3981,7 @@ body {
                 padding-top: calc(8px); }
                 .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text p {
                   width: 100%;
-                  font-size: 14px;
+                  font-size: calc(16px);
                   color: #1a1a1a;
                   text-align: justify;
                   font-family: GelionLight; }
@@ -4180,7 +4218,8 @@ body {
                   line-height: calc(56px);
                   padding-left: 8px; }
               .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle {
-                width: 100%; }
+                width: 100%;
+                display: none; }
                 .nosotrosControlTab .nosotrosControlTab__background .content .item .background .head .title .subtitle p {
                   width: auto;
                   color: #d61c25;
@@ -4242,13 +4281,15 @@ body {
                   width: 100%; }
                   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .title h2 {
                     color: #d61c25;
-                    font-family: SFProBold; }
+                    font-family: SFProBold;
+                    font-size: calc(24px); }
                 .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .paragraph {
                   width: 100%; }
                   .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlMisionVision .nosotrosControlMisionVision__background .side .paragraph p {
                     font-family: GelionLight;
                     line-height: calc(20px);
-                    text-align: justify; }
+                    text-align: justify;
+                    font-size: calc(16px); }
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
@@ -4485,7 +4526,8 @@ body {
       .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .title h2 {
         color: #1a1a1a;
         text-align: center;
-        font-family: SFProBold; }
+        font-family: SFProBold;
+        font-size: calc(24px); }
     .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items {
       width: 100%;
       /*display: flex;
@@ -4531,7 +4573,7 @@ body {
           padding: calc(40px);
           border-radius: 8px;
           z-index: 1073;
-          border: solid 1px #ececec;
+          border: solid 1px #dee2e6;
           overflow: hidden; }
           .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl {
             width: calc(64px);
@@ -4603,7 +4645,7 @@ body {
           padding-left: calc(24px);
           padding-right: calc(24px);
           z-index: 1072;
-          border: solid 1px #ececec;
+          border: solid 1px #dee2e6;
           background-color: #ffffff; }
           .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .info .title {
             width: 100%; }
@@ -4698,7 +4740,7 @@ body {
       padding-right: calc(48px); }
       .nosotrosControlExperiencia .nosotrosControlExperiencia__background .title h2 {
         color: #d61c25;
-        font-size: calc(28px);
+        font-size: calc(24px);
         font-family: SFProBold;
         text-align: right;
         line-height: calc(24px); }
@@ -4747,11 +4789,11 @@ body {
                 justify-content: center; }
                 .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item .item__back .item__number .number__icon .fas, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item .item__back .item__number .number__icon .fas {
                   color: #d61c25;
-                  font-size: calc(20px);
+                  font-size: calc(18px);
                   padding: calc(8px); }
                 .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item .item__back .item__number .number__text h3, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item .item__back .item__number .number__text h3 {
                   color: #d61c25;
-                  font-size: calc(44px);
+                  font-size: calc(36px);
                   font-family: SFProBold;
                   letter-spacing: -4px; }
               .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item .item__back .text, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item .item__back .text {
@@ -4765,7 +4807,7 @@ body {
                   text-align: center;
                   color: #1a1a1a;
                   font-family: GelionLight;
-                  font-size: calc(20px);
+                  font-size: calc(16px);
                   line-height: calc(16px); }
 
 @media only screen and (min-width: 300px) and (max-width: 900px) {
@@ -4776,17 +4818,9 @@ body {
       .nosotrosControlExperiencia .nosotrosControlExperiencia__background .image .image__object {
         width: calc(256px);
         height: calc(256px); }
-    .nosotrosControlExperiencia .nosotrosControlExperiencia__background .title h2 {
-      font-size: calc(24px); }
     .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item {
       width: calc(144px);
-      height: calc(144px); }
-      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item .item__back .item__number .number__icon .fas, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item .item__back .item__number .number__icon .fas {
-        font-size: calc(16px); }
-      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item .item__back .item__number .number__text h3, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item .item__back .item__number .number__text h3 {
-        font-size: calc(32px); }
-      .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col1 .item .item__back .text p, .nosotrosControlExperiencia .nosotrosControlExperiencia__background .info .info__back .col2 .item .item__back .text p {
-        font-size: calc(16px); } }
+      height: calc(144px); } }
 
 @media only screen and (min-width: 901px) {
   .nosotrosControlExperiencia {
@@ -4832,7 +4866,7 @@ body {
         padding-right: calc(0px); }
         .nosotrosControlExperiencia .nosotrosControlExperiencia__background .title h2 {
           color: #d61c25;
-          font-size: calc(32px);
+          font-size: calc(24px);
           font-family: SFProBold;
           text-align: right;
           line-height: calc(32px); }
@@ -4971,7 +5005,7 @@ body {
               color: #d61c25;
               text-decoration: none;
               font-family: GelionLight;
-              font-size: 12px; }
+              font-size: calc(16px); }
         .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .paragraph {
           grid-area: col4; }
           .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .paragraph p {
@@ -5038,7 +5072,7 @@ body {
               .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .level h4 {
                 width: 100%;
                 font-family: GelionLight;
-                font-size: calc(11.2px);
+                font-size: calc(16px);
                 text-align: center;
                 color: #d61c25;
                 line-height: calc(8px); }
@@ -5076,7 +5110,7 @@ body {
                 color: #d61c25;
                 text-decoration: none;
                 font-family: SFProBold;
-                font-size: 12px; }
+                font-size: calc(16px); }
 
 @media only screen and (min-width: 900px) {
   .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background {
@@ -5108,10 +5142,6 @@ body {
       .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .image .image__object {
         width: calc(120px);
         height: calc(120px); }
-      .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .name h3 {
-        font-size: calc(18.4px); }
-      .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .level h4 {
-        font-size: calc(13.6px); }
       .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .social .item .icon {
         width: calc(24px);
         height: calc(24px); } }
@@ -5188,7 +5218,8 @@ body {
           width: calc(200px);
           height: calc(72px);
           background-color: #ececec8a;
-          border-radius: 8px; }
+          border-radius: 8px;
+          border: solid 1px #dee2e6; }
           .nosotrosConrolAliados .nosotrosConrolAliados__background .nosotrosConrolAliados__columns .column .itemControl .image {
             width: 100%;
             height: 100%;
