@@ -24,34 +24,34 @@
                         </div>
                     </a>
                     <div class="menu menuIcon menuIcon--active arrow">
-                        <i class="fas fa-angle-right"></i>
+                        <i class="fas fa-angle-right d-none"></i>
                     </div>
                 </div>
                 <div class="siteMenu__background__sideRight">
                     <nav>
                         <div class="nav__itemMenu">
-                            <div class="nav__itemMenu__nivel parent" data-attr-child="abc12345">
+                            <div id="parent354" class="nav__itemMenu__nivel parent" data-attr-child="child354">
                                 <div class="menu">
-                                    <a href="index.html" class="menu__link classEventOnClick">
+                                    <a href="#" class="menu__link classEventOnClick">
                                         Nosotros
                                     </a>
                                 </div>
                             </div>
-                            <div class="nav__itemMenu__nivel child" id="abc12345">
+                            <div class="nav__itemMenu__nivel child" id="child354" data-attr-parent="parent354">
                                 <div class="menu">
-                                    <a href="nosotros.html?codeTab=0" class="menu__link">
+                                    <a href="nosotros.html?codeTab=1" class="menu__link">
                                         Nosotros
                                     </a>
                                 </div>
                                 <div class="menu">
-                                    <a href="nosotros.html?codeTab=1" class="menu__link">
+                                    <a href="nosotros.html?codeTab=2" class="menu__link">
                                         Equipo Apoyo Capital
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav__itemMenu">
-                            <div class="nav__itemMenu__nivel parent">
+                            <div id="parent325" class="nav__itemMenu__nivel parent" data-attr-child="child325">
                                 <div class="menu">
                                     <a href="producto.html" class="menu__link">
                                         Producto
@@ -62,7 +62,7 @@
                         <div class="nav__itemMenu">
                             <div class="nav__itemMenu__nivel parent">
                                 <div class="menu">
-                                    <a href="#" class="menu__link">
+                                    <a href="noticias.html" class="menu__link">
                                         Noticias
                                     </a>
                                 </div>
@@ -270,9 +270,14 @@
         $('.imageBrand').toggleClass("imageBrand--active");
         $('.menuIcon').toggleClass("menuIcon--active");
     })
-    $(".nav__itemMenu__nivel.parent").on("click", function(){
+    $(".nav__itemMenu__nivel.parent").hover(function(){
+        let xPosT = $(this).position().top;
+        let xPosL = $(this).position().left;
+        console.log(xPosT)
+        console.log(xPosL)
         let childId = $(this).attr("data-attr-child");
         $(".nav__itemMenu__nivel.child:not(#" + childId + ")").hide();
+        $("#" + childId).css({top: (xPosT + 40), left: xPosL});
         $("#" + childId).toggle();
         if($(".nav__itemMenu__nivel.child#" + childId).is(":visible")){
             $('.imageBrand').addClass("imageBrand--zoom");
@@ -281,6 +286,12 @@
             $('.imageBrand').removeClass("imageBrand--zoom");
         }
     })
+    $(".nav__itemMenu__nivel.child").hover( function(){
+        let parentId = $(this).attr("data-attr-parent");
+        console.log(parentId);
+        $("#" + parentId + " .menu .menu__link").toggleClass("classhover")
+        $(this).toggle();
+    });
     //readySiteMenu();
     $(document).ready(function() {
         responsiveControl();

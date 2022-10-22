@@ -341,6 +341,9 @@ body {
                     .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link:hover {
                       background-color: #d61c25;
                       color: #ffffff; }
+                    .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link.classhover {
+                      background-color: #d61c25;
+                      color: #ffffff; }
               .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child {
                 z-index: 1077;
                 position: absolute;
@@ -358,6 +361,7 @@ body {
                     .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link:active {
                       background-color: #d14b52; }
                     .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child .menu .menu__link:hover {
+                      background-color: #dee2e6;
                       color: #d61c25; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1220px) {
@@ -2755,7 +2759,6 @@ body {
       z-index: 1072;
       filter: blur(40px); }
     .headPage .headPage__background {
-      z-index: 1073;
       width: 100%;
       min-height: calc(512px - 0px);
       max-height: calc(512px - 0px);
@@ -3374,14 +3377,14 @@ body {
             .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .title h2 {
               color: #d61c25;
               font-family: SFProHeavy;
-              font-size: 20px; }
+              font-size: calc(24px); }
           .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text {
             width: 100%;
             height: auto; }
             .productoControlFinanciamos .productoControlFinanciamos__background .side--info .content .text p {
               color: #1a1a1a;
               font-family: GelionLight;
-              font-size: 16px; }
+              font-size: calc(16px); }
       .productoControlFinanciamos .productoControlFinanciamos__background .side--image {
         display: none; }
 
@@ -3551,11 +3554,21 @@ body {
                 justify-content: center;
                 padding-top: calc(16px);
                 padding-bottom: calc(16px); }
+                .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-input, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-input {
+                  border: solid 1px #dee2e6; }
+                  .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-input:focus, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-input:focus {
+                    box-shadow: none; }
+                  .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-input:checked, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-input:checked {
+                    background-color: #d61c25; }
                 .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-label, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-label {
                   padding-top: 3px;
                   padding-left: 3px;
                   color: #828282;
-                  font-size: calc(16px); }
+                  font-size: 12px; }
+                  .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-label .linkTermsCond, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-label .linkTermsCond {
+                    text-decoration: none;
+                    color: #d61c25;
+                    font-weight: 700; }
               .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .buttonBar, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .buttonBar {
                 width: 100%;
                 display: flex;
@@ -3569,6 +3582,9 @@ body {
                   background-color: #d61c25;
                   border: none;
                   border-radius: 8px; }
+                  .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .buttonBar .buttonEnviar--disabled, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .buttonBar .buttonEnviar--disabled {
+                    background-color: #dee2e6;
+                    color: white; }
       .contactoControlContactanos .contactoControlContactanos__background .row--medios {
         display: flex;
         align-items: center;
@@ -3726,11 +3742,21 @@ body {
                 justify-content: center;
                 padding-top: calc(16px);
                 padding-bottom: calc(16px); }
+                .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-input, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-input {
+                  border: solid 1px #dee2e6; }
+                  .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-input:focus, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-input:focus {
+                    box-shadow: none; }
+                  .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-input:checked, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-input:checked {
+                    background-color: #d61c25; }
                 .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-label, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-label {
                   padding-top: 3px;
                   padding-left: 3px;
                   color: #828282;
                   font-size: 12px; }
+                  .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .form-check .form-check-label .linkTermsCond, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .form-check .form-check-label .linkTermsCond {
+                    text-decoration: none;
+                    color: #d61c25;
+                    font-weight: 700; }
               .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .buttonBar, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .buttonBar {
                 width: 100%;
                 display: flex;
@@ -3744,6 +3770,9 @@ body {
                   background-color: #d61c25;
                   border: none;
                   border-radius: 8px; }
+                  .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col1 .buttonBar .buttonEnviar--disabled, .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row .col2 .buttonBar .buttonEnviar--disabled {
+                    background-color: #dee2e6;
+                    color: white; }
             .contactoControlContactanos .contactoControlContactanos__background .row--form .formContacto .form__row--buttonBar {
               flex-direction: column; }
       .contactoControlContactanos .contactoControlContactanos__background .row--medios {
@@ -4094,7 +4123,8 @@ body {
       justify-items: center;
       justify-content: center;
       gap: calc(8px);
-      background-color: transparent; }
+      background-color: transparent;
+      display: none; }
       .nosotrosControlTab .nosotrosControlTab__background .tabs .item {
         width: calc(192px);
         height: calc(48px);
@@ -4936,7 +4966,8 @@ body {
         justify-content: center;
         background-color: #ffffff;
         border-radius: 8px;
-        padding: calc(24px); }
+        padding: calc(24px);
+        border: solid 1px #dee2e6; }
         .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .image {
           grid-area: col1; }
           .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background .image .image__object {
@@ -5111,10 +5142,14 @@ body {
                 text-decoration: none;
                 font-family: SFProBold;
                 font-size: calc(16px); }
+          .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .viewinfo {
+            text-decoration: none;
+            cursor: pointer; }
 
 @media only screen and (min-width: 900px) {
   .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background {
     display: grid;
+    height: calc(352px);
     grid-template-areas: "col1 col2" "col1 col3" "col1 col4";
     background-color: transparent; }
     .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background--effect {
@@ -5297,7 +5332,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: calc(16px);
+    padding-bottom: calc(16px); }
     .controlSimularFactoring .controlSimularFactoring__background .sideLeft {
       width: 50%;
       display: flex;
@@ -5374,20 +5411,6 @@ body {
             font-size: calc(20px);
             text-align: center;
             text-decoration: none; }
-          .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row--button {
-            padding-top: calc(16px);
-            padding-bottom: calc(16px);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            justify-items: center;
-            align-items: center; }
-            .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row--button .form-check {
-              text-align: center; }
-              .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row--button .form-check .form-check-label a {
-                text-align: center;
-                color: #d61c25;
-                font-weight: 500; }
           .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row .multiple {
             display: grid;
             gap: calc(8px); }
@@ -5406,6 +5429,50 @@ body {
             color: #1a1a1a;
             text-align: center;
             font-size: calc(24px); }
+        .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row__final {
+          padding-top: calc(16px);
+          padding-bottom: calc(16px);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          align-items: center; }
+          .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row__final .form-check {
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            padding-top: calc(16px);
+            padding-bottom: calc(16px); }
+            .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row__final .form-check .form-check-input {
+              border: solid 1px #dee2e6; }
+              .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row__final .form-check .form-check-input:focus {
+                box-shadow: none; }
+              .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row__final .form-check .form-check-input:checked {
+                background-color: #d61c25; }
+            .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row__final .form-check .form-check-label {
+              padding-top: 3px;
+              padding-left: 3px;
+              color: #828282;
+              font-size: calc(16px); }
+              .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row__final .form-check .form-check-label .linkTermsCond {
+                text-decoration: none;
+                color: #d61c25;
+                font-weight: 700; }
+          .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row__final .buttonFinalizar {
+            width: 56%;
+            height: calc(32px);
+            color: #ffffff;
+            background-color: #d61c25;
+            border-radius: 8px;
+            border: solid 1px #f5e9e9 !important;
+            font-size: calc(20px);
+            text-align: center;
+            text-decoration: none; }
+            .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step .form_step__row__final .buttonFinalizar--disabled {
+              background-color: #dee2e6;
+              color: white; }
         .controlSimularFactoring .controlSimularFactoring__background .sideRight .form_step--hide {
           display: none; }
 
@@ -5419,18 +5486,14 @@ body {
       width: 50%; }
   .controlSimularFactoring--capital .controlSimularFactoring__background {
     width: calc(1024px);
-    height: auto;
-    padding-top: calc(16px);
-    padding-bottom: calc(16px); }
+    height: auto; }
     .controlSimularFactoring--capital .controlSimularFactoring__background .sideLeft {
       display: block; }
     .controlSimularFactoring--capital .controlSimularFactoring__background .sideRight {
       width: 50%; }
   .controlSimularFactoring--exito .controlSimularFactoring__background {
     width: calc(1152px);
-    height: auto;
-    padding-top: calc(16px);
-    padding-bottom: calc(16px); }
+    height: auto; }
     .controlSimularFactoring--exito .controlSimularFactoring__background .sideLeft {
       display: block; }
     .controlSimularFactoring--exito .controlSimularFactoring__background .sideRight {
@@ -5597,3 +5660,37 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.siteModalTerminosCondiciones {
+  top: 70px;
+  height: 88vh; }
+
+.controlTerminosCondiciones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .controlTerminosCondiciones .controlTerminosCondiciones__background {
+    width: 96%; }
+    .controlTerminosCondiciones .controlTerminosCondiciones__background .title {
+      width: 100%;
+      color: #d61c25;
+      font-size: calc(24px);
+      font-family: SFProHeavy; }
+      .controlTerminosCondiciones .controlTerminosCondiciones__background .title h2 {
+        text-align: center; }
+    .controlTerminosCondiciones .controlTerminosCondiciones__background .firtsParagraph {
+      font-size: calc(12px); }
+      .controlTerminosCondiciones .controlTerminosCondiciones__background .firtsParagraph p {
+        text-align: justify; }
+    .controlTerminosCondiciones .controlTerminosCondiciones__background .content .item .subtitle {
+      width: 100%; }
+      .controlTerminosCondiciones .controlTerminosCondiciones__background .content .item .subtitle h3 {
+        font-size: calc(16px);
+        color: #d61c25;
+        font-family: SFProBold; }
+    .controlTerminosCondiciones .controlTerminosCondiciones__background .content .item .paragraph {
+      width: 100%; }
+      .controlTerminosCondiciones .controlTerminosCondiciones__background .content .item .paragraph p {
+        color: #1a1a1a;
+        font-size: calc(12px); }

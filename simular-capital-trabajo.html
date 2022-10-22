@@ -11,6 +11,77 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="modal fade siteModalTerminosCondiciones" id="modalTerminos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="controlTerminosCondiciones">
+                        <div class="controlTerminosCondiciones__background">
+                            <div class="title">
+                                <h2>TERMINOS Y CONDICIONES</h2>
+                            </div>
+                            <div class="firtsParagraph">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium, vitae modi in exercitationem illum velit dignissimos soluta dicta voluptatibus sapiente fuga fugit est recusandae voluptatum quia? Expedita, eveniet rerum.</p>
+                            </div>
+                            <div class="content">
+                                <div class="item">
+                                    <div class="subtitle">
+                                        <h3>DEFINICIONES:</h3>
+                                    </div>
+                                    <div class="paragraph">
+                                        <p>Plataforma: Es el sitio web www.APOYOCAPITAL.com.pe de titularidad de apoyo capital, al cual acceden los Usuarios. Política de Privacidad: Son las normas que regulan la recopilación, uso y tratamiento de Datos Personales. Usuario: Se entenderá por Usuario a todas las personas naturales (que a título personal o en representación de una persona jurídica) accedan a la Plataforma</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="subtitle">
+                                        <h3>CONFIDENCIALIDAD:</h3>
+                                    </div>
+                                    <div class="paragraph">
+                                        <p>Garantizamos el necesario nivel de secreto de la información y de su tratamiento, para prevenir su divulgación no autorizada cuando está almacenada o en tránsito.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="subtitle">
+                                        <h3>SERVICIOS DE LA EMPRESA:</h3>
+                                    </div>
+                                    <div class="paragraph">
+                                        <p>A través de la Plataforma, el Usuario toma conocimiento y accede a los servicios que presta la Empresa, y, de igual forma, podrá proporcionar datos e información a la Empresa para que este último pueda evaluar la información proporcionada por el Usuario, y determinar si es factible prestarle sus servicios a dicho Usuario.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="subtitle">
+                                        <h3>ACEPTACIÓN DEL USUARIO:</h3>
+                                    </div>
+                                    <div class="paragraph">
+                                        <p>El acceso y la utilización de la Plataforma de la Empresa implican la aceptación sin reservas ni excepciones de todas las disposiciones incluidas en los presentes Términos y Condiciones, siendo obligación del Usuario leer atentamente los mismos antes de hacer uso de la Plataforma y los servicios ofrecidos por la Empresa. Asimismo, el acceso y utilización de la Plataforma tienen carácter libre y gratuito</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="subtitle">
+                                        <h3>REGISTRO:</h3>
+                                    </div>
+                                    <div class="paragraph">
+                                        <p>El Usuario podrá registrarse con un correo electrónico de su titularidad, dirección física y/o teléfono, autorizando expresamente a la Empresa a poder contactarlo en cualquiera o todas de dichas direcciones. En el caso que el Usuario tenga indicios que un tercero tiene acceso a los datos proporcionados a la Empresa, deberá notificarlo de manera inmediata a la Empresa, señalando los motivos por los que considera aquello.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="subtitle">
+                                        <h3>DATOS PERSONALES:</h3>
+                                    </div>
+                                    <div class="paragraph">
+                                        <p>El tratamiento de la información de carácter personal, así como las finalidades de su uso se encuentran detallados en la Política de Privacidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success fs-6 acceptTermsCond" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="siteMenu">
             <div class="siteMenu__background">
@@ -24,34 +95,34 @@
                         </div>
                     </a>
                     <div class="menu menuIcon menuIcon--active arrow">
-                        <i class="fas fa-angle-right"></i>
+                        <i class="fas fa-angle-right d-none"></i>
                     </div>
                 </div>
                 <div class="siteMenu__background__sideRight">
                     <nav>
                         <div class="nav__itemMenu">
-                            <div class="nav__itemMenu__nivel parent" data-attr-child="abc12345">
+                            <div id="parent354" class="nav__itemMenu__nivel parent" data-attr-child="child354">
                                 <div class="menu">
-                                    <a href="index.html" class="menu__link classEventOnClick">
+                                    <a href="#" class="menu__link classEventOnClick">
                                         Nosotros
                                     </a>
                                 </div>
                             </div>
-                            <div class="nav__itemMenu__nivel child" id="abc12345">
+                            <div class="nav__itemMenu__nivel child" id="child354" data-attr-parent="parent354">
                                 <div class="menu">
-                                    <a href="nosotros.html?codeTab=0" class="menu__link">
+                                    <a href="nosotros.html?codeTab=1" class="menu__link">
                                         Nosotros
                                     </a>
                                 </div>
                                 <div class="menu">
-                                    <a href="nosotros.html?codeTab=1" class="menu__link">
+                                    <a href="nosotros.html?codeTab=2" class="menu__link">
                                         Equipo Apoyo Capital
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="nav__itemMenu">
-                            <div class="nav__itemMenu__nivel parent">
+                            <div id="parent325" class="nav__itemMenu__nivel parent" data-attr-child="child325">
                                 <div class="menu">
                                     <a href="producto.html" class="menu__link">
                                         Producto
@@ -155,16 +226,14 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="form_step__row form_step__row--button">
+                            <div class="form_step__row__final">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      He leído los <a href="#">términos y condiciones</a>
+                                    <input class="form-check-input" type="checkbox" value="" id="chkTerminos">
+                                    <label class="form-check-label" for="chkTerminos">
+                                      He leído y acepto la <a href="#" class="linkTermsCond" data-bs-toggle="modal" data-bs-target="#modalTerminos">política de privacidad</a>
                                     </label>
                                 </div>
-                                <a id="buttonFinalizar" type="button" class="buttonFinalizar">
-                                    Finalizar
-                                </a>
+                                <input type="submit" value="Finalizar" class="buttonFinalizar buttonFinalizar--disabled" id="buttonFinalizar" disabled>
                             </div>
                         </form>
                         <form id="form_step2" class="form_step form_step--step2 form_step--hide was-validated">
@@ -287,15 +356,39 @@
         $('.imageBrand').toggleClass("imageBrand--active");
         $('.menuIcon').toggleClass("menuIcon--active");
     })
-    $(".nav__itemMenu__nivel.parent").on("click", function(){
+    $(".nav__itemMenu__nivel.parent").hover(function(){
+        let xPosT = $(this).position().top;
+        let xPosL = $(this).position().left;
+        console.log(xPosT)
+        console.log(xPosL)
         let childId = $(this).attr("data-attr-child");
         $(".nav__itemMenu__nivel.child:not(#" + childId + ")").hide();
+        $("#" + childId).css({top: (xPosT + 40), left: xPosL});
         $("#" + childId).toggle();
         if($(".nav__itemMenu__nivel.child#" + childId).is(":visible")){
             $('.imageBrand').addClass("imageBrand--zoom");
         }
         if(!($(".nav__itemMenu__nivel.child").is(":visible"))){
             $('.imageBrand').removeClass("imageBrand--zoom");
+        }
+    })
+    $(".nav__itemMenu__nivel.child").hover( function(){
+        let parentId = $(this).attr("data-attr-parent");
+        console.log(parentId);
+        $("#" + parentId + " .menu .menu__link").toggleClass("classhover")
+        $(this).toggle();
+    });
+    $(".acceptTermsCond").on("click", function(){
+        $("#chkTerminos").prop('checked', true);
+        $('#chkTerminos').trigger("change");
+    });
+    $('#chkTerminos').on('change', function(){
+        if(this.checked){
+            $("#buttonFinalizar").removeClass("buttonFinalizar--disabled");
+            $("#buttonFinalizar").removeAttr("disabled")
+        }else{
+            $("#buttonFinalizar").addClass("buttonFinalizar--disabled");
+            $("#buttonFinalizar").attr("disabled","")
         }
     })
     //readySiteMenu();
