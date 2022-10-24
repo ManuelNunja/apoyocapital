@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="modalSite" class="modalSite modalSite__animation_hide">
+        <div class="spinner-border text-danger m-1" role="status">
+            <span class="sr-only"></span>
+        </div>
+        <div class="modalSite_text text-danger fw-bold">
+            <span>Estamos procesando tu solicitud</span><span class="dots"></span>
+        </div>
+    </div>
     <div class="modal fade siteModalTerminosCondiciones" id="modalTerminos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
             <div class="modal-content">
@@ -168,62 +176,74 @@
             <div class="controlSimularFactoring controlSimularFactoring--capital controlSimularFactoring--exito">
                 <div class="controlSimularFactoring__background">
                     <div class="sideRight">
-                        <form id="form_step1" class="form_step form_step--step1 was-validated">
+                        <form id="form_step1" class="form_step form_step--step1">
                             <div class="form_step__row">
                                 <h2 class="title">Datos Personales</h2>
                             </div>
                             <div class="form_step__row">
                                 <span class="label">Nombre:</span>
-                                <input id="inputMonto" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputNombre" class="form-control" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <span class="label">Apellido:</span>
-                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputApellido" class="form-control" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <span class="label">Correo electrónico:</span>
-                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputCorreo" class="form-control" type="text" aria-label=".form-control-lg example" required>
                             </div>
-                            <div class="form_step__row">
+                            <div class="form_step__row pb-4">
                                 <span class="label">Teléfono:</span>
-                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputTelefono" class="form-control" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
-                                <span class="label">Datos de tu empresa:</span>
-                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                <span class="label label--empresa">Datos de tu empresa:</span>
+                                <input id="inputRucEmpresa" class="form-control" type="text" placeholder="RUC" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <div class="multiple multiple--2">
-                                    <span class="label">Financiamiento:</span>
+                                    <span class="label label--empresa">Financiamiento:</span>
                                 </div>
-                                <div class="multiple multiple--15">
-                                    <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
+                                <div class="input-group">
+                                    <input id="inputMontoFinanciamiento" class="form-control site__input--group" type="number" aria-label=".form-control-lg example" required>
                                     <span class="input-group-text" id="basic-addon2">
-                                        <select id="inputMoneda" class="form-select" required>
-                                            <option value="">Moneda ?</option>
-                                            <option value="1">Soles</option>
-                                            <option value="2">Dolares</option>
+                                        <select id="inputMontoFinanciamientoMoneda" class="form-select selectMoneda" required>
+                                            <option value="soles">Soles</option>
+                                            <option value="dolares">Dolares</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <span class="label_leyend">El valor mínimo de financiamiento: USD 200,000 o su equivalente en moneda nacional</span>
+                            </div>
+                            <div class="form_step__row">
+                                <span class="label label--empresa">Plazo:</span>
+                                <input id="inputPlazo" class="form-control" type="number" aria-label=".form-control-lg example" required>
+                                <span class="label_leyend">Minimo 13 meses, Maximo 84 meses</span>
+                            </div>
+                            <div class="form_step__row">
+                                <div class="multiple multiple--2">
+                                    <span class="label label--empresa">Valor de garantía:</span>
+                                </div>
+                                <div class="input-group">
+                                    <input id="inputMontoGarantia" class="form-control site__input--group" type="number" aria-label=".form-control-lg example" required>
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <select id="inputMontoGarantiaMoneda" class="form-select selectMoneda" required>
+                                            <option value="soles">Soles</option>
+                                            <option value="dolares">Dolares</option>
                                         </select>
                                     </span>
                                 </div>
                             </div>
                             <div class="form_step__row">
-                                <span class="label">Plazo:</span>
-                                <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
-                            </div>
-                            <div class="form_step__row">
-                                <div class="multiple multiple--2">
-                                    <span class="label">Valor de garantía:</span>
+                                <div class="multiple multiple--3">
+                                    <span class="label label--empresa">Plazo de gracia:</span>
+                                    <span class="label label--empresa">Tasa Efectiva Anual:</span>
+                                    <span class="label label--empresa">Desembolso:</span>
                                 </div>
-                                <div class="multiple multiple--15">
-                                    <input id="inputInteres" class="form-control form-control-lg" type="text" aria-label=".form-control-lg example" required>
-                                    <span class="input-group-text" id="basic-addon2">
-                                        <select id="inputMoneda" class="form-select" required>
-                                            <option value="">Moneda ?</option>
-                                            <option value="1">Soles</option>
-                                            <option value="2">Dolares</option>
-                                        </select>
-                                    </span>
+                                <div class="multiple multiple--3">
+                                    <input id="inputPlazoGracia" class="form-control text-secondary fw-bold text-lg-center" type="text" value="3 Meses" aria-label=".form-control-lg example" disabled>
+                                    <input id="inputTEA" class="form-control text-secondary fw-bold text-lg-center" type="text" value="26%" aria-label=".form-control-lg example" disabled>
+                                    <input id="inputFechaDesembolso" class="form-control" type="date" aria-label=".form-control-lg example" required>
                                 </div>
                             </div>
                             <div class="form_step__row__final">
@@ -233,7 +253,7 @@
                                       He leído y acepto la <a href="#" class="linkTermsCond" data-bs-toggle="modal" data-bs-target="#modalTerminos">política de privacidad</a>
                                     </label>
                                 </div>
-                                <input type="submit" value="Finalizar" class="buttonFinalizar buttonFinalizar--disabled" id="buttonFinalizar" disabled>
+                                <input type="button" value="Finalizar" class="buttonFinalizar buttonFinalizar--disabled" id="buttonFinalizar" disabled>
                             </div>
                         </form>
                         <form id="form_step2" class="form_step form_step--step2 form_step--hide was-validated">
@@ -399,14 +419,38 @@
 </script>
 <script>
     $("#buttonFinalizar").on("click", function(){
-        $("#form_step1").toggleClass("form_step--hide");
-        $("#controlSimularFactoring").toggleClass("controlSimularFactoring--exito");
-        $("#form_step2").toggleClass("form_step--hide");
-    })
-    $("#btnSeguir").on("click", function(){
-        $("#form_step1").toggleClass("form_step--hide");
-        $("#form_step2").toggleClass("form_step--hide");
-    })
-    
+        let exito = ValidateSimularCapitalTrabajo();
+        if(exito){
+            disableScroll()
+            $(".modalSite").toggleClass("modalSite__animation_hide modalSite__animation_show");
+            intervalDots = setInterval(() => {
+                let cantDots = $(".modalSite .modalSite_text .dots").text().length;
+                if(cantDots < 3){
+                    $(".modalSite .modalSite_text .dots").text(".".repeat(cantDots + 1));
+                }else{
+                    $(".modalSite .modalSite_text .dots").text("");
+                }
+            }, 500);
+            (async () => {
+                let exito = await CalculateCapitalTrabajo();
+                if(exito){
+                    console.log("Simulacion procesada correctamente !!!");
+                    $(".modalSite").toggleClass("modalSite__animation_hide");
+                    setTimeout(() => {
+                        $(".modalSite").toggleClass("modalSite__animation_show");
+                    }, 500);
+                    enableScroll();
+                    $("#form_step1").toggleClass("form_step--hide");
+                    $("#form_step2").toggleClass("form_step--hide");
+                    setTimeout(() => {
+                        ClearControlFactoring();
+                    }, 500);
+                }else{
+                    console.log("Error !!!")
+                }
+                clearInterval(intervalDots);
+            })();
+        }
+    })    
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
