@@ -1,4 +1,4 @@
-document.getElementById("inputFinanciamiento").value = "100%";
+/*document.getElementById("inputFinanciamiento").value = "100%";
 document.getElementById("inputTasa").value = "2%";
 
 var inputMoneda = document.getElementById("inputMoneda");
@@ -106,5 +106,109 @@ async function CalculateFinancing1() {
 
     let result = await promise;
     return result;
-  }
-        
+}*/
+
+class ResponseFactoring{
+    constructor(monto, interes, desembolso){
+        this.monto = monto
+        this.interes = interes
+        this.desembolso = desembolso
+    }
+}
+
+function FormatValue(pValue){
+    let valueFormat = new Intl.NumberFormat('es-MX').format(pValue.toFixed(2));
+    return valueFormat;
+}
+
+async function CalculateFactoring(){
+    let exito = false;
+    let inputMontoFactura = document.getElementById("inputMontoFactura").value;
+    let inputDias = document.getElementById("inputDias").value;
+
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let tasa = (0.02 + 1);
+            let montoFactura = parseFloat(inputMontoFactura);
+            let dias = parseInt(inputDias);
+            let t = (dias / 30);
+
+            let interes = ((Math.pow(tasa, t) * montoFactura) - montoFactura);
+            let desembolso = (montoFactura - interes)
+
+            document.getElementById("inputMontoResponse").value = FormatValue(montoFactura);
+            document.getElementById("inputInteresResponse").value = FormatValue(interes);
+            document.getElementById("inputAdelantoResponse").value = FormatValue(desembolso);
+            exito = true;
+
+            resolve(exito);
+        }, 3000);
+    });
+    let result = await promise;
+    //console.log(result);
+    return result;
+}
+
+function ClearControlFactoring(){
+    document.getElementById("inputRucEmpresa").value = "";
+    document.getElementById("inputMontoFactura").value = "";
+    document.getElementById("inputDias").value = "";
+    document.getElementById("inputRucCliente").value = "";
+    document.getElementById("inputCorreo").value = "";
+    document.getElementById("inputTelefono").value = "";
+    document.getElementById("chkTerminos").checked = false;
+    let control = document.querySelectorAll(".inputButtonDias");
+    for(i = 0;i<= control.length - 1;i++){
+        control[i].classList.remove("inputButtonDias--selected")
+    }
+}
+
+async function CalculateCapitalTrabajo(){
+    let exito = false;
+    let inputNombre = document.getElementById("inputNombre").value;
+    let inputApellido = document.getElementById("inputApellido").value;
+    let inputCorreo = document.getElementById("inputCorreo").value;
+    let inputTelefono = document.getElementById("inputTelefono").value;
+    let inputRucEmpresa = document.getElementById("inputRucEmpresa").value;
+
+    let inputMontoFinanciamiento = document.getElementById("inputMontoFinanciamiento").value;
+    let inputPlazo = document.getElementById("inputPlazo").value;
+    let inputPlazoGracia = document.getElementById("inputPlazoGracia").value;
+    let inputMontoGarantia = document.getElementById("inputMontoGarantia").value;
+    let inputFechaDesembolso = document.getElementById("inputFechaDesembolso").value;
+
+    let inputMontoFinanciamientoMoneda = document.getElementById("inputMontoFinanciamientoMoneda").value;
+    let inputMontoGarantiaMoneda = document.getElementById("inputMontoGarantiaMoneda").value;    
+
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let TEA = (0.24 + 1);
+            let montoFinanciamiento = parseFloat(inputMontoFinanciamiento);
+            let montoGarantia = parseFloat(inputMontoGarantia);
+            let plazo = parseInt(inputPlazo);
+            let plazoGracia = parseInt(inputPlazoGracia);
+
+            // PROCESS ...
+            console.log("-- Save data --");
+            console.log(inputNombre + " " + inputApellido);
+            console.log("email: " + inputCorreo);
+            console.log("Phone: " + inputTelefono);
+            console.log("RUC: " + inputRucEmpresa);
+
+            console.log("Financiamiento: " + FormatValue(montoFinanciamiento) + " " + (inputMontoFinanciamientoMoneda == 'soles' ? "PEN" : "USD"));
+            console.log("Plazo: " + inputPlazo);
+            console.log("Valor de garantía: " + FormatValue(montoGarantia) + " " + (inputMontoGarantiaMoneda == 'soles' ? "PEN" : "USD"));
+            console.log("Plazo de Gracia: " + inputPlazoGracia);
+            console.log("TEA: 26%");
+            console.log("Fecha de desembolso: " + inputFechaDesembolso);
+            
+
+            exito = true;
+
+            resolve(exito);
+        }, 3000);
+    });
+    let result = await promise;
+    //console.log(result);
+    return result;
+}
