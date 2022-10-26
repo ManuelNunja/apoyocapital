@@ -344,6 +344,9 @@ body {
                     .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link.classhover {
                       background-color: #d61c25;
                       color: #ffffff; }
+                    .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.parent .menu .menu__link--current {
+                      background-color: #d61c25;
+                      color: #ffffff; }
               .siteMenu .siteMenu__background .siteMenu__background__sideRight > nav .nav__itemMenu .nav__itemMenu__nivel.child {
                 z-index: 1077;
                 position: absolute;
@@ -4700,19 +4703,19 @@ body {
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl--effect1 {
               animation: animation__valores 0.35s ease-out;
               animation-fill-mode: forwards;
-              animation-delay: 0.35s; }
+              animation-delay: 0.15s; }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl--effect2 {
               animation: animation__valores 0.35s ease-out;
               animation-fill-mode: forwards;
-              animation-delay: 0.45s; }
+              animation-delay: 0.35s; }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl--effect3 {
               animation: animation__valores 0.35s ease-out;
               animation-fill-mode: forwards;
-              animation-delay: 0.55s; }
+              animation-delay: 0.25s; }
             .nosotrosControlTab .nosotrosControlTab__background .content .item .background .nosotrosControlValores .nosotrosControlValores__background .items .item .image .imgControl--effect4 {
               animation: animation__valores 0.35s ease-out;
               animation-fill-mode: forwards;
-              animation-delay: 0.65s; }
+              animation-delay: 0.45s; }
 
 @keyframes animation__valores {
   0% {
