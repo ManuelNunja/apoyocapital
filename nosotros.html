@@ -325,11 +325,11 @@
                                                 <div class="social">
                                                     <div class="item">
                                                         <div class="icon icon--lkn"></div>
-                                                        <a class="link linkedin">cuenta@linkedin.com</a>
+                                                        <a class="link linkedin" href="https://www.linkedin.com/in/javier-jui-azabache-6b1b2256/?trk=public_profile_browsemap&originalSubdomain=pe" target="_blank">JavieJuiAzabache@linkedin.com</a>
                                                     </div>
                                                     <div class="item">
                                                         <div class="icon icon--mail"></div>
-                                                        <a class="link email">cuenta@apoyocapital.com</a>
+                                                        <a class="link email" href="mailto: correo@apoyocapital.pe">correo@apoyocapital.com</a>
                                                     </div>
                                                 </div>
                                                 <div class="paragraph">
@@ -362,7 +362,7 @@
                                                         </div>
                                                         <div class="item email__object--1">
                                                             <div class="icon icon--mail"></div>
-                                                            <a class="link">cuenta@apoyocapital.com</a>
+                                                            <a class="link">correo@apoyocapital.com</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -385,7 +385,7 @@
                                                         </div>
                                                         <div class="item email__object--2">
                                                             <div class="icon icon--mail"></div>
-                                                            <a class="link">cuenta@apoyocapital.com</a>
+                                                            <a class="link">correo@apoyocapital.com</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -408,7 +408,7 @@
                                                         </div>
                                                         <div class="item email__object--3">
                                                             <div class="icon icon--mail"></div>
-                                                            <a class="link">cuenta@apoyocapital.com</a>
+                                                            <a class="link">correo@apoyocapital.pe</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -608,7 +608,9 @@
         $(".viewinfoprincipal .info .name h3").html(miembro.nombre)
         $(".viewinfoprincipal .info .level h4").html(miembro.cargo)
         $(".viewinfoprincipal .social .linkedin").html(miembro.linkedin)
+        $(".viewinfoprincipal .social .linkedin").attr("href", miembro.linkedinURL)
         $(".viewinfoprincipal .social .email").html(miembro.correo)
+        $(".viewinfoprincipal .social .email").attr("href", miembro.correoSEND)
         $(".viewinfoprincipal .paragraph p").html(miembro.texto)
 
         

@@ -5236,7 +5236,8 @@ body {
 @media only screen and (min-width: 900px) {
   .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background {
     display: grid;
-    height: calc(352px);
+    height: auto;
+    min-height: calc(352px);
     grid-template-areas: "col1 col2" "col1 col3" "col1 col4";
     background-color: transparent; }
     .nosotrosControlEquipo .nosotrosControlEquipo__background .principal .principal__background--effect {
@@ -5631,7 +5632,33 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
+  .controlGridNews .title {
+    grid-column: 3 / 11;
+    padding-top: calc(16px);
+    padding-bottom: calc(16px);
+    max-height: 80px;
+    min-height: 80px; }
+    .controlGridNews .title h2 {
+      text-align: center;
+      font-size: calc(24px);
+      color: #d61c25;
+      font-family: GelionLight;
+      font-weight: 700;
+      animation: animation__controlGridNews__title 1s ease-in-out;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      margin-top: 50px;
+      opacity: 0; }
+
+@keyframes animation__controlGridNews__title {
+  from {
+    margin-top: 10px;
+    opacity: 0; }
+  to {
+    margin-top: 0px;
+    opacity: 1; } }
   .controlGridNews .controlGridNews__background {
+    display: none;
     grid-column: 3 / 11;
     background-color: transparent; }
     .controlGridNews .controlGridNews__background .items {
