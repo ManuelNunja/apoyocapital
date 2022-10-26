@@ -347,7 +347,7 @@
                                                     <a class="image viewinfo" data-attr-ident="image__object--1" data-attr-name="name__object--1" data-attr-level="level__object--1" data-attr-lnkd="lnkd__object--1" data-attr-email="email__object--1" data-attr-miembro="m002">
                                                         <div class="image__object image__object--1"></div>
                                                     </a>
-                                                    <a class="info viewinfo" data-attr-miembro="m002">
+                                                    <a class="info" data-attr-miembro="m002">
                                                         <div class="name name__object--1">
                                                             <h3>Jorge Sarmiento<br>Zorrilla</h3>
                                                         </div>
@@ -356,21 +356,19 @@
                                                         </div>
                                                     </a>
                                                     <div class="social">
-                                                        <div class="item lknd__object--1">
+                                                        <a class="item lnkd__object--1" href="https://www.linkedin.com/in/jorge-sarmiento-zorrilla-a85a5149/" target="_blank">
                                                             <div class="icon icon--lkn"></div>
-                                                            <a class="link">cuenta@linkedin.com</a>
-                                                        </div>
-                                                        <div class="item email__object--1">
+                                                        </a>
+                                                        <a class="item email__object--1" href="mailto: correo@apoyocapital.pe">
                                                             <div class="icon icon--mail"></div>
-                                                            <a class="link">correo@apoyocapital.com</a>
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="item">
                                                     <a class="image viewinfo" data-attr-ident="image__object--2" data-attr-name="name__object--2" data-attr-level="level__object--2" data-attr-lnkd="lnkd__object--2" data-attr-email="email__object--2" data-attr-miembro="m003">
                                                         <div class="image__object image__object--2"></div>
                                                     </a>
-                                                    <a class="info viewinfo" data-attr-miembro="m003">
+                                                    <a class="info" data-attr-miembro="m003">
                                                         <div class="name name__object--2">
                                                             <h3>Juan Flores<br>Lozano</h3>
                                                         </div>
@@ -379,21 +377,19 @@
                                                         </div>
                                                     </a>
                                                     <div class="social">
-                                                        <div class="item lnkd__object--2">
+                                                        <a class="item lnkd__object--2" href="https://www.linkedin.com/in/juanfranciscofloreslozano20506764/" target="_blank">
                                                             <div class="icon icon--lkn"></div>
-                                                            <a class="link">cuenta@linkedin.com</a>
-                                                        </div>
-                                                        <div class="item email__object--2">
+                                                        </a>
+                                                        <a class="item email__object--2" href="mailto: correo@apoyocapital.pe">
                                                             <div class="icon icon--mail"></div>
-                                                            <a class="link">correo@apoyocapital.com</a>
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="item">
                                                     <a class="image viewinfo" data-attr-ident="image__object--3" data-attr-name="name__object--3" data-attr-level="level__object--3" data-attr-lnkd="lnkd__object--3" data-attr-email="email__object--3" data-attr-miembro="m004">
                                                         <div class="image__object image__object--3"></div>
                                                     </a>
-                                                    <a class="info viewinfo" data-attr-miembro="m004">
+                                                    <a class="info" data-attr-miembro="m004">
                                                         <div class="name name__object--3">
                                                             <h3>Pedro Pingo P.</h3>
                                                         </div>
@@ -402,14 +398,12 @@
                                                         </div>
                                                     </a>
                                                     <div class="social">
-                                                        <div class="item lnkd__object--3">
+                                                        <a class="item lnkd__object--3" href="https://www.linkedin.com/in/pedropingo/?originalSubdomain=pe" target="_blank">
                                                             <div class="icon icon--lkn"></div>
-                                                            <a class="link">cuenta@linkedin.com</a>
-                                                        </div>
-                                                        <div class="item email__object--3">
+                                                        </a>
+                                                        <a class="item email__object--3" href="mailto: correo@apoyocapital.pe">
                                                             <div class="icon icon--mail"></div>
-                                                            <a class="link">correo@apoyocapital.pe</a>
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -596,11 +590,12 @@
         let attrLevel = $(this).attr("data-attr-level");
         let attrLnkd = $(this).attr("data-attr-lnkd");
         let attrEmail = $(this).attr("data-attr-email");
-        console.log(attrLevel)
+        console.log(attrLnkd)
         $("." + attrImage).css("background-image", 'url(' + miembroP.image + ')')
         $("." + attrName + " h3").html(miembroP.nombre)
         $("." + attrLevel + " h4").html(miembroP.cargo)
         $("." + attrLnkd + " .link").html(miembroP.linkedin)
+        $("." + attrLnkd).attr("href", miembroP.linkedinURL)
         $("." + attrEmail + " .link").html(miembroP.correo)
 
 
