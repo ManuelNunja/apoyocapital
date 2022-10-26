@@ -5174,7 +5174,8 @@ body {
               .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .image .image__object--3 {
                 background-image: url("../resources/image/equipoapoyo/pedropablo.jpg"); }
           .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info {
-            grid-area: col2; }
+            grid-area: col2;
+            text-decoration: none; }
             .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .name {
               width: 100%; }
               .nosotrosControlEquipo .nosotrosControlEquipo__background .items .items__background > .item .info .name h3 {
@@ -5831,7 +5832,9 @@ body {
       width: 100%;
       color: #d61c25;
       font-size: calc(24px);
-      font-family: SFProHeavy; }
+      font-family: SFProHeavy;
+      padding-top: calc(16px);
+      padding-bottom: calc(16px); }
       .controlTerminosCondiciones .controlTerminosCondiciones__background .title h2 {
         text-align: center; }
     .controlTerminosCondiciones .controlTerminosCondiciones__background .firtsParagraph {
@@ -5848,4 +5851,5 @@ body {
       width: 100%; }
       .controlTerminosCondiciones .controlTerminosCondiciones__background .content .item .paragraph p {
         color: #1a1a1a;
-        font-size: calc(12px); }
+        font-size: calc(12px);
+        text-align: justify; }
