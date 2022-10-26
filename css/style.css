@@ -4012,12 +4012,22 @@ body {
                 padding-top: calc(8px);
                 overflow: hidden;
                 position: relative; }
-                .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text p {
+                .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text .find__paragraph {
                   width: 100%;
                   font-size: calc(16px);
                   color: #1a1a1a;
                   text-align: justify;
                   font-family: GelionLight; }
+                  .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text .find__paragraph ul {
+                    font-size: calc(16px);
+                    color: #1a1a1a;
+                    text-align: justify;
+                    font-family: GelionLight; }
+                  .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text .find__paragraph ol {
+                    font-size: calc(16px);
+                    color: #1a1a1a;
+                    text-align: justify;
+                    font-family: GelionLight; }
                 .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col .accordion-item .accordion-collapse .accordion-body--site .text .end {
                   width: 100%;
                   height: calc(64px);
@@ -4071,6 +4081,52 @@ body {
             background-image: url("../resources/image/controlFAKS/new/9.png"); }
           .cayudaControlFAKS .cayudaControlFAKS__background .accordion--site .accordion__col:nth-child(2) .accordion-item:nth-child(5) .accordion-collapse .accordion-body--site .image {
             background-image: url("../resources/image/controlFAKS/new/4.png"); }
+
+#modalFAKS__title {
+  color: #d61c25;
+  font-family: SFProHeavy;
+  font-size: calc(20px) !important;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  padding-right: 0; }
+
+.modal-body--FAKS {
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-items: flex-start;
+  justify-content: flex-start;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr; }
+  .modal-body--FAKS .image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .modal-body--FAKS .content {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: flex-start;
+    padding-top: calc(16px);
+    padding-bottom: calc(16px); }
+    .modal-body--FAKS .content .find__paragraph {
+      width: 95%;
+      font-size: calc(16px);
+      color: #1a1a1a;
+      text-align: justify;
+      font-family: GelionLight; }
+      .modal-body--FAKS .content .find__paragraph ul {
+        font-size: calc(16px);
+        color: #1a1a1a;
+        text-align: justify;
+        font-family: GelionLight; }
+      .modal-body--FAKS .content .find__paragraph ol {
+        font-size: calc(16px);
+        color: #1a1a1a;
+        text-align: justify;
+        font-family: GelionLight; }
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .cayudaControlFAKS {
