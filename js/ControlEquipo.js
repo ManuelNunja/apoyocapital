@@ -32,13 +32,17 @@ let textPingo = "CEO de APOYO CAPITAL con xperiencia de más de 15 años de expe
 let pingoLnkdnURL = "https://www.linkedin.com/in/pedropingo/?originalSubdomain=pe"
 let pingoLnkdn = "PedroPingo@linkedin.com"
 
-let mail = "correo@apoyocapital.pe"
-let mailTO = "mailto: correo@apoyocapital.pe"
+let mailJui = "javier.jui@apoyocapital.pe"
+let mailSarmiento = "jorge.sarmiento@apoyocapital.pe"
+let mailFlores = "francisco.flores@apoyocapital.pe"
+let mailPingo = "pedro.pingo@apoyocapital.pe"
 
-let m1 = new MiembroEquipo("m001","resources/image/equipoapoyo/javierjui.jpg","Javier Jui Azabache","Gerente Comercial", juiLnkdn,juiLnkdnURL,mail,mailTO,textJui)
-let m2 = new MiembroEquipo("m002","resources/image/equipoapoyo/jorgesarmiento.jpg","Jorge Sarmiento Zorrilla","Gerente Comercial",sarmientoLnkdn,sarmientoLnkdnURL,mail,mailTO,textSarmiento)
-let m3 = new MiembroEquipo("m003","resources/image/equipoapoyo/juanflores.jpg","Juan Flores Lozano","Jefe de Riesgos",floresLnkdn, floresLnkdnURL,mail,mailTO,textFlores)
-let m4 = new MiembroEquipo("m004","resources/image/equipoapoyo/pedropablo.jpg","Pedro Pingo P.","Director",pingoLnkdn,pingoLnkdnURL,mail,mailTO,textPingo)
+let mailTO = "mailto: "
+
+let m1 = new MiembroEquipo("m001","resources/image/equipoapoyo/javierjui.jpg","Javier Jui Azabache","Gerente Comercial", juiLnkdn,juiLnkdnURL,mailJui,(mailTO + mailJui),textJui)
+let m2 = new MiembroEquipo("m002","resources/image/equipoapoyo/jorgesarmiento.jpg","Jorge Sarmiento Zorrilla","Gerente Comercial",sarmientoLnkdn,sarmientoLnkdnURL,mailSarmiento,(mailTO + mailSarmiento),textSarmiento)
+let m3 = new MiembroEquipo("m003","resources/image/equipoapoyo/juanflores.jpg","Juan Flores Lozano","Jefe de Riesgos",floresLnkdn, floresLnkdnURL,mailFlores,(mailTO + mailFlores),textFlores)
+let m4 = new MiembroEquipo("m004","resources/image/equipoapoyo/pedropablo.jpg","Pedro Pingo P.","Director",pingoLnkdn,pingoLnkdnURL,mailPingo,(mailTO + mailPingo),textPingo)
 
 arrayEquipo.push(m1)
 arrayEquipo.push(m2)
