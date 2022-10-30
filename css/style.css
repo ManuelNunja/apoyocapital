@@ -5820,6 +5820,68 @@ body {
   100% {
     opacity: 1; } }
 
+.floatWhatsApp {
+  width: calc(80px);
+  height: calc(80px);
+  background-color: transparent;
+  position: fixed;
+  z-index: 1077;
+  bottom: calc(16px);
+  right: calc(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: calc(0px); }
+  .floatWhatsApp .floatWhatsApp__background {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .floatWhatsApp .floatWhatsApp__background a {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .floatWhatsApp .floatWhatsApp__background a #svg__wapp {
+        width: calc(64px);
+        animation: animation__svgwapp__show 0.35s ease-in-out;
+        animation-fill-mode: forwards;
+        /*@keyframes animation__svgwapp__fill{
+                    0%{stroke-dashoffset: 2000;}
+                    35%{stroke-dashoffset: 0;}
+                    45%{stroke-dashoffset: 0;}
+                    55%{stroke-dashoffset: 0;}
+                    100%{stroke-dashoffset: 2000;}
+                }*/ }
+        .floatWhatsApp .floatWhatsApp__background a #svg__wapp .border {
+          fill-opacity: 1;
+          stroke-opacity: 0;
+          stroke: #EDEDED;
+          stroke-width: calc(8px);
+          stroke-dashoffset: 0;
+          stroke-dasharray: 2000; }
+        .floatWhatsApp .floatWhatsApp__background a #svg__wapp.svg__wapp--animation {
+          animation: animation__svgwapp__move 7s ease-in-out infinite; }
+
+@keyframes animation__svgwapp__show {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+@keyframes animation__svgwapp__move {
+  0% {
+    margin-left: 0px; }
+  1% {
+    margin-left: 10px; }
+  2% {
+    margin-left: 0px; }
+  3% {
+    margin-left: 10px; }
+  4% {
+    margin-left: 0px; }
+  100% {
+    margin-left: 0px; } }
+
 .siteModalTerminosCondiciones {
   top: 70px;
   height: 88vh; }
