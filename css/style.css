@@ -157,12 +157,12 @@ body {
           color: #ffffff; }
       .siteMenu .siteMenu__background .siteMenu__background__sideLeft .imageBrand {
         height: 100%;
-        background-image: url("../resources/brand/brandRed.png");
+        background-image: url("../resources/brand/brandRed_new1.png");
         background-position: 50%;
         background-size: calc(192px);
         background-repeat: no-repeat; }
         .siteMenu .siteMenu__background .siteMenu__background__sideLeft .imageBrand--active {
-          background-image: url("../resources/brand/brandWhite.png"); }
+          background-image: url("../resources/brand/brandWhite_new.png"); }
     .siteMenu .siteMenu__background .siteMenu__background__sideRight {
       z-index: 1079;
       width: 90%;
@@ -265,12 +265,10 @@ body {
           display: none; }
         .siteMenu .siteMenu__background .siteMenu__background__sideLeft .imageBrand {
           height: 100%;
-          background-image: url("../resources/brand/brandRed.png");
           background-position: 50%;
           background-size: calc(256px);
           background-repeat: no-repeat; }
           .siteMenu .siteMenu__background .siteMenu__background__sideLeft .imageBrand img {
-            content: url("../resources/brand/brandRed.png");
             width: 10%;
             height: 10%; }
           .siteMenu .siteMenu__background .siteMenu__background__sideLeft .imageBrand--zoom {
@@ -2556,7 +2554,7 @@ body {
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(1) .itemControl:nth-child(1) .image {
             background-image: url("../resources/client/apoyocapital.png"); }
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(1) .itemControl:nth-child(2) .image {
-            background-image: url("../resources/client/ameritan.png"); }
+            background-image: url("../resources/client/ameritam.png"); }
         .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(2) {
           grid-area: col2; }
           .homeControlIcaGroup .homeControlIcaGroup__background .homeControlIcaGroup__columns .column:nth-child(2) .itemControl:nth-child(1) .image {
@@ -5842,7 +5840,7 @@ body {
       align-items: center;
       justify-content: center; }
       .floatWhatsApp .floatWhatsApp__background a #svg__wapp {
-        width: calc(64px);
+        width: calc(52px);
         animation: animation__svgwapp__show 0.35s ease-in-out;
         animation-fill-mode: forwards;
         /*@keyframes animation__svgwapp__fill{
