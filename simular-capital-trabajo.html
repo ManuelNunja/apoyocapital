@@ -199,30 +199,30 @@
                             </div>
                             <div class="form_step__row">
                                 <span class="label">Nombre:</span>
-                                <input id="inputNombre" class="form-control" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputNombre" class="form-control inputRxtAplha" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <span class="label">Apellido:</span>
-                                <input id="inputApellido" class="form-control" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputApellido" class="form-control inputRxtAplha" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <span class="label">Correo electrónico:</span>
-                                <input id="inputCorreo" class="form-control" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputCorreo" class="form-control inputRxtAlphaNumberEmail" type="email" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row pb-4">
                                 <span class="label">Teléfono:</span>
-                                <input id="inputTelefono" class="form-control" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputTelefono" class="form-control inputRxtNumber" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <span class="label label--empresa">Datos de tu empresa:</span>
-                                <input id="inputRucEmpresa" class="form-control" type="text" placeholder="RUC" aria-label=".form-control-lg example" required>
+                                <input id="inputRucEmpresa" class="form-control inputRxtAlphaNumber" type="text" placeholder="RUC" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <div class="multiple multiple--2">
                                     <span class="label label--empresa">Financiamiento:</span>
                                 </div>
                                 <div class="input-group">
-                                    <input id="inputMontoFinanciamiento" class="form-control site__input--group" type="number" aria-label=".form-control-lg example" required>
+                                    <input id="inputMontoFinanciamiento" class="form-control site__input--group inputRxtNumberFloat" type="number" aria-label=".form-control-lg example" required>
                                     <span class="input-group-text" id="basic-addon2">
                                         <select id="inputMontoFinanciamientoMoneda" class="form-select selectMoneda" required>
                                             <option value="soles">Soles</option>
@@ -234,7 +234,7 @@
                             </div>
                             <div class="form_step__row">
                                 <span class="label label--empresa">Plazo:</span>
-                                <input id="inputPlazo" class="form-control" type="number" aria-label=".form-control-lg example" required>
+                                <input id="inputPlazo" class="form-control inputRxtNumberRange" type="number" aria-label=".form-control-lg example" required>
                                 <span class="label_leyend">Minimo 13 meses, Maximo 84 meses</span>
                             </div>
                             <div class="form_step__row">
@@ -242,7 +242,7 @@
                                     <span class="label label--empresa">Valor de garantía:</span>
                                 </div>
                                 <div class="input-group">
-                                    <input id="inputMontoGarantia" class="form-control site__input--group" type="number" aria-label=".form-control-lg example" required>
+                                    <input id="inputMontoGarantia" class="form-control site__input--group inputRxtNumberFloat" type="number" aria-label=".form-control-lg example" required>
                                     <span class="input-group-text" id="basic-addon2">
                                         <select id="inputMontoGarantiaMoneda" class="form-select selectMoneda" required>
                                             <option value="soles">Soles</option>
@@ -365,7 +365,7 @@
 <script src="js/ControlValidate.js" type="text/javascript"></script>
 <script src="js/ControlAlert.js"></script>
 <script src="js/ObserverEffect.js"></script>
-
+<script src="js/InputRestricted.js"></script>
 <script>
     function readySiteMenu(){
         $('.nav__itemMenu__nivel.child').hide(1)
