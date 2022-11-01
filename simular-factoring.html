@@ -202,14 +202,14 @@
                             </div>
                             <div class="form_step__row">
                                 <span class="label">RUC de tu empresa:</span>
-                                <input id="inputRucEmpresa" class="form-control" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputRucEmpresa" class="form-control inputRxtAlphaNumber" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <div class="multiple multiple--2">
                                     <span class="label">Monto de la factura:</span>
                                 </div>
                                 <div class="input-group">
-                                    <input id="inputMontoFactura" class="form-control site__input--group" type="number" placeholder="Monto" aria-label=".form-control-lg example" required>
+                                    <input id="inputMontoFactura" class="form-control site__input--group inputRxtNumberFloat" type="text" placeholder="Monto" aria-label=".form-control-lg example" required>
                                     <span class="input-group-text" id="basic-addon2">
                                         <select id="inputMonedaFinanciamiento" class="form-select selectMoneda" required>
                                             <option value="1">Soles</option>
@@ -224,12 +224,12 @@
                                     <input id="inputButtonDias30" class="form-control text-secondary inputButtonDias" data-attr-dias="30" value="30Dias" type="button" aria-label=".form-control-lg example" required>
                                     <input id="inputButtonDias45" class="form-control text-secondary inputButtonDias" data-attr-dias="45" value="45Dias" type="button" aria-label=".form-control-lg example" required>
                                     <input id="inputButtonDias60" class="form-control text-secondary inputButtonDias" data-attr-dias="60" value="60Dias" type="button" aria-label=".form-control-lg example" required>
-                                    <input id="inputDias" class="form-control" placeholder="Dias" type="number" aria-label=".form-control-lg example" required>
+                                    <input id="inputDias" class="form-control inputRxtNumberRange" placeholder="Dias" type="text" aria-label=".form-control-lg example" required>
                                 </div>
                             </div>
                             <div class="form_step__row">
                                 <span class="label">RUC de tu cliente (Únicamente RUC 20):</span>
-                                <input id="inputRucCliente" class="form-control" type="text" aria-label=".form-control-lg example" required>
+                                <input id="inputRucCliente" class="form-control inputRxtAlphaNumber" type="text" aria-label=".form-control-lg example" required>
                             </div>
                             <div class="form_step__row">
                                 <div class="multiple multiple--2">
@@ -237,8 +237,8 @@
                                     <span class="label">Tu teléfono:</span>
                                 </div>
                                 <div class="multiple multiple--2">
-                                    <input id="inputCorreo" class="form-control" type="email" aria-label=".form-control-lg example" required>
-                                    <input id="inputTelefono" class="form-control" type="tel" aria-label=".form-control-lg example" required>
+                                    <input id="inputCorreo" class="form-control inputRxtAlphaNumberEmail" type="email" aria-label=".form-control-lg example" required>
+                                    <input id="inputTelefono" class="form-control inputRxtNumber" type="tel" aria-label=".form-control-lg example" required>
                                 </div>
                             </div>
                             <div class="form_step__row">
@@ -359,7 +359,7 @@
 <script src="js/ControlValidate.js" type="text/javascript"></script>
 <script src="js/ControlAlert.js"></script>
 <script src="js/ObserverEffect.js"></script>
-
+<script src="js/InputRestricted.js"></script>
 <script>
     function readySiteMenu(){
         $('.nav__itemMenu__nivel.child').hide(1)
