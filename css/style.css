@@ -3402,9 +3402,7 @@ body {
     overflow: hidden;
     background-color: #f6f6f8; }
     .productoControlFinanciamos .productoControlFinanciamos__background {
-      width: 75%;
-      min-width: calc(960px);
-      max-width: calc(1312px);
+      width: 100%;
       min-height: calc(256px);
       max-height: calc(256px);
       display: grid;
@@ -3453,7 +3451,7 @@ body {
             width: 100%;
             height: 100%;
             background-image: url("../resources/image/revisando-documentos_small.png");
-            background-position: 100%;
+            background-position: 50% 24%;
             background-size: cover;
             background-repeat: no-repeat; }
         .productoControlFinanciamos .productoControlFinanciamos__background .side--effect {
@@ -5835,11 +5833,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .floatWhatsApp .floatWhatsApp__background a {
+    .floatWhatsApp .floatWhatsApp__background .GoWhatsApp {
       display: flex;
       align-items: center;
-      justify-content: center; }
-      .floatWhatsApp .floatWhatsApp__background a #svg__wapp {
+      justify-content: center;
+      cursor: pointer; }
+      .floatWhatsApp .floatWhatsApp__background .GoWhatsApp #svg__wapp {
         width: calc(52px);
         animation: animation__svgwapp__show 0.35s ease-in-out;
         animation-fill-mode: forwards;
@@ -5850,14 +5849,14 @@ body {
                     55%{stroke-dashoffset: 0;}
                     100%{stroke-dashoffset: 2000;}
                 }*/ }
-        .floatWhatsApp .floatWhatsApp__background a #svg__wapp .border {
+        .floatWhatsApp .floatWhatsApp__background .GoWhatsApp #svg__wapp .border {
           fill-opacity: 1;
           stroke-opacity: 0;
           stroke: #EDEDED;
           stroke-width: calc(8px);
           stroke-dashoffset: 0;
           stroke-dasharray: 2000; }
-        .floatWhatsApp .floatWhatsApp__background a #svg__wapp.svg__wapp--animation {
+        .floatWhatsApp .floatWhatsApp__background .GoWhatsApp #svg__wapp.svg__wapp--animation {
           animation: animation__svgwapp__move 7s ease-in-out infinite; }
 
 @keyframes animation__svgwapp__show {
