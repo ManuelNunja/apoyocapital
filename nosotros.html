@@ -592,7 +592,8 @@
         let dataMiembro = $(this).attr("data-attr-miembro")
         let miembroP = BuscarMiembro(dataMiembroP);
         let miembro = BuscarMiembro(dataMiembro);
-
+        console.log(miembroP)
+        console.log(miembro)
         $(".viewinfoprincipal").attr("data-attr-principal", dataMiembro)
         $(this).attr("data-attr-miembro", dataMiembroP)
 
